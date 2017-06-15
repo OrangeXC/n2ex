@@ -6,13 +6,13 @@
       </mu-card-header>
       <mu-card-actions>
         <div class="chip-container">
-          <mu-chip class="chip" backgroundColor="greenA100" v-if="user.website">
+          <mu-chip class="chip" backgroundColor="greenA100" v-if="user.website" @click="toWebsite(user.website)">
             <mu-avatar :size="32" icon="public" backgroundColor="greenA700" />{{ user.website }}
           </mu-chip>
           <mu-chip class="chip" backgroundColor="lightBlue100" v-if="user.twitter">
             <mu-avatar :size="32" src="../../twitter.png" />{{ user.twitter }}
           </mu-chip>
-          <mu-chip class="chip" backgroundColor="grey300" v-if="user.github">
+          <mu-chip class="chip" backgroundColor="grey300" v-if="user.github" @click="toGithub(user.github)">
             <mu-avatar :size="32" src="../../github.png" backgroundColor="#fff" />{{ user.github }}
           </mu-chip>
           <mu-chip class="chip" backgroundColor="deepOrange100" v-if="user.location">
@@ -49,6 +49,14 @@ export default {
       }
     }))
     .catch(error => console.log(error))
+  },
+  methods: {
+    toWebsite (url) {
+      window.open(url)
+    },
+    toGithub (name) {
+      window.open(`https://github.com/${name}`)
+    },
   },
   components: {
     TopicList

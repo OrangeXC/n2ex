@@ -1,9 +1,12 @@
 <template>
   <div>
-    <mu-appbar title="N2EX">
+    <mu-appbar>
       <mu-icon-button icon="menu" @click="toggle(true)" slot="left" />
-      <mu-flat-button label="最热主题" @click="toHome()" slot="right" />
-      <mu-flat-button label="最新主题" @click="toNew()" slot="right" />
+      <mu-flat-button label="最热主题" @click="toHome()" slot="left" />
+      <mu-flat-button label="最新主题" @click="toNew()" slot="left" />
+      <mu-icon-button href="https://github.com/OrangeXC/n2ex" slot="right">
+        <i class="muidocs-icon-custom-github"></i>
+      </mu-icon-button>
     </mu-appbar>
     <mu-drawer :open="open" :docked="docked" @close="toggle()">
       <mu-list @itemClick="docked ? '' : toggle()">
