@@ -1,0 +1,25 @@
+.page-enter-active, .page-leave-active
+{
+  transition: opacity .5s
+}
+.page-enter, .page-leave-active
+{
+  opacity: 0
+}
+
+.container {
+  padding: 10px;
+}
+
+.mu-card {
+  margin: 10px 0;
+}
+
+.chip-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chip {
+  margin: 4px;
+}
