@@ -21,7 +21,7 @@
         </div>
       </mu-card-actions>
     </mu-card>
-    <comment :comments="comments" />
+    <comment :comments="comments" v-if="comments.length" />
   </section>
 </template>
 
