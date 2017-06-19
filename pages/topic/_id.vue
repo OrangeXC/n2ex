@@ -34,8 +34,8 @@ import Comment from '~components/Comment'
 export default {
   asyncData ({ params, error }) {
     return axios.all([
-      axios.get(`https://www.v2ex.com/api/topics/show.json?id=${params.id}`),
-      axios.get(`https://www.v2ex.com/api/replies/show.json?topic_id=${params.id}`)
+      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?id=${params.id}`),
+      axios.get(`https://proxy-uuptfgaypk.now.sh/replies/show.json?topic_id=${params.id}`)
     ])
     .then(axios.spread(function (detail, comments) {
       detail.data[0].created = format(detail.data[0].created)

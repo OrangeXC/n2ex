@@ -28,8 +28,8 @@ import TopicList from '~components/TopicList'
 export default {
   asyncData ({ params, error }) {
     return axios.all([
-      axios.get(`https://www.v2ex.com/api/nodes/show.json?name=${params.name}`),
-      axios.get(`https://www.v2ex.com/api/topics/show.json?node_name=${params.name}`)
+      axios.get(`https://proxy-uuptfgaypk.now.sh/nodes/show.json?name=${params.name}`),
+      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=${params.name}`)
     ])
     .then(axios.spread(function (node, topicList) {
       node.data.created = format(node.data.created)
