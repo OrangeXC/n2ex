@@ -8,7 +8,7 @@ import TopicList from '~components/TopicList'
 
 export default {
   asyncData ({ params, error }) {
-    return axios.get(`https://www.v2ex.com/api/topics/latest.json`).then((res) => {
+    return axios.get(`https://proxy-uuptfgaypk.now.sh/topics/latest.json`).then((res) => {
       return {
         newList: res.data
       }
