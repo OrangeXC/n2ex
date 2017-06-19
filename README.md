@@ -20,8 +20,6 @@ nuxt 版 [v2ex](https://www.v2ex.com/)
 * 节点详情（包含话题列表）
 * 用户详情（包含话题列表）
 
-> 注意：在线网站请看顶部链接，路由跳转时接口会报错，因为接口请求跨域问题，建议安装 chrome 插件 [Allow-Control-Allow-Origin: *](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi)以解决跨域问题。
-
 ## English
 
 ## Description
@@ -37,8 +35,6 @@ The v2ex base nuxt
 * (header menu) some node of topic
 * node detail
 * user detail
-
-> Note: the website plese to page top, when open the website, router changes will be error, because CORS, you can install chrome component [Allow-Control-Allow-Origin: *](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi).
 
 ## Build Setup
 
