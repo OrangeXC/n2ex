@@ -1,19 +1,19 @@
 <template>
   <section class="container">
     <mu-card>
-      <div @click="toUser(detail.member.username)">
+      <nuxt-link :to="'/member/' + detail.member.username">
         <mu-card-header :title="detail.title" :subTitle="detail.member.username">
           <mu-avatar :src="detail.member.avatar_normal" slot="avatar"/>
         </mu-card-header>
-      </div>
+      </nuxt-link>
       <div class="mu-card-text" v-html="detail.content_rendered"></div>
       <mu-card-actions>
         <div class="chip-container">
           <mu-chip class="chip" @click="toNode(detail.node.name)">
-            <mu-avatar :size="32" :src="detail.node.avatar_normal"/>{{ detail.node.title }}
+            <mu-avatar :size="32" :src="detail.node.avatar_normal | image"/>{{ detail.node.title }}
           </mu-chip>
           <mu-chip class="chip">
-            <mu-avatar :size="32" icon="schedule"/>{{ detail.created }}
+            <mu-avatar :size="32" icon="schedule"/>{{ detail.created | timeAgo }}
           </mu-chip>
           <mu-chip class="chip">
             <mu-avatar :size="32" icon="comment"/>{{ detail.replies }}
@@ -27,9 +27,8 @@
 
 <script>
 import axios from 'axios'
-import { format } from '~assets/script/utils'
+import { timeAgo, image } from '~plugins/filters'
 import Comment from '~components/Comment'
-
 
 export default {
   asyncData ({ params, error }) {
@@ -38,8 +37,6 @@ export default {
       axios.get(`https://proxy-uuptfgaypk.now.sh/replies/show.json?topic_id=${params.id}`)
     ])
     .then(axios.spread(function (detail, comments) {
-      detail.data[0].created = format(detail.data[0].created)
-
       return {
         detail: detail.data[0],
         comments: comments.data
@@ -48,9 +45,6 @@ export default {
     .catch(error => console.log(error))
   },
   methods: {
-    toUser (name) {
-      this.$router.push(`/member/${name}`)
-    },
     toNode (name) {
       this.$router.push(`/node/${name}`)
     }

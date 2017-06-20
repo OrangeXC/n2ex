@@ -2,7 +2,7 @@
   <section class="container">
     <mu-card class="node-card">
       <mu-card-header :title="node.title" :subTitle="node.header">
-        <mu-avatar :src="node.avatar_normal" slot="avatar"/>
+        <mu-avatar :src="node.avatar_normal | image" slot="avatar"/>
       </mu-card-header>
       <mu-card-actions>
         <div class="chip-container">
@@ -10,7 +10,7 @@
             <mu-avatar :size="32" icon="star" backgroundColor="orangeA400" />{{ node.stars }}
           </mu-chip>
           <mu-chip class="chip" backgroundColor="blue300">
-            <mu-avatar :size="32" icon="schedule" backgroundColor="indigo900" />{{ node.created }}
+            <mu-avatar :size="32" icon="schedule" backgroundColor="indigo900" />{{ node.created | format }}
           </mu-chip>
         </div>
       </mu-card-actions>
@@ -21,9 +21,8 @@
 
 <script>
 import axios from 'axios'
-import { format } from '~assets/script/utils'
+import { format, image } from '~plugins/filters'
 import TopicList from '~components/TopicList'
-
 
 export default {
   asyncData ({ params, error }) {
@@ -32,8 +31,6 @@ export default {
       axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=${params.name}`)
     ])
     .then(axios.spread(function (node, topicList) {
-      node.data.created = format(node.data.created)
-
       return {
         node: node.data,
         topicList: topicList.data
@@ -52,4 +49,3 @@ export default {
   margin: -10px;
 }
 </style>
-
