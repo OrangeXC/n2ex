@@ -24,7 +24,8 @@ module.exports = {
     '@nuxtjs/component-cache'
   ],
   plugins: [
-    { src: '~plugins/muse-ui.js', ssr: true }
+    { src: '~plugins/muse-ui.js', ssr: true },
+    '~plugins/filters.js'
   ],
   build: {
     vendor: ['axios']

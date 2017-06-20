@@ -83,7 +83,7 @@ module.exports = {
     color: '#ff4081'
   },
   modules: ['@nuxtjs/pwa', '@nuxtjs/component-cache'],
-  plugins: [{ src: '~plugins/muse-ui.js', ssr: true }],
+  plugins: [{ src: '~plugins/muse-ui.js', ssr: true }, '~plugins/filters.js'],
   build: {
     vendor: ['axios']
   }

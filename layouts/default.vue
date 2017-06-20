@@ -1,23 +1,25 @@
 <template>
   <div>
-    <mu-appbar>
+    <mu-appbar title="N2EX">
       <mu-icon-button icon="menu" @click="toggle(true)" slot="left" />
-      <mu-flat-button label="最热主题" @click="toHome()" slot="left" />
-      <mu-flat-button label="最新主题" @click="toNew()" slot="left" />
       <mu-icon-button href="https://github.com/OrangeXC/n2ex" slot="right">
         <i class="muidocs-icon-custom-github"></i>
       </mu-icon-button>
     </mu-appbar>
     <mu-drawer :open="open" :docked="docked" @close="toggle()">
+      <mu-appbar title="Tabs"/>
       <mu-list @itemClick="docked ? '' : toggle()">
-        <mu-list-item title="前端" @click="toNode('fe')" />
-        <mu-list-item title="GitHub" @click="toNode('github')" />
-        <mu-list-item title="创意" @click="toNode('ideas')" />
-        <mu-list-item title="好玩" @click="toNode('share')"/>
-        <mu-list-item title="Apple" @click="toNode('apple')" />
-        <mu-list-item title="酷工作" @click="toNode('jobs')" />
-        <mu-list-item title="交易" @click="toNode('deals')"/>
-        <mu-list-item title="问与答" @click="toNode('qna')" />
+        <mu-list-item title="技术" @click="toTab('tech')" />
+        <mu-list-item title="创意" @click="toTab('creative')" />
+        <mu-list-item title="好玩" @click="toTab('play')" />
+        <mu-list-item title="Apple" @click="toTab('apple')" />
+        <mu-list-item title="酷工作" @click="toTab('jobs')" />
+        <mu-list-item title="交易" @click="toTab('deals')" />
+        <mu-list-item title="城市" @click="toTab('city')" />
+        <mu-list-item title="问与答" @click="toTab('qna')" />
+        <mu-list-item title="最热" @click="toHome()" />
+        <mu-list-item title="全部" @click="toNew()" />
+        <mu-list-item title="节点" @click="toTab('nodes')" />
       </mu-list>
     </mu-drawer>
     <nuxt/>
@@ -47,6 +49,9 @@ export default {
     },
     toNode (name) {
       this.$router.push(`/node/${name}`)
+    },
+    toTab (name) {
+      this.$router.push(`/tab/${name}`)
     }
   },
   components: {

@@ -10,16 +10,16 @@
             <mu-avatar :size="32" icon="public" backgroundColor="greenA700" />{{ user.website }}
           </mu-chip>
           <mu-chip class="chip" backgroundColor="lightBlue100" v-if="user.twitter">
-            <mu-avatar :size="32" src="~assets/img/twitter.png" />{{ user.twitter }}
+            <mu-avatar :size="32" src="../../img/twitter.png" />{{ user.twitter }}
           </mu-chip>
           <mu-chip class="chip" backgroundColor="grey300" v-if="user.github" @click="toGithub(user.github)">
-            <mu-avatar :size="32" src="~assets/img/github.png" backgroundColor="#fff" />{{ user.github }}
+            <mu-avatar :size="32" src="../../img/github.png" backgroundColor="#fff" />{{ user.github }}
           </mu-chip>
           <mu-chip class="chip" backgroundColor="deepOrange100" v-if="user.location">
             <mu-avatar :size="32" icon="location_city" backgroundColor="deepOrange800" />{{ user.location }}
           </mu-chip>
           <mu-chip class="chip" backgroundColor="blue300">
-            <mu-avatar :size="32" icon="schedule" backgroundColor="indigo900" />{{ user.created }}
+            <mu-avatar :size="32" icon="schedule" backgroundColor="indigo900" />{{ user.created | format }}
           </mu-chip>
         </div>
       </mu-card-actions>
@@ -30,7 +30,7 @@
 
 <script>
 import axios from 'axios'
-import { format } from '~assets/script/utils'
+import { format } from '~plugins/filters'
 import TopicList from '~components/TopicList'
 
 export default {
@@ -40,8 +40,6 @@ export default {
       axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?username=${params.name}`)
     ])
     .then(axios.spread(function (user, topicList) {
-      user.data.created = format(user.data.created)
-
       return {
         user: user.data,
         topicList: topicList.data
