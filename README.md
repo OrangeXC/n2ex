@@ -2,6 +2,10 @@
 
 vue ssr v2ex，because it depends on nuxt so called n2ex
 
+## Links
+
+[中文文档](https://github.com/OrangeXC/n2ex/blob/master/README.zh-CN.md)
+
 ## Features
 
 * Use vue ssr framework [nuxt](https://github.com/nuxt/nuxt.js)
