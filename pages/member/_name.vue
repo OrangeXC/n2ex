@@ -10,10 +10,10 @@
             <mu-avatar :size="32" icon="public" backgroundColor="greenA700" />{{ user.website }}
           </mu-chip>
           <mu-chip class="chip" backgroundColor="lightBlue100" v-if="user.twitter">
-            <mu-avatar :size="32" src="../../twitter.png" />{{ user.twitter }}
+            <mu-avatar :size="32" src="~assets/img/twitter.png" />{{ user.twitter }}
           </mu-chip>
           <mu-chip class="chip" backgroundColor="grey300" v-if="user.github" @click="toGithub(user.github)">
-            <mu-avatar :size="32" src="../../github.png" backgroundColor="#fff" />{{ user.github }}
+            <mu-avatar :size="32" src="~assets/img/github.png" backgroundColor="#fff" />{{ user.github }}
           </mu-chip>
           <mu-chip class="chip" backgroundColor="deepOrange100" v-if="user.location">
             <mu-avatar :size="32" icon="location_city" backgroundColor="deepOrange800" />{{ user.location }}
@@ -32,7 +32,6 @@
 import axios from 'axios'
 import { format } from '~assets/script/utils'
 import TopicList from '~components/TopicList'
-
 
 export default {
   asyncData ({ params, error }) {

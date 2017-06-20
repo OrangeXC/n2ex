@@ -12,21 +12,23 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
+    "@nuxtjs/pwa": "^0.2.0",
     "axios": "^0.16.2",
     "cross-env": "^5.0.0",
-    "eslint-plugin-node": "^5.0.0",
     "koa": "^2.0.0",
     "muse-ui": "^2.0.3",
-    "nuxt": "~1.0.0-alpha1",
+    "nuxt": "^1.0.0-alpha.4",
     "source-map-support": "^0.4.15"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
+    "babel-loader": "^7.0.0",
     "backpack-core": "^0.3.0",
     "eslint": "^3.13.1",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-html": "^2.0.3",
     "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^3.0.1",
     "node-sass": "^4.5.3",
