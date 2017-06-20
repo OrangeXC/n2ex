@@ -1,40 +1,22 @@
 # n2ex
 
-> v2ex ssr app ，use nuxt && muse-ui && v2ex API && axios
+vue ssr v2ex，because it depends on nuxt so called n2ex
 
-## Chinese
+## Features
 
-### 项目描述
+* Use vue ssr framework [nuxt](https://github.com/nuxt/nuxt.js)
+* Use aterial Design UI library [muse-ui](https://github.com/museui/muse-ui)
+* Use browser and node.js http client [axios](https://github.com/mzabriskie/axios)
+* Node proxy solve [CORS](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS) problem
 
-nuxt 版 [v2ex](https://www.v2ex.com/)
+## pages
 
-基于 vue 服务端渲染框架 [nuxt](https://github.com/nuxt/nuxt.js)， 使用 [v2ex API](https://www.v2ex.com/p/7v9TEc53) 作为接口，使用 [muse-ui](https://github.com/museui/muse-ui) UI 组件库。
-
-### 功能
-
-* 首页-最热话题列表
-* 最新话题列表
-* 话题详情
-* 话题评论
-* 菜单导航-部分节点列表
-* 节点详情（包含话题列表）
-* 用户详情（包含话题列表）
-
-## English
-
-## Description
-
-The v2ex base nuxt
-
-### Function
-
-* Hot Topic List
-* New Topic List
-* Topic Detail
-* Topic comment
-* (header menu) some node of topic
-* node detail
-* user detail
+* Hot topic list
+* New topic list
+* Topic detail with comment
+* Node list
+* Node detail
+* User detail
 
 ## Build Setup
 
