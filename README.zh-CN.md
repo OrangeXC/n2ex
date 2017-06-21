@@ -10,6 +10,7 @@ vue 服务端渲染版 [v2ex](https://www.v2ex.com/)
 * [v2ex API](https://www.v2ex.com/p/7v9TEc53) - v2ex 公开 API 接口
 * [muse-ui](https://github.com/museui/muse-ui) - 基础组件库
 * [axios](https://github.com/mzabriskie/axios) - http 请求
+* [pwa](https://developers.google.com/web/progressive-web-apps/) - 渐进式 web 应用
 
 ## 功能
 
