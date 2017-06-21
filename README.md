@@ -9,11 +9,12 @@ vue ssr v2ex，because it depends on nuxt so called n2ex
 ## Features
 
 * Use vue ssr framework [nuxt](https://github.com/nuxt/nuxt.js)
-* Use aterial Design UI library [muse-ui](https://github.com/museui/muse-ui)
+* Use material Design UI library [muse-ui](https://github.com/museui/muse-ui)
 * Use browser and node.js http client [axios](https://github.com/mzabriskie/axios)
 * Node proxy solve [CORS](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS) problem
+* Progressive Web Apps
 
-## pages
+## page
 
 * Hot topic list
 * New topic list
