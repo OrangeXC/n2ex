@@ -9,13 +9,13 @@
           <mu-chip class="chip" backgroundColor="greenA100" v-if="user.website" @click="toWebsite(user.website)">
             <mu-avatar :size="32" icon="public" backgroundColor="greenA700" />{{ user.website }}
           </mu-chip>
-          <mu-chip class="chip" backgroundColor="lightBlue100" v-if="user.twitter">
+          <mu-chip class="chip" backgroundColor="lightBlue100" v-if="user.twitter" @click="toTwitter(user.twitter)">
             <mu-avatar :size="32" src="../../img/twitter.png" />{{ user.twitter }}
           </mu-chip>
           <mu-chip class="chip" backgroundColor="grey300" v-if="user.github" @click="toGithub(user.github)">
             <mu-avatar :size="32" src="../../img/github.png" backgroundColor="#fff" />{{ user.github }}
           </mu-chip>
-          <mu-chip class="chip" backgroundColor="deepOrange100" v-if="user.location">
+          <mu-chip class="chip" backgroundColor="deepOrange100" v-if="user.location" @click="toMap(user.location)">
             <mu-avatar :size="32" icon="location_city" backgroundColor="deepOrange800" />{{ user.location }}
           </mu-chip>
           <mu-chip class="chip" backgroundColor="blue300">
@@ -54,6 +54,12 @@ export default {
     toGithub (name) {
       window.open(`https://github.com/${name}`)
     },
+    toTwitter (name) {
+      window.open(`https://twitter.com/${name}`)
+    },
+    toMap (location) {
+      window.open(`https://www.google.com/maps?q=${location}`)
+    }
   },
   components: {
     TopicList
