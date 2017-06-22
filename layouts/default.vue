@@ -27,8 +27,6 @@
 </template>
 
 <script>
-import MyFooter from '~components/Footer.vue'
-
 export default {
   data () {
     return {
@@ -53,9 +51,6 @@ export default {
     toTab (name) {
       this.$router.push(`/tab/${name}`)
     }
-  },
-  components: {
-    MyFooter
   }
 }
 </script>

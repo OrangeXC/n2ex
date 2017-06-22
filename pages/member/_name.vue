@@ -30,14 +30,14 @@
 
 <script>
 import axios from 'axios'
-import { format } from '~plugins/filters'
 import TopicList from '~components/TopicList'
+import { format } from '~plugins/filters'
 
 export default {
-  asyncData ({ params, error }) {
+  asyncData ({ app, params, error }) {
     return axios.all([
-      axios.get(`https://proxy-uuptfgaypk.now.sh/members/show.json?username=${params.name}`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?username=${params.name}`)
+      app.$axios.get(`members/show.json?username=${params.name}`),
+      app.$axios.get(`topics/show.json?username=${params.name}`)
     ])
     .then(axios.spread(function (user, topicList) {
       return {

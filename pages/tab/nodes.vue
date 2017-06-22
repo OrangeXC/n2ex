@@ -1,7 +1,7 @@
 <template>
   <section class="chip-container">
+    <mu-text-field hintText="搜索" v-model="searchString" icon="search" />
     <mu-sub-header>
-      <mu-text-field hintText="搜索" v-model="searchString" icon="search" />
       已为您找到 {{ nodes.length }} 个节点.
     </mu-sub-header>
     <mu-content-block>
@@ -16,9 +16,9 @@
 import axios from 'axios'
 
 export default {
-  async asyncData () {
+  async asyncData ({ app }) {
     try {
-      const { data } = await axios.get(`https://proxy-uuptfgaypk.now.sh/nodes/all.json`)
+      const { data } = await app.$axios.get(`nodes/all.json`)
 
       return {
         nodeList: data

@@ -14,20 +14,24 @@ module.exports = {
   },
   css: [
     '~assets/css/main.css',
-    'muse-ui/dist/muse-ui.css'
+    'muse-ui/dist/muse-ui.css',
+    'muse-ui/dist/theme-carbon.css'
   ],
   loading: {
     color: '#ff4081'
   },
   modules: [
+    '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/component-cache'
   ],
+  axios: {
+    baseURL: 'https://proxy-uuptfgaypk.now.sh',
+    credentials: false,
+    proxyHeaders: false
+  },
   plugins: [
     { src: '~plugins/muse-ui.js', ssr: true },
     '~plugins/filters.js'
-  ],
-  build: {
-    vendor: ['axios']
-  }
+  ]
 }

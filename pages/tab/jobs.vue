@@ -7,12 +7,12 @@ import axios from 'axios'
 import TopicList from '~components/TopicList'
 
 export default {
-  asyncData ({ params, error }) {
+  asyncData ({ app, params, error }) {
     return axios.all([
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=jobs`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=cv`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=career`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=outsourcing`)
+      app.$axios.get(`topics/show.json?node_name=jobs`),
+      app.$axios.get(`topics/show.json?node_name=cv`),
+      app.$axios.get(`topics/show.json?node_name=career`),
+      app.$axios.get(`topics/show.json?node_name=outsourcing`)
     ])
     .then(axios.spread(function (jobs, cv, career, outsourcing) {
       let sortlist = jobs.data.concat(cv.data, career.data, outsourcing.data).sort(function(a, b) {
