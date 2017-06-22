@@ -21,14 +21,14 @@
 
 <script>
 import axios from 'axios'
-import { format, image } from '~plugins/filters'
 import TopicList from '~components/TopicList'
+import { format, image } from '~plugins/filters'
 
 export default {
-  asyncData ({ params, error }) {
+  asyncData ({ app, params, error }) {
     return axios.all([
-      axios.get(`https://proxy-uuptfgaypk.now.sh/nodes/show.json?name=${params.name}`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=${params.name}`)
+      app.$axios.get(`nodes/show.json?name=${params.name}`),
+      app.$axios.get(`topics/show.json?node_name=${params.name}`)
     ])
     .then(axios.spread(function (node, topicList) {
       return {

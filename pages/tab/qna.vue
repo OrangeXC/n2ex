@@ -7,9 +7,9 @@ import axios from 'axios'
 import TopicList from '~components/TopicList'
 
 export default {
-  async asyncData () {
+  async asyncData ({ app }) {
     try {
-      const { data } = await axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=qna`)
+      const { data } = await app.$axios.get(`topics/show.json?node_name=qna`)
 
       return {
         qnaList: data

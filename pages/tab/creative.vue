@@ -7,11 +7,11 @@ import axios from 'axios'
 import TopicList from '~components/TopicList'
 
 export default {
-  asyncData ({ params, error }) {
+  asyncData ({ app, params, error }) {
     return axios.all([
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=create`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=design`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=ideas`)
+      app.$axios.get(`topics/show.json?node_name=create`),
+      app.$axios.get(`topics/show.json?node_name=design`),
+      app.$axios.get(`topics/show.json?node_name=ideas`)
     ])
     .then(axios.spread(function (create, design, ideas) {
       let sortlist = create.data.concat(design.data, ideas.data).sort(function(a, b) {

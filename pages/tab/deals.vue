@@ -7,13 +7,13 @@ import axios from 'axios'
 import TopicList from '~components/TopicList'
 
 export default {
-  asyncData ({ params, error }) {
+  asyncData ({ app, params, error }) {
     return axios.all([
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=all4all`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=exchange`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=free`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=dn`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=tuan`)
+      app.$axios.get(`topics/show.json?node_name=all4all`),
+      app.$axios.get(`topics/show.json?node_name=exchange`),
+      app.$axios.get(`topics/show.json?node_name=free`),
+      app.$axios.get(`topics/show.json?node_name=dn`),
+      app.$axios.get(`topics/show.json?node_name=tuan`)
     ])
     .then(axios.spread(function (all4all, exchange, free, dn, tuan) {
       let sortlist = all4all.data.concat(exchange.data, free.data, dn.data, tuan.data).sort(function(a, b) {

@@ -7,14 +7,14 @@ import axios from 'axios'
 import TopicList from '~components/TopicList'
 
 export default {
-  asyncData ({ params, error }) {
+  asyncData ({ app, params, error }) {
     return axios.all([
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=apple`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=macos`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=ios`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=ipad`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=iphone`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=mbp`)
+      app.$axios.get(`topics/show.json?node_name=apple`),
+      app.$axios.get(`topics/show.json?node_name=macos`),
+      app.$axios.get(`topics/show.json?node_name=ios`),
+      app.$axios.get(`topics/show.json?node_name=ipad`),
+      app.$axios.get(`topics/show.json?node_name=iphone`),
+      app.$axios.get(`topics/show.json?node_name=mbp`)
     ])
     .then(axios.spread(function (apple, macos, ios, ipad, iphone, mbp) {
       let sortlist = apple.data.concat(macos.data, ios.data, ipad.data, iphone.data, mbp.data).sort(function(a, b) {

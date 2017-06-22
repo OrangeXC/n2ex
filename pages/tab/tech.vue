@@ -7,13 +7,13 @@ import axios from 'axios'
 import TopicList from '~components/TopicList'
 
 export default {
-  asyncData ({ params, error }) {
+  asyncData ({ app, params, error }) {
     return axios.all([
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=programmer`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=fe`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=js`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=nodejs`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?node_name=vue`)
+      app.$axios.get(`topics/show.json?node_name=programmer`),
+      app.$axios.get(`topics/show.json?node_name=fe`),
+      app.$axios.get(`topics/show.json?node_name=js`),
+      app.$axios.get(`topics/show.json?node_name=nodejs`),
+      app.$axios.get(`topics/show.json?node_name=vue`)
     ])
     .then(axios.spread(function (programmer, fe, js, nodejs, vue) {
       let sortlist = programmer.data.concat(fe.data, js.data, nodejs.data, vue.data).sort(function(a, b) {

@@ -3,13 +3,12 @@
 </template>
 
 <script>
-import axios from 'axios'
 import TopicList from '~components/TopicList'
 
 export default {
-  async asyncData () {
+  async asyncData ({ app }) {
     try {
-      const { data } = await axios.get(`https://proxy-uuptfgaypk.now.sh/topics/latest.json`)
+      const { data } = await app.$axios.get(`topics/latest.json`)
 
       return {
         newList: data

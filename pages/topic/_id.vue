@@ -27,14 +27,14 @@
 
 <script>
 import axios from 'axios'
-import { timeAgo, image } from '~plugins/filters'
 import Comment from '~components/Comment'
+import { timeAgo, image } from '~plugins/filters'
 
 export default {
-  asyncData ({ params, error }) {
+  asyncData ({ app, params, error }) {
     return axios.all([
-      axios.get(`https://proxy-uuptfgaypk.now.sh/topics/show.json?id=${params.id}`),
-      axios.get(`https://proxy-uuptfgaypk.now.sh/replies/show.json?topic_id=${params.id}`)
+      app.$axios.get(`topics/show.json?id=${params.id}`),
+      app.$axios.get(`replies/show.json?topic_id=${params.id}`)
     ])
     .then(axios.spread(function (detail, comments) {
       return {
