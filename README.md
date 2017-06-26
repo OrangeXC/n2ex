@@ -2,6 +2,10 @@
 
 vue ssr v2ex，because it depends on nuxt so called n2ex
 
+## Performance
+
+* Lighthouse [100/100](http://orkj5d055.bkt.clouddn.com/n2ex-sehiddtque.now.sh_2017-06-26_18-43-12.html) - Webpagetest
+
 ## Links
 
 [中文文档](https://github.com/OrangeXC/n2ex/blob/master/README.zh-CN.md)
