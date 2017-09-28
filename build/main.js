@@ -84,7 +84,7 @@ module.exports = {
   },
   modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxtjs/component-cache'],
   axios: {
-    baseURL: 'https://proxy-enldkdbkkm.now.sh',
+    baseURL: 'https://proxy-jdvvityxqq.now.sh',
     credentials: false,
     proxyHeaders: false
   },
