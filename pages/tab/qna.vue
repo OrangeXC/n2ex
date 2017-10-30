@@ -4,7 +4,7 @@
 
 <script>
 import axios from 'axios'
-import TopicList from '~components/TopicList'
+import TopicList from '~/components/TopicList'
 
 export default {
   async asyncData ({ app }) {

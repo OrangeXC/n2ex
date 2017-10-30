@@ -30,8 +30,8 @@
 
 <script>
 import axios from 'axios'
-import TopicList from '~components/TopicList'
-import { format } from '~plugins/filters'
+import TopicList from '~/components/TopicList'
+import { format } from '~/plugins/filters'
 
 export default {
   asyncData ({ app, params, error }) {

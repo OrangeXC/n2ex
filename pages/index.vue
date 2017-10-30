@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import TopicList from '~components/TopicList'
+import TopicList from '~/components/TopicList'
 
 export default {
   async asyncData ({ app }) {

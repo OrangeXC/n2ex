@@ -21,8 +21,8 @@
 
 <script>
 import axios from 'axios'
-import TopicList from '~components/TopicList'
-import { format, image } from '~plugins/filters'
+import TopicList from '~/components/TopicList'
+import { format, image } from '~/plugins/filters'
 
 export default {
   asyncData ({ app, params, error }) {
