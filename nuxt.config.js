@@ -26,7 +26,7 @@ module.exports = {
     '@nuxtjs/component-cache'
   ],
   axios: {
-    baseURL: 'https://proxy-jdvvityxqq.now.sh',
+    baseURL: 'https://proxy-oagpwnbkpe.now.sh',
     credentials: false,
     proxyHeaders: false
   },
