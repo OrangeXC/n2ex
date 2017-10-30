@@ -14,7 +14,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^4.4.0",
     "@nuxtjs/component-cache": "^1.1.0",
-    "@nuxtjs/pwa": "^1.2.0",
+    "@nuxtjs/pwa": "^1.0.2",
     "axios": "^0.16.2",
     "cross-env": "^5.0.5",
     "koa": "^2.3.0",
