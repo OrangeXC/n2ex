@@ -1,5 +1,5 @@
 <template>
-  <section class="chip-container">
+  <section class="container">
     <mu-text-field hintText="搜索" v-model="searchString" icon="search" />
     <mu-sub-header>
       已为您找到 {{ nodes.length }} 个节点.
