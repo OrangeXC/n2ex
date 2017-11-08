@@ -8,12 +8,12 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/icon.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic' }
     ]
   },
   css: [
     '~assets/css/main.css',
+    '~assets/font/material-icons.css',
     'muse-ui/dist/muse-ui.css',
     'muse-ui/dist/theme-carbon.css'
   ],
