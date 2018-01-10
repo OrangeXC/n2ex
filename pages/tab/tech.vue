@@ -3,28 +3,24 @@
 </template>
 
 <script>
-import axios from 'axios'
+import { sortByDate } from '~/utils'
 import TopicList from '~/components/TopicList'
 
 export default {
-  asyncData ({ app, params, error }) {
-    return axios.all([
-      app.$axios.get(`topics/show.json?node_name=programmer`),
-      app.$axios.get(`topics/show.json?node_name=fe`),
-      app.$axios.get(`topics/show.json?node_name=js`),
-      app.$axios.get(`topics/show.json?node_name=nodejs`),
-      app.$axios.get(`topics/show.json?node_name=vue`)
+  async asyncData ({ app }) {
+    const [programmer, fe, js, nodejs, vue] = await Promise.all([
+      app.$axios.get(`topics/show.json?node_name=programmer`).then(res => res.data),
+      app.$axios.get(`topics/show.json?node_name=fe`).then(res => res.data),
+      app.$axios.get(`topics/show.json?node_name=js`).then(res => res.data),
+      app.$axios.get(`topics/show.json?node_name=nodejs`).then(res => res.data),
+      app.$axios.get(`topics/show.json?node_name=vue`).then(res => res.data)
     ])
-    .then(axios.spread(function (programmer, fe, js, nodejs, vue) {
-      let sortlist = programmer.data.concat(fe.data, js.data, nodejs.data, vue.data).sort(function(a, b) {
-        return parseInt(a.created) < parseInt(b.created) ? 1 : parseInt(a.created) === parseInt(b.created) ? 0 : -1
-      })
 
-      return {
-        techList: sortlist
-      }
-    }))
-    .catch(error => console.log(error))
+    const techList = sortByDate([...programmer, ...fe, ...js, ...nodejs, ...vue])
+
+    return {
+      techList
+    }
   },
   components: {
     TopicList

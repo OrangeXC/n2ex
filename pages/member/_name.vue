@@ -29,23 +29,20 @@
 </template>
 
 <script>
-import axios from 'axios'
 import TopicList from '~/components/TopicList'
 import { format } from '~/plugins/filters'
 
 export default {
-  asyncData ({ app, params, error }) {
-    return axios.all([
-      app.$axios.get(`members/show.json?username=${params.name}`),
-      app.$axios.get(`topics/show.json?username=${params.name}`)
+  async asyncData ({ app }) {
+    const [user, topicList] = await Promise.all([
+      app.$axios.get(`members/show.json?username=${params.name}`).then(res => res.data),
+      app.$axios.get(`topics/show.json?username=${params.name}`).then(res => res.data)
     ])
-    .then(axios.spread(function (user, topicList) {
-      return {
-        user: user.data,
-        topicList: topicList.data
-      }
-    }))
-    .catch(error => console.log(error))
+
+    return {
+      user,
+      topicList
+    }
   },
   methods: {
     toWebsite (url) {
@@ -72,4 +69,3 @@ export default {
   margin: -10px;
 }
 </style>
-

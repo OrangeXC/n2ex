@@ -3,28 +3,24 @@
 </template>
 
 <script>
-import axios from 'axios'
+import { sortByDate } from '~/utils'
 import TopicList from '~/components/TopicList'
 
 export default {
-  asyncData ({ app, params, error }) {
-    return axios.all([
-      app.$axios.get(`topics/show.json?node_name=beijing`),
-      app.$axios.get(`topics/show.json?node_name=shanghai`),
-      app.$axios.get(`topics/show.json?node_name=shenzhen`),
-      app.$axios.get(`topics/show.json?node_name=hangzhou`),
-      app.$axios.get(`topics/show.json?node_name=life`)
+  async asyncData ({ app }) {
+    const [beijing, shanghai, shenzhen, hangzhou, life] = await Promise.all([
+      app.$axios.get(`topics/show.json?node_name=beijing`).then(res => res.data),
+      app.$axios.get(`topics/show.json?node_name=shanghai`).then(res => res.data),
+      app.$axios.get(`topics/show.json?node_name=shenzhen`).then(res => res.data),
+      app.$axios.get(`topics/show.json?node_name=hangzhou`).then(res => res.data),
+      app.$axios.get(`topics/show.json?node_name=life`).then(res => res.data)
     ])
-    .then(axios.spread(function (beijing, shanghai, shenzhen, hangzhou, life) {
-      let sortlist = beijing.data.concat(shanghai.data, shenzhen.data, hangzhou.data, life.data).sort(function(a, b) {
-        return parseInt(a.created) < parseInt(b.created) ? 1 : parseInt(a.created) === parseInt(b.created) ? 0 : -1
-      })
 
-      return {
-        cityList: sortlist
-      }
-    }))
-    .catch(error => console.log(error))
+    const cityList = sortByDate([...beijing, ...shanghai, ...shenzhen, ...hangzhou, ...life])
+
+    return {
+      cityList
+    }
   },
   components: {
     TopicList
