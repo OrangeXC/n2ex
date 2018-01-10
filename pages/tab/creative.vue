@@ -3,26 +3,22 @@
 </template>
 
 <script>
-import axios from 'axios'
+import { sortByDate } from '~/utils'
 import TopicList from '~/components/TopicList'
 
 export default {
-  asyncData ({ app, params, error }) {
-    return axios.all([
-      app.$axios.get(`topics/show.json?node_name=create`),
-      app.$axios.get(`topics/show.json?node_name=design`),
-      app.$axios.get(`topics/show.json?node_name=ideas`)
+  async asyncData ({ app }) {
+    const [create, design, ideas] = await Promise.all([
+      app.$axios.get(`topics/show.json?node_name=create`).then(res => res.data),
+      app.$axios.get(`topics/show.json?node_name=design`).then(res => res.data),
+      app.$axios.get(`topics/show.json?node_name=ideas`).then(res => res.data)
     ])
-    .then(axios.spread(function (create, design, ideas) {
-      let sortlist = create.data.concat(design.data, ideas.data).sort(function(a, b) {
-        return parseInt(a.created) < parseInt(b.created) ? 1 : parseInt(a.created) === parseInt(b.created) ? 0 : -1
-      })
 
-      return {
-        creativeList: sortlist
-      }
-    }))
-    .catch(error => console.log(error))
+    const creativeList = sortByDate([...create, ...design, ...ideas])
+
+    return {
+      creativeList
+    }
   },
   components: {
     TopicList

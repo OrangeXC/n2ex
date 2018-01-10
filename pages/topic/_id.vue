@@ -31,18 +31,16 @@ import Comment from '~/components/Comment'
 import { timeAgo, image } from '~/plugins/filters'
 
 export default {
-  asyncData ({ app, params, error }) {
-    return axios.all([
-      app.$axios.get(`topics/show.json?id=${params.id}`),
-      app.$axios.get(`replies/show.json?topic_id=${params.id}`)
+  async asyncData ({ app, params }) {
+    const [ detail, comments ] = await Promise.all([
+      app.$axios.get(`topics/show.json?id=${params.id}`).then(res => res.data[0]),
+      app.$axios.get(`replies/show.json?topic_id=${params.id}`).then(res => res.data)
     ])
-    .then(axios.spread(function (detail, comments) {
-      return {
-        detail: detail.data[0],
-        comments: comments.data
-      }
-    }))
-    .catch(error => console.log(error))
+
+    return {
+      detail,
+      comments
+    }
   },
   methods: {
     toNode (name) {

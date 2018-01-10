@@ -20,23 +20,20 @@
 </template>
 
 <script>
-import axios from 'axios'
 import TopicList from '~/components/TopicList'
 import { format, image } from '~/plugins/filters'
 
 export default {
-  asyncData ({ app, params, error }) {
-    return axios.all([
-      app.$axios.get(`nodes/show.json?name=${params.name}`),
-      app.$axios.get(`topics/show.json?node_name=${params.name}`)
+  async asyncData ({ app }) {
+    const [node, topicList] = await Promise.all([
+      app.$axios.get(`nodes/show.json?name=${params.name}`).then(res => res.data),
+      app.$axios.get(`topics/show.json?node_name=${params.name}`).then(res => res.data)
     ])
-    .then(axios.spread(function (node, topicList) {
-      return {
-        node: node.data,
-        topicList: topicList.data
-      }
-    }))
-    .catch(error => console.log(error))
+
+    return {
+      node,
+      topicList
+    }
   },
   components: {
     TopicList

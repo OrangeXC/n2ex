@@ -11,6 +11,8 @@ npm-debug.log
 dist
 
 # Workbox
-
 static/sw.js
 static/workbox-sw*.js
+
+# build
+build

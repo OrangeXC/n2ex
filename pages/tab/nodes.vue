@@ -13,18 +13,12 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
   async asyncData ({ app }) {
-    try {
-      const { data } = await app.$axios.get(`nodes/all.json`)
+    const { data } = await app.$axios.get(`nodes/all.json`)
 
-      return {
-        nodeList: data
-      }
-    } catch (err) {
-      console.error(err)
+    return {
+      nodeList: data
     }
   },
   data () {

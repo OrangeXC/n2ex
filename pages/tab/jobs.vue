@@ -3,27 +3,23 @@
 </template>
 
 <script>
-import axios from 'axios'
+import { sortByDate } from '~/utils'
 import TopicList from '~/components/TopicList'
 
 export default {
-  asyncData ({ app, params, error }) {
-    return axios.all([
-      app.$axios.get(`topics/show.json?node_name=jobs`),
-      app.$axios.get(`topics/show.json?node_name=cv`),
-      app.$axios.get(`topics/show.json?node_name=career`),
-      app.$axios.get(`topics/show.json?node_name=outsourcing`)
+  async asyncData ({ app }) {
+    const [jobs, cv, career, outsourcing] = await Promise.all([
+      app.$axios.get(`topics/show.json?node_name=jobs`).then(res => res.data),
+      app.$axios.get(`topics/show.json?node_name=cv`).then(res => res.data),
+      app.$axios.get(`topics/show.json?node_name=career`).then(res => res.data),
+      app.$axios.get(`topics/show.json?node_name=outsourcing`).then(res => res.data)
     ])
-    .then(axios.spread(function (jobs, cv, career, outsourcing) {
-      let sortlist = jobs.data.concat(cv.data, career.data, outsourcing.data).sort(function(a, b) {
-        return parseInt(a.created) < parseInt(b.created) ? 1 : parseInt(a.created) === parseInt(b.created) ? 0 : -1
-      })
 
-      return {
-        jobList: sortlist
-      }
-    }))
-    .catch(error => console.log(error))
+    const jobList = sortByDate([...jobs, ...cv, ...career, ...outsourcing])
+
+    return {
+      jobList
+    }
   },
   components: {
     TopicList
