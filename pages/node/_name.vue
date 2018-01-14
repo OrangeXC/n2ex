@@ -24,7 +24,7 @@ import TopicList from '~/components/TopicList'
 import { format, image } from '~/plugins/filters'
 
 export default {
-  async asyncData ({ app }) {
+  async asyncData ({ app, params }) {
     const [node, topicList] = await Promise.all([
       app.$axios.get(`nodes/show.json?name=${params.name}`).then(res => res.data),
       app.$axios.get(`topics/show.json?node_name=${params.name}`).then(res => res.data)

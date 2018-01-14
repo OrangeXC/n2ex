@@ -33,7 +33,7 @@ import TopicList from '~/components/TopicList'
 import { format } from '~/plugins/filters'
 
 export default {
-  async asyncData ({ app }) {
+  async asyncData ({ app, params }) {
     const [user, topicList] = await Promise.all([
       app.$axios.get(`members/show.json?username=${params.name}`).then(res => res.data),
       app.$axios.get(`topics/show.json?username=${params.name}`).then(res => res.data)
