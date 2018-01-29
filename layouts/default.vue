@@ -22,7 +22,7 @@
         <mu-list-item title="节点" @click="toTab('nodes')" />
       </mu-list>
     </mu-drawer>
-    <nuxt/>
+    <nuxt keep-alive />
   </div>
 </template>
 
