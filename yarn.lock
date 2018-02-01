@@ -4695,9 +4695,9 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
-nuxt@^1.2.0:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-1.2.1.tgz#bea0cef7c0fb9a67b284d629cccb6e55a3bf5a04"
+nuxt@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-1.3.0.tgz#a862818aa39e8a8c2b60ede73cba4ff8628f1a5d"
   dependencies:
     "@nuxtjs/youch" "^4.2.3"
     ansi-html "^0.0.7"
@@ -4740,16 +4740,17 @@ nuxt@^1.2.0:
     postcss-url "^7.3.0"
     pretty-error "^2.1.1"
     progress-bar-webpack-plugin "^1.10.0"
+    semver "^5.5.0"
     serialize-javascript "^1.4.0"
     serve-static "^1.13.1"
     server-destroy "^1.0.1"
     source-map "^0.7.0"
     style-resources-loader "^1.0.0"
-    uglifyjs-webpack-plugin "^1.1.6"
+    uglifyjs-webpack-plugin "^1.1.8"
     upath "^1.0.2"
     url-loader "^0.6.2"
     vue "^2.5.13"
-    vue-loader "^13.7.0"
+    vue-loader "13.7.0"
     vue-meta "^1.4.2"
     vue-router "^3.0.1"
     vue-server-renderer "^2.5.13"
@@ -6307,6 +6308,10 @@ semver@5.3.0, semver@~5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
 
+semver@^5.5.0:
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.0.tgz#dc4bbc7a6ca9d916dee5d43516f0092b58f7b8ab"
+
 send@0.16.1:
   version "0.16.1"
   resolved "https://registry.yarnpkg.com/send/-/send-0.16.1.tgz#a70e1ca21d1382c11d0d9f6231deb281080d7ab3"
@@ -7001,9 +7006,9 @@ uglifyjs-webpack-plugin@^0.4.6:
     uglify-js "^2.8.29"
     webpack-sources "^1.0.1"
 
-uglifyjs-webpack-plugin@^1.1.6:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/uglifyjs-webpack-plugin/-/uglifyjs-webpack-plugin-1.1.6.tgz#f4ba8449edcf17835c18ba6ae99b9d610857fb19"
+uglifyjs-webpack-plugin@^1.1.8:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/uglifyjs-webpack-plugin/-/uglifyjs-webpack-plugin-1.1.8.tgz#1302fb9471a7daf3d0a5174da6d65f0f415e75ad"
   dependencies:
     cacache "^10.0.1"
     find-cache-dir "^1.0.0"
@@ -7226,7 +7231,7 @@ vue-hot-reload-api@^2.2.0:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.2.4.tgz#683bd1d026c0d3b3c937d5875679e9a87ec6cd8f"
 
-vue-loader@^13.7.0:
+vue-loader@13.7.0:
   version "13.7.0"
   resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-13.7.0.tgz#4d6a35b169c2a0a488842fb95c85052105fa9729"
   dependencies:
