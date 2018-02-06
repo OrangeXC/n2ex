@@ -13,7 +13,7 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^4.5.2",
+    "@nuxtjs/axios": "^5.0.0",
     "@nuxtjs/component-cache": "^1.1.1",
     "@nuxtjs/pwa": "^2.0.5",
     "cross-env": "^5.1.3",
