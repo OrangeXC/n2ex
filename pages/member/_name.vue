@@ -46,7 +46,9 @@ export default {
   },
   methods: {
     toWebsite (url) {
-      window.open(url)
+      url.indexOf('http') === -1
+        ? window.open(`http://${url}`)
+        : window.open(url)
     },
     toGithub (name) {
       window.open(`https://github.com/${name}`)
