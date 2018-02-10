@@ -30,7 +30,6 @@
 
 <script>
 import TopicList from '~/components/TopicList'
-import { format } from '~/plugins/filters'
 
 export default {
   async asyncData ({ app, params }) {

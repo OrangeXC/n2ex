@@ -26,9 +26,7 @@
 </template>
 
 <script>
-import axios from 'axios'
 import Comment from '~/components/Comment'
-import { timeAgo, image } from '~/plugins/filters'
 
 export default {
   async asyncData ({ app, params }) {

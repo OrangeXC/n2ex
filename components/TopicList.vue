@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { timeAgo, image } from '~/plugins/filters'
+import { timeAgo } from '~/plugins/filters'
 
 export default {
   props: {

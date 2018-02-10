@@ -21,7 +21,6 @@
 
 <script>
 import TopicList from '~/components/TopicList'
-import { format, image } from '~/plugins/filters'
 
 export default {
   async asyncData ({ app, params }) {
