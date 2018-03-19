@@ -32,10 +32,14 @@
 import TopicList from '~/components/TopicList'
 
 export default {
-  async asyncData ({ app, params }) {
+  async asyncData ({ app, params, error }) {
     const [user, topicList] = await Promise.all([
-      app.$axios.get(`members/show.json?username=${params.name}`).then(res => res.data),
-      app.$axios.get(`topics/show.json?username=${params.name}`).then(res => res.data)
+      app.$axios.get(`members/show.json?username=${params.name}`)
+        .then(res => res.data)
+        .catch(err => error({ statusCode: 404, message: 'Member not found' })),
+      app.$axios.get(`topics/show.json?username=${params.name}`)
+        .then(res => res.data)
+        .catch(err => error({ statusCode: 404, message: 'Member not found' }))
     ])
 
     return {

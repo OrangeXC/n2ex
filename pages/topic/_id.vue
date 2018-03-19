@@ -40,6 +40,9 @@ export default {
       comments
     }
   },
+  validate ({ params }) {
+    return /^\d+$/.test(params.id)
+  },
   methods: {
     toNode (name) {
       this.$router.push(`/node/${name}`)

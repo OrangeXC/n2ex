@@ -25,8 +25,12 @@ import TopicList from '~/components/TopicList'
 export default {
   async asyncData ({ app, params }) {
     const [node, topicList] = await Promise.all([
-      app.$axios.get(`nodes/show.json?name=${params.name}`).then(res => res.data),
-      app.$axios.get(`topics/show.json?node_name=${params.name}`).then(res => res.data)
+      app.$axios.get(`nodes/show.json?name=${params.name}`)
+        .then(res => res.data)
+        .catch(err => error({ statusCode: 404, message: 'Node not found' })),
+      app.$axios.get(`topics/show.json?node_name=${params.name}`)
+        .then(res => res.data)
+        .catch(err => error({ statusCode: 404, message: 'Node not found' }))
     ])
 
     return {
