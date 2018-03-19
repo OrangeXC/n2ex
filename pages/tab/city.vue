@@ -7,6 +7,11 @@ import { sortByDate } from '~/utils'
 import TopicList from '~/components/TopicList'
 
 export default {
+  head () {
+    return {
+      titleTemplate: '%s - 城市'
+    }
+  },
   async asyncData ({ app }) {
     const [beijing, shanghai, shenzhen, hangzhou, life] = await Promise.all([
       app.$axios.get(`topics/show.json?node_name=beijing`).then(res => res.data),

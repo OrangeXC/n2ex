@@ -7,6 +7,11 @@ import { sortByDate } from '~/utils'
 import TopicList from '~/components/TopicList'
 
 export default {
+  head () {
+    return {
+      titleTemplate: '%s - 交易'
+    }
+  },
   async asyncData ({ app }) {
     const [all4all, exchange, free, dn, tuan] = await Promise.all([
       app.$axios.get(`topics/show.json?node_name=all4all`).then(res => res.data),

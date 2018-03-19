@@ -7,6 +7,11 @@ import { sortByDate } from '~/utils'
 import TopicList from '~/components/TopicList'
 
 export default {
+  head () {
+    return {
+      titleTemplate: '%s - Apple'
+    }
+  },
   async asyncData ({ app }) {
     const [ apple, macos, ios, ipad, iphone, mbp ] = await Promise.all([
       app.$axios.get(`topics/show.json?node_name=apple`).then(res => res.data),

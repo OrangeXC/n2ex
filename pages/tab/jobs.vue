@@ -7,6 +7,11 @@ import { sortByDate } from '~/utils'
 import TopicList from '~/components/TopicList'
 
 export default {
+  head () {
+    return {
+      titleTemplate: '%s - 酷工作'
+    }
+  },
   async asyncData ({ app }) {
     const [jobs, cv, career, outsourcing] = await Promise.all([
       app.$axios.get(`topics/show.json?node_name=jobs`).then(res => res.data),

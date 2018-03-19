@@ -25,6 +25,11 @@
 import TopicList from '~/components/TopicList'
 
 export default {
+  head () {
+    return {
+      titleTemplate: '%s - 节点详情'
+    }
+  },
   async asyncData ({ app, params }) {
     const [node, topicList] = await Promise.all([
       app.$axios.get(`nodes/show.json?name=${params.name}`)

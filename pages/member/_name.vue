@@ -34,6 +34,11 @@
 import TopicList from '~/components/TopicList'
 
 export default {
+  head () {
+    return {
+      titleTemplate: '%s - 用户详情'
+    }
+  },
   async asyncData ({ app, params, error }) {
     const [user, topicList] = await Promise.all([
       app.$axios.get(`members/show.json?username=${params.name}`)

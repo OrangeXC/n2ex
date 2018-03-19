@@ -7,6 +7,11 @@ import { sortByDate } from '~/utils'
 import TopicList from '~/components/TopicList'
 
 export default {
+  head () {
+    return {
+      titleTemplate: '%s - 好玩'
+    }
+  },
   async asyncData ({ app }) {
     const [share, bb, games, travel, hardware] = await Promise.all([
       app.$axios.get(`topics/show.json?node_name=share`).then(res => res.data),

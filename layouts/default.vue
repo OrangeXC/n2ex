@@ -18,7 +18,7 @@
         <mu-list-item title="城市" @click="toTab('city')" />
         <mu-list-item title="问与答" @click="toTab('qna')" />
         <mu-list-item title="最热" @click="toHome()" />
-        <mu-list-item title="全部" @click="toNew()" />
+        <mu-list-item title="最新" @click="toNew()" />
         <mu-list-item title="节点" @click="toTab('nodes')" />
       </mu-list>
     </mu-drawer>

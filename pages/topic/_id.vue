@@ -29,6 +29,11 @@
 import Comment from '~/components/Comment'
 
 export default {
+  head () {
+    return {
+      titleTemplate: '%s - 话题详情'
+    }
+  },
   async asyncData ({ app, params }) {
     const [ detail, comments ] = await Promise.all([
       app.$axios.get(`topics/show.json?id=${params.id}`).then(res => res.data[0]),
