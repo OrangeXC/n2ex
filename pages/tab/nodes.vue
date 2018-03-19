@@ -14,6 +14,11 @@
 
 <script>
 export default {
+  head () {
+    return {
+      titleTemplate: '%s - 全部节点'
+    }
+  },
   async asyncData ({ app }) {
     const { data } = await app.$axios.get(`nodes/all.json`)
 
