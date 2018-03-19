@@ -1,22 +1,24 @@
 <template>
-  <section class="container">
-    <mu-card class="node-card">
-      <mu-card-header :title="node.title" :subTitle="node.header">
-        <mu-avatar :src="node.avatar_normal | image" slot="avatar"/>
-      </mu-card-header>
-      <mu-card-actions>
-        <div class="chip-container">
-          <mu-chip class="chip" backgroundColor="amberA100">
-            <mu-avatar :size="32" icon="star" backgroundColor="orangeA400" />{{ node.stars }}
-          </mu-chip>
-          <mu-chip class="chip" backgroundColor="blue300">
-            <mu-avatar :size="32" icon="schedule" backgroundColor="indigo900" />{{ node.created | format }}
-          </mu-chip>
-        </div>
-      </mu-card-actions>
-    </mu-card>
+  <div>
+    <section class="container">
+      <mu-card class="node-card">
+        <mu-card-header :title="node.title" :subTitle="node.header">
+          <mu-avatar :src="node.avatar_normal | image" slot="avatar"/>
+        </mu-card-header>
+        <mu-card-actions>
+          <div class="chip-container">
+            <mu-chip class="chip" backgroundColor="amberA100">
+              <mu-avatar :size="32" icon="star" backgroundColor="orangeA400" />{{ node.stars }}
+            </mu-chip>
+            <mu-chip class="chip" backgroundColor="blue300">
+              <mu-avatar :size="32" icon="schedule" backgroundColor="indigo900" />{{ node.created | format }}
+            </mu-chip>
+          </div>
+        </mu-card-actions>
+      </mu-card>
+    </section>
     <topic-list :topicList="topicList" />
-  </section>
+  </div>
 </template>
 
 <script>
@@ -46,6 +48,8 @@ export default {
 
 <style lang="scss">
 .node-card {
-  margin: -10px;
+  margin-bottom: -20px;
+
+  background: linear-gradient(to right,  #89f7fe 0%, #66a6ff 100%);
 }
 </style>
