@@ -24,20 +24,20 @@
     "source-map-support": "^0.5.4"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.2",
+    "babel-eslint": "^8.2.3",
     "babel-loader": "7.1.4",
     "backpack-core": "^0.7.0",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-html": "^4.0.2",
-    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-html": "^4.0.3",
+    "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-standard": "^3.0.1",
     "node-sass": "^4.8.3",
     "nodemon": "^1.17.3",
     "nuxt-jest-puppeteer": "^0.3.8",
-    "sass-loader": "^6.0.7",
+    "sass-loader": "^7.0.1",
     "scmp": "^2.0.0"
   }
 }
