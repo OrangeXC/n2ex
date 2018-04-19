@@ -16,3 +16,6 @@ static/workbox-sw*.js
 
 # build
 build
+
+# System Files
+.DS_Store
