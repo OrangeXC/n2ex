@@ -43,10 +43,10 @@ export default {
     const [user, topicList] = await Promise.all([
       app.$axios.get(`members/show.json?username=${params.name}`)
         .then(res => res.data)
-        .catch(err => error({ statusCode: 404, message: 'Member not found' })),
+        .catch(() => error({ statusCode: 404, message: 'Member not found' })),
       app.$axios.get(`topics/show.json?username=${params.name}`)
         .then(res => res.data)
-        .catch(err => error({ statusCode: 404, message: 'Member not found' }))
+        .catch(() => error({ statusCode: 404, message: 'Member not found' }))
     ])
 
     return {
