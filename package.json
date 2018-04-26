@@ -1,6 +1,6 @@
 {
   "name": "n2ex",
-  "version": "1.0.0",
+  "version": "2.0.0-rc",
   "description": "Nuxt.js project",
   "author": "OrangeXC <842012622@qq.com>",
   "private": true,
@@ -20,7 +20,7 @@
     "cross-env": "^5.1.4",
     "koa": "^2.5.0",
     "muse-ui": "^2.1.0",
-    "nuxt": "^1.4.0",
+    "nuxt": "npm:nuxt-edge",
     "source-map-support": "^0.5.4"
   },
   "devDependencies": {
