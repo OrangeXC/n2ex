@@ -15,13 +15,13 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
-    "@nuxtjs/component-cache": "^1.1.1",
+    "@nuxtjs/component-cache": "^1.1.2",
     "@nuxtjs/pwa": "^2.0.8",
     "cross-env": "^5.1.4",
-    "koa": "^2.5.0",
+    "koa": "^2.5.1",
     "muse-ui": "^2.1.0",
     "nuxt": "npm:nuxt-edge",
-    "source-map-support": "^0.5.4"
+    "source-map-support": "^0.5.5"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
@@ -33,8 +33,8 @@
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.7.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "node-sass": "^4.8.3",
+    "eslint-plugin-standard": "^3.1.0",
+    "node-sass": "^4.9.0",
     "nodemon": "^1.17.3",
     "nuxt-jest-puppeteer": "^0.3.8",
     "sass-loader": "^7.0.1",
