@@ -25,13 +25,29 @@ module.exports = {
     '@nuxtjs/pwa',
     '@nuxtjs/component-cache'
   ],
+  router: {
+    middleware: 'redirect'
+  },
   axios: {
     baseURL: 'https://proxy-oagpwnbkpe.now.sh',
     credentials: false,
     proxyHeaders: false
   },
   plugins: [
-    { src: '~plugins/muse-ui.js', ssr: true },
+    '~plugins/element-ui.js',
+    '~plugins/muse-ui.js',
     '~plugins/filters.js'
-  ]
+  ],
+  build: {
+    babel: {
+      plugins: [
+        ['component', [
+          {
+            libraryName: 'element-ui',
+            styleLibraryName: 'theme-chalk'
+          }
+        ]]
+      ]
+    }
+  }
 }

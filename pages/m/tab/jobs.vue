@@ -1,10 +1,10 @@
 <template>
-  <topic-list-chalk :topicList="jobList"></topic-list-chalk>
+  <topic-list :topicList="jobList" />
 </template>
 
 <script>
 import { sortByDate } from '~/utils'
-import TopicListChalk from '~/components/TopicListChalk'
+import TopicList from '~/components/TopicList'
 
 export default {
   head () {
@@ -26,8 +26,9 @@ export default {
       jobList
     }
   },
+  layout: 'mobile',
   components: {
-    TopicListChalk
+    TopicList
   }
 }
 </script>

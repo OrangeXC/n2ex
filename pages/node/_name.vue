@@ -1,28 +1,21 @@
 <template>
-  <div>
-    <section class="container">
-      <mu-card class="node-card">
-        <mu-card-header :title="node.title" :subTitle="node.header">
-          <mu-avatar :src="node.avatar_normal | image" slot="avatar"/>
-        </mu-card-header>
-        <mu-card-actions>
-          <div class="chip-container">
-            <mu-chip class="chip" backgroundColor="amberA100">
-              <mu-avatar :size="32" icon="star" backgroundColor="orangeA400" />{{ node.stars }}
-            </mu-chip>
-            <mu-chip class="chip" backgroundColor="blue300">
-              <mu-avatar :size="32" icon="schedule" backgroundColor="indigo900" />{{ node.created | format }}
-            </mu-chip>
-          </div>
-        </mu-card-actions>
-      </mu-card>
-    </section>
-    <topic-list :topicList="topicList" />
-  </div>
+  <section>
+    <el-card>
+      <div slot="header" class="card card-header">
+        <div class="avatar">
+          <img :src="node.avatar_large | image" alt="avatar">
+        </div>
+        <div class="title">{{ node.title }}</div>
+        <p>关注 {{ node.stars }} • 创建于 {{ node.created | format }}</p>
+      </div>
+      <div v-html="node.header"></div>
+    </el-card>
+    <topic-list-chalk :topicList="topicList"></topic-list-chalk>
+  </section>
 </template>
 
 <script>
-import TopicList from '~/components/TopicList'
+import TopicListChalk from '~/components/TopicListChalk'
 
 export default {
   head () {
@@ -46,15 +39,31 @@ export default {
     }
   },
   components: {
-    TopicList
+    TopicListChalk
   }
 }
 </script>
 
-<style lang="scss">
-.node-card {
-  margin-bottom: -20px;
+<style lang="scss" scoped>
+.card-header {
+  line-height: 1;
 
-  background: linear-gradient(to right,  #89f7fe 0%, #66a6ff 100%);
+  text-align: center;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>

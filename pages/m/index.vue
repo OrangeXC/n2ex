@@ -1,9 +1,9 @@
 <template>
-  <topic-list-chalk :topicList="hotList"></topic-list-chalk>
+  <topic-list :topicList="hotList" />
 </template>
 
 <script>
-import TopicListChalk from '~/components/TopicListChalk'
+import TopicList from '~/components/TopicList'
 
 export default {
   head () {
@@ -18,8 +18,9 @@ export default {
       hotList: data
     }
   },
+  layout: 'mobile',
   components: {
-    TopicListChalk
+    TopicList
   }
 }
 </script>

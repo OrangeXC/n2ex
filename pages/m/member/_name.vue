@@ -1,13 +1,10 @@
 <template>
   <div>
-    <section>
-      <el-card>
-        <div slot="header" class="card card-header">
-          <div class="avatar">
-            <img :src="user.avatar_large" alt="avatar">
-          </div>
-          <div class="title">{{ user.username }}</div>
-        </div>
+    <section class="container">
+      <mu-card class="user-card">
+        <mu-card-header :title="user.username" :subTitle="user.tagline">
+          <mu-avatar :src="user.avatar_normal" slot="avatar"/>
+        </mu-card-header>
         <mu-card-actions>
           <div class="chip-container">
             <mu-chip class="chip" backgroundColor="greenA100" v-if="user.website" @click="toWebsite(user.website)">
@@ -27,14 +24,14 @@
             </mu-chip>
           </div>
         </mu-card-actions>
-      </el-card>
+      </mu-card>
     </section>
-    <topic-list-chalk :topicList="topicList"></topic-list-chalk>
+    <topic-list :topicList="topicList" />
   </div>
 </template>
 
 <script>
-import TopicListChalk from '~/components/TopicListChalk'
+import TopicList from '~/components/TopicList'
 
 export default {
   head () {
@@ -73,33 +70,17 @@ export default {
       window.open(`https://www.google.com/maps?q=${location}`)
     }
   },
+  layout: 'mobile',
   components: {
-    TopicListChalk
+    TopicList
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.card-header {
-  line-height: 1;
+.user-card {
+  margin-bottom: -20px;
 
-  text-align: center;
-}
-
-.title {
-  margin-top: 10px;
-  font-size: 20px;
-}
-
-.avatar {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-
-  img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-  }
+  background: linear-gradient(to right, #B5CBED 0%,#FE8A75 100%);
 }
 </style>

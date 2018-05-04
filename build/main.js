@@ -142,12 +142,23 @@ module.exports = {
     color: '#ff4081'
   },
   modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxtjs/component-cache'],
+  router: {
+    middleware: 'redirect'
+  },
   axios: {
     baseURL: 'https://proxy-oagpwnbkpe.now.sh',
     credentials: false,
     proxyHeaders: false
   },
-  plugins: [{ src: '~plugins/muse-ui.js', ssr: true }, '~plugins/filters.js']
+  plugins: ['~plugins/element-ui.js', '~plugins/muse-ui.js', '~plugins/filters.js'],
+  build: {
+    babel: {
+      plugins: [['component', [{
+        libraryName: 'element-ui',
+        styleLibraryName: 'theme-chalk'
+      }]]]
+    }
+  }
 };
 
 /***/ })

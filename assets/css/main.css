@@ -7,7 +7,7 @@
 }
 
 .container {
-	max-width: 1140px;
+	max-width: 960px;
 	margin: 0 auto;
   padding: 10px;
 }
@@ -30,6 +30,20 @@
 }
 
 .embedded_image {
+	max-width: 100%;
+}
+
+.el-main {
+	width: 960px;
+	margin: 0 auto;
+	min-height: calc(100vh - 120px);
+}
+
+.el-card {
+	margin-bottom: 16px;
+}
+
+.article img {
 	max-width: 100%;
 }
 

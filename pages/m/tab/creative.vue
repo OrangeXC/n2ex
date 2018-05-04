@@ -1,10 +1,10 @@
 <template>
-  <topic-list-chalk :topicList="creativeList"></topic-list-chalk>
+  <topic-list :topicList="creativeList" />
 </template>
 
 <script>
 import { sortByDate } from '~/utils'
-import TopicListChalk from '~/components/TopicListChalk'
+import TopicList from '~/components/TopicList'
 
 export default {
   head () {
@@ -25,8 +25,9 @@ export default {
       creativeList
     }
   },
+  layout: 'mobile',
   components: {
-    TopicListChalk
+    TopicList
   }
 }
 </script>

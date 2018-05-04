@@ -1,9 +1,9 @@
 <template>
-  <topic-list-chalk :topicList="qnaList"></topic-list-chalk>
+  <topic-list :topicList="qnaList" />
 </template>
 
 <script>
-import TopicListChalk from '~/components/TopicListChalk'
+import TopicList from '~/components/TopicList'
 
 export default {
   head () {
@@ -18,8 +18,9 @@ export default {
       qnaList: data
     }
   },
+  layout: 'mobile',
   components: {
-    TopicListChalk
+    TopicList
   }
 }
 </script>

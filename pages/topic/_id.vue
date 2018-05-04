@@ -1,26 +1,19 @@
 <template>
-  <section class="container">
-    <mu-card>
-      <nuxt-link :to="'/member/' + detail.member.username">
-        <mu-card-header :title="detail.title" :subTitle="detail.member.username">
-          <mu-avatar :src="detail.member.avatar_normal" slot="avatar"/>
-        </mu-card-header>
-      </nuxt-link>
-      <div class="mu-card-text" v-html="detail.content_rendered"></div>
-      <mu-card-actions>
-        <div class="chip-container">
-          <mu-chip class="chip" @click="toNode(detail.node.name)">
-            <mu-avatar :size="32" :src="detail.node.avatar_normal | image"/>{{ detail.node.title }}
-          </mu-chip>
-          <mu-chip class="chip">
-            <mu-avatar :size="32" icon="schedule"/>{{ detail.created | timeAgo }}
-          </mu-chip>
-          <mu-chip class="chip">
-            <mu-avatar :size="32" icon="comment"/>{{ detail.replies }}
-          </mu-chip>
+  <section>
+    <el-card>
+      <div slot="header" class="card card-header">
+        <div class="avatar">
+          <img :src="detail.member.avatar_large" alt="avatar">
         </div>
-      </mu-card-actions>
-    </mu-card>
+        <div class="card-header-content">
+          <div class="title">{{ detail.title }}</div>
+          <el-tag size="small" @click.native="toNode(detail.node.title)">{{ detail.node.title }}</el-tag>
+          <span class="link" @click="toMember(detail.member.username)">{{ detail.member.username }}</span>
+          • {{ detail.created | timeAgo }}
+        </div>
+      </div>
+      <article class="article" v-html="detail.content_rendered"></article>
+    </el-card>
     <comment :comments="comments" v-if="comments.length" />
   </section>
 </template>
@@ -51,6 +44,9 @@ export default {
   methods: {
     toNode (name) {
       this.$router.push(`/node/${name}`)
+    },
+    toMember (name) {
+      this.$router.push(`/member/${name}`)
     }
   },
   components: {
@@ -58,3 +54,46 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.card-header {
+  display: flex;
+  align-items: center;
+}
+
+.card-header-content {
+  width: 870px;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.link {
+  margin: 0 3px;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+
+    color: #409EFF;
+  }
+}
+
+.el-tag {
+  cursor: pointer;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  margin-right: 16px;
+
+  img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+  }
+}
+</style>
