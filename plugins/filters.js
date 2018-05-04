@@ -31,8 +31,8 @@ export function format (timestamp) {
 }
 
 export function image (url) {
-  if (url === '/static/img/node_normal.png') {
-    return '../img/node_normal.png'
+  if (url.indexOf('/static/img/') > -1) {
+    return `https://www.v2ex.com${url}`
   } else {
     return url
   }

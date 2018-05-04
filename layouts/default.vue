@@ -1,56 +1,74 @@
 <template>
-  <div>
-    <mu-appbar title="N2EX">
-      <mu-icon-button icon="menu" @click="toggle(true)" slot="left" />
-      <mu-icon-button href="https://github.com/OrangeXC/n2ex" slot="right">
+  <el-container>
+    <el-header>
+      <el-menu
+        :default-active="activeIndex"
+        mode="horizontal"
+        router>
+        <el-menu-item index="/">最热</el-menu-item>
+        <el-menu-item index="/new">最新</el-menu-item>
+        <el-menu-item index="/tab/tech">技术</el-menu-item>
+        <el-menu-item index="/tab/creative">创意</el-menu-item>
+        <el-menu-item index="/tab/play">好玩</el-menu-item>
+        <el-menu-item index="/tab/apple">Apple</el-menu-item>
+        <el-menu-item index="/tab/jobs">酷工作</el-menu-item>
+        <el-menu-item index="/tab/deals">交易</el-menu-item>
+        <el-menu-item index="/tab/city">城市</el-menu-item>
+        <el-menu-item index="/tab/qna">问与答</el-menu-item>
+        <el-menu-item index="/tab/nodes">节点</el-menu-item>
+      </el-menu>
+    </el-header>
+    <el-main>
+      <nuxt keep-alive />
+    </el-main>
+    <el-footer>
+      <span>
+        Copyright © 2016-2018 Orange
+      </span>
+      <a class="github" href="https://github.com/OrangeXC/n2ex" target="_blank">
         <i class="muidocs-icon-custom-github"></i>
-      </mu-icon-button>
-    </mu-appbar>
-    <mu-drawer :open="open" :docked="docked" @close="toggle()">
-      <mu-appbar title="Tabs"/>
-      <mu-list @itemClick="docked ? '' : toggle()">
-        <mu-list-item title="技术" @click="toTab('tech')" />
-        <mu-list-item title="创意" @click="toTab('creative')" />
-        <mu-list-item title="好玩" @click="toTab('play')" />
-        <mu-list-item title="Apple" @click="toTab('apple')" />
-        <mu-list-item title="酷工作" @click="toTab('jobs')" />
-        <mu-list-item title="交易" @click="toTab('deals')" />
-        <mu-list-item title="城市" @click="toTab('city')" />
-        <mu-list-item title="问与答" @click="toTab('qna')" />
-        <mu-list-item title="最热" @click="toHome()" />
-        <mu-list-item title="最新" @click="toNew()" />
-        <mu-list-item title="节点" @click="toTab('nodes')" />
-      </mu-list>
-    </mu-drawer>
-    <nuxt keep-alive />
-  </div>
+      </a>
+    </el-footer>
+  </el-container>
 </template>
 
 <script>
 export default {
   data () {
     return {
-      open: false,
-      docked: true
+      activeIndex: '/'
     }
   },
-  methods: {
-    toggle (flag) {
-      this.open = !this.open
-      this.docked = !flag
-    },
-    toHome () {
-      this.$router.push('/')
-    },
-    toNew () {
-      this.$router.push('/new')
-    },
-    toNode (name) {
-      this.$router.push(`/node/${name}`)
-    },
-    toTab (name) {
-      this.$router.push(`/tab/${name}`)
-    }
+  created () {
+    this.activeIndex = this.$route.path
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.el-container {
+  min-width: 960px;
+}
+
+.el-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #f7fbfd;
+  line-height: 60px;
+}
+
+.github {
+  height: 36px;
+  font-size: 36px;
+  color: #c8d6e8;
+
+  line-height: 36px;
+
+  &:hover {
+    transform: scale(1.2);
+    color: #8d99ab;
+  }
+}
+</style>

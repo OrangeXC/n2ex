@@ -1,12 +1,14 @@
 <template>
   <section class="container">
-    <el-input v-model="searchString" suffix-icon="el-icon-search" placeholder="请输入搜索内容"></el-input>
-    <p>已为您找到 {{ nodes.length }} 个节点</p>
-    <div class="tags">
-      <el-tag v-for="node in nodes" :key="node.id" @click.native="toNode(node.name)">
+    <mu-text-field hintText="搜索" v-model="searchString" icon="search" />
+    <mu-sub-header>
+      已为您找到 {{ nodes.length }} 个节点.
+    </mu-sub-header>
+    <mu-content-block>
+      <mu-chip class="chip" v-for="node in nodes" :key="node.id" @click="toNode(node.name)">
         {{ node.title }}
-      </el-tag>
-    </div>
+      </mu-chip>
+    </mu-content-block>
   </section>
 </template>
 
@@ -42,24 +44,7 @@ export default {
 
       return this.nodeList.filter(({ title, name }) => title.toLowerCase().indexOf(searchString) !== -1 || name.toLowerCase().indexOf(searchString) !== -1)
     }
-  }
+  },
+  layout: 'mobile'
 }
 </script>
-
-<style scoped>
-.tags {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-right: -16px;
-}
-
-.el-tag {
-  width: 120px;
-  margin: 0 16px 16px 0;
-  overflow: hidden;
-  cursor: pointer;
-
-  text-align: center;
-}
-</style>

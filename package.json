@@ -1,6 +1,6 @@
 {
   "name": "n2ex",
-  "version": "2.0.0-rc",
+  "version": "2.0.0",
   "description": "Nuxt.js project",
   "author": "OrangeXC <842012622@qq.com>",
   "private": true,
@@ -18,6 +18,7 @@
     "@nuxtjs/component-cache": "^1.1.2",
     "@nuxtjs/pwa": "^2.0.8",
     "cross-env": "^5.1.4",
+    "element-ui": "^2.3.7",
     "koa": "^2.5.1",
     "muse-ui": "^2.1.0",
     "nuxt": "npm:nuxt-edge",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "babel-eslint": "^8.2.3",
     "babel-loader": "7.1.4",
+    "babel-plugin-component": "^1.1.0",
     "backpack-core": "^0.7.0",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
@@ -34,6 +36,8 @@
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-standard": "^3.1.0",
+    "less": "^3.0.2",
+    "less-loader": "^4.1.0",
     "node-sass": "^4.9.0",
     "nodemon": "^1.17.3",
     "nuxt-jest-puppeteer": "^0.3.8",

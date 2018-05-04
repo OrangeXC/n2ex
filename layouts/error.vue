@@ -1,7 +1,7 @@
 <template>
   <div class="wrap">
     <div class="code-area">
-      <span style="color: #777 ;font-style:italic;">
+      <span style="color: #777; font-style:italic;">
         // {{ error.statusCode }} {{ error.message }}.
       </span>
       <span>
@@ -34,6 +34,10 @@ export default {
 .wrap {
   width: 100vw;
   height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
   cursor: default;
 
   background: #081421;
