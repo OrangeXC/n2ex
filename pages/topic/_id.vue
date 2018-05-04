@@ -62,7 +62,7 @@ export default {
 }
 
 .card-header-content {
-  width: 870px;
+  width: 800px;
 }
 
 .title {
