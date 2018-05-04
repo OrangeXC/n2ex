@@ -36,8 +36,6 @@
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-standard": "^3.1.0",
-    "less": "^3.0.2",
-    "less-loader": "^4.1.0",
     "node-sass": "^4.9.0",
     "nodemon": "^1.17.3",
     "nuxt-jest-puppeteer": "^0.3.8",
