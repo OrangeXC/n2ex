@@ -2,6 +2,7 @@
   <div>
     <section>
       <el-card>
+        <img class="card-background" :src="user.avatar_large" alt="background">
         <div slot="header" class="card card-header">
           <div class="avatar">
             <img :src="user.avatar_large" alt="avatar">
@@ -80,6 +81,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.el-card {
+  position: relative;
+
+  background-color: transparent;
+}
+
+.card-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  filter: blur(150px);
+}
+
 .card-header {
   line-height: 1;
 
