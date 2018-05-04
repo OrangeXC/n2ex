@@ -7,7 +7,7 @@
         </div>
         <div class="card-header-content">
           <div class="title">{{ detail.title }}</div>
-          <el-tag size="small" @click.native="toNode(detail.node.title)">{{ detail.node.title }}</el-tag>
+          <el-tag size="small" @click.native="toNode(detail.node.name)">{{ detail.node.title }}</el-tag>
           <span class="link" @click="toMember(detail.member.username)">{{ detail.member.username }}</span>
           • {{ detail.created | timeAgo }}
         </div>
