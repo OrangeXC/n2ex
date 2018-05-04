@@ -2,6 +2,7 @@
   <div>
     <section class="container">
       <mu-card class="node-card">
+        <img class="card-background" :src="node.avatar_normal" alt="background">
         <mu-card-header :title="node.title" :subTitle="node.header">
           <mu-avatar :src="node.avatar_normal | image" slot="avatar"/>
         </mu-card-header>
@@ -54,8 +55,21 @@ export default {
 
 <style lang="scss">
 .node-card {
-  margin-bottom: -20px;
+  position: relative;
+  margin: -10px -10px -20px -10px;
+  overflow: hidden;
 
-  background: linear-gradient(to right,  #89f7fe 0%, #66a6ff 100%);
+  background-color: transparent;
+}
+
+.card-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  filter: blur(100px);
 }
 </style>

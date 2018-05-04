@@ -2,6 +2,7 @@
   <div>
     <section class="container">
       <mu-card class="user-card">
+        <img class="card-background" :src="user.avatar_normal" alt="background">
         <mu-card-header :title="user.username" :subTitle="user.tagline">
           <mu-avatar :src="user.avatar_normal" slot="avatar"/>
         </mu-card-header>
@@ -79,8 +80,21 @@ export default {
 
 <style lang="scss" scoped>
 .user-card {
-  margin-bottom: -20px;
+  position: relative;
+  margin: -10px -10px -20px -10px;
+  overflow: hidden;
 
-  background: linear-gradient(to right, #B5CBED 0%,#FE8A75 100%);
+  background-color: transparent;
+}
+
+.card-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  filter: blur(100px);
 }
 </style>
