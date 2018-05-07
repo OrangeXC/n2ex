@@ -40,16 +40,16 @@ export default {
       this.docked = !flag
     },
     toHome () {
-      this.$router.push('/')
+      this.$router.push('/m')
     },
     toNew () {
-      this.$router.push('/new')
+      this.$router.push('/m/new')
     },
     toNode (name) {
-      this.$router.push(`/node/${name}`)
+      this.$router.push(`/m/node/${name}`)
     },
     toTab (name) {
-      this.$router.push(`/tab/${name}`)
+      this.$router.push(`/m/tab/${name}`)
     }
   }
 }
