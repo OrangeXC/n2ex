@@ -99,6 +99,7 @@ async function start() {
   app.use(async (ctx, next) => {
     await next();
     ctx.status = 200; // koa defaults to 404 when it sees that status is unset
+
     return new Promise((resolve, reject) => {
       ctx.res.on('close', resolve);
       ctx.res.on('finish', resolve);
