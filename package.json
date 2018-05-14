@@ -18,11 +18,11 @@
     "@nuxtjs/component-cache": "^1.1.2",
     "@nuxtjs/pwa": "^2.0.8",
     "cross-env": "^5.1.5",
-    "element-ui": "^2.3.7",
+    "element-ui": "^2.3.8",
     "koa": "^2.5.1",
     "muse-ui": "^2.1.0",
     "nuxt": "npm:nuxt-edge",
-    "source-map-support": "^0.5.5"
+    "source-map-support": "^0.5.6"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
