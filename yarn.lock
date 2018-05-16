@@ -5907,8 +5907,8 @@ nuxt-jest-puppeteer@^0.3.8:
     vue-jest "^2.0.1"
 
 "nuxt@npm:nuxt-edge":
-  version "2.0.0-25429981.9298177"
-  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.0.0-25429981.9298177.tgz#79fdeae94daa254a9ea3f4f732e85a1bf8e99b68"
+  version "2.0.0-25438075.3a76475"
+  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.0.0-25438075.3a76475.tgz#2bf9a056438c4c0468938427f6e585bd9c5ef10c"
   dependencies:
     "@nuxtjs/friendly-errors-webpack-plugin" "^2.0.2"
     "@nuxtjs/youch" "^4.2.3"
