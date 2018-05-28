@@ -8,14 +8,13 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/icon.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic' }
+      { rel: 'stylesheet', href: 'https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css' }
     ]
   },
   css: [
     '~assets/css/main.css',
-    '~assets/font/material-icons.css',
     'muse-ui/dist/muse-ui.css',
-    'muse-ui/dist/theme-carbon.css'
+    'muse-ui/dist/theme-light.css'
   ],
   loading: {
     color: '#ff4081'
