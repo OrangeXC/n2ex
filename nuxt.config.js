@@ -13,8 +13,7 @@ module.exports = {
   },
   css: [
     '~assets/css/main.css',
-    'muse-ui/dist/muse-ui.css',
-    'muse-ui/dist/theme-light.css'
+    'muse-ui/dist/muse-ui.css'
   ],
   loading: {
     color: '#ff4081'

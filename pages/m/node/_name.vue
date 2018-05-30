@@ -4,15 +4,23 @@
       <mu-card class="node-card">
         <img class="card-background" :src="node.avatar_normal" alt="background">
         <mu-card-header :title="node.title" :subTitle="node.header">
-          <mu-avatar :src="node.avatar_normal | image" slot="avatar"/>
+          <mu-avatar slot="avatar">
+            <img :src="node.avatar_normal | image" alt="avatar">
+          </mu-avatar>
         </mu-card-header>
         <mu-card-actions>
           <div class="chip-container">
-            <mu-chip class="chip" backgroundColor="amberA100">
-              <mu-avatar :size="32" icon="star" backgroundColor="orangeA400" />{{ node.stars }}
+            <mu-chip class="chip" color="amberA100">
+              <mu-avatar :size="32" color="orangeA400">
+                <mu-icon value="star"></mu-icon>
+              </mu-avatar>
+              {{ node.stars }}
             </mu-chip>
-            <mu-chip class="chip" backgroundColor="blue300">
-              <mu-avatar :size="32" icon="schedule" backgroundColor="indigo900" />{{ node.created | format }}
+            <mu-chip class="chip" color="blue300">
+              <mu-avatar :size="32" color="indigo900">
+                <mu-icon value="schedule"></mu-icon>
+              </mu-avatar>
+              {{ node.created | format }}
             </mu-chip>
           </div>
         </mu-card-actions>
@@ -56,7 +64,6 @@ export default {
 <style lang="scss">
 .node-card {
   position: relative;
-  margin: -10px -10px -20px -10px;
   overflow: hidden;
 
   background-color: transparent;
