@@ -9,11 +9,16 @@
 .container {
 	max-width: 960px;
 	margin: 0 auto;
-  padding: 10px;
+	padding: 0 10px;
+	overflow: hidden;
 }
 
 .mu-card {
   margin: 10px 0;
+}
+
+.mu-card-header-title {
+	word-break: break-all;
 }
 
 .chip-container {
@@ -25,12 +30,12 @@
   margin: 4px;
 }
 
-.mu-card-text img {
-  max-width: 100%;
-}
-
 .embedded_image {
 	max-width: 100%;
+}
+
+.el-container .el-header {
+	padding: 0;
 }
 
 .el-main {

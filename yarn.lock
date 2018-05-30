@@ -5245,10 +5245,6 @@ lodash.templatesettings@^4.0.0:
   dependencies:
     lodash._reinterpolate "~3.0.0"
 
-lodash.tolower@^4.1.2:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/lodash.tolower/-/lodash.tolower-4.1.2.tgz#d6d309ac43eef8d44e8ded66b73dab0beb0806d7"
-
 lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
@@ -5605,12 +5601,12 @@ ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
 
-muse-ui@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/muse-ui/-/muse-ui-2.1.0.tgz#aa2f6e7df220beedbb908417ba4850071bff64df"
+muse-ui@^3.0.0-beta.1:
+  version "3.0.0-beta.1"
+  resolved "http://npm.zhaopin.com/muse-ui/-/muse-ui-3.0.0-beta.1.tgz#738641b698ce2d04104e0d87433b05bff9b79f31"
   dependencies:
     keycode "^2.1.9"
-    lodash.tolower "^4.1.2"
+    normalize-wheel "^1.0.1"
 
 mustache@^2.3.0:
   version "2.3.0"

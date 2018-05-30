@@ -8,20 +8,35 @@
         </mu-card-header>
         <mu-card-actions>
           <div class="chip-container">
-            <mu-chip class="chip" backgroundColor="greenA100" v-if="user.website" @click="toWebsite(user.website)">
-              <mu-avatar :size="32" icon="public" backgroundColor="greenA700" />{{ user.website }}
+            <mu-chip class="chip" color="greenA100" v-if="user.website" @click="toWebsite(user.website)">
+              <mu-avatar :size="32" color="greenA700">
+                <mu-icon value="public"></mu-icon>
+              </mu-avatar>
+              {{ user.website }}
             </mu-chip>
-            <mu-chip class="chip" backgroundColor="lightBlue100" v-if="user.twitter" @click="toTwitter(user.twitter)">
-              <mu-avatar :size="32" src="../../img/twitter.png" />{{ user.twitter }}
+            <mu-chip class="chip" color="lightBlue100" v-if="user.twitter" @click="toTwitter(user.twitter)">
+              <mu-avatar :size="32">
+                <img src="~/assets/img/twitter.png" alt="twitter">
+              </mu-avatar>
+              {{ user.twitter }}
             </mu-chip>
-            <mu-chip class="chip" backgroundColor="grey300" v-if="user.github" @click="toGithub(user.github)">
-              <mu-avatar :size="32" src="../../img/github.png" backgroundColor="#fff" />{{ user.github }}
+            <mu-chip class="chip" color="grey300" v-if="user.github" @click="toGithub(user.github)">
+              <mu-avatar :size="32" color="#fff">
+                <img src="~/assets/img/github.png" alt="github">
+              </mu-avatar>
+              {{ user.github }}
             </mu-chip>
-            <mu-chip class="chip" backgroundColor="deepOrange100" v-if="user.location" @click="toMap(user.location)">
-              <mu-avatar :size="32" icon="location_city" backgroundColor="deepOrange800" />{{ user.location }}
+            <mu-chip class="chip" color="deepOrange100" v-if="user.location" @click="toMap(user.location)">
+              <mu-avatar :size="32" color="deepOrange800">
+                <mu-icon value="location_city"></mu-icon>
+              </mu-avatar>
+              {{ user.location }}
             </mu-chip>
-            <mu-chip class="chip" backgroundColor="blue300">
-              <mu-avatar :size="32" icon="schedule" backgroundColor="indigo900" />{{ user.created | format }}
+            <mu-chip class="chip" color="blue300">
+              <mu-avatar :size="32" color="indigo900">
+                <mu-icon value="schedule"></mu-icon>
+              </mu-avatar>
+              {{ user.created | format }}
             </mu-chip>
           </div>
         </mu-card-actions>

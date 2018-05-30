@@ -3,20 +3,31 @@
     <mu-card>
       <nuxt-link :to="'/m/member/' + detail.member.username">
         <mu-card-header :title="detail.title" :subTitle="detail.member.username">
-          <mu-avatar :src="detail.member.avatar_normal" slot="avatar"/>
+          <mu-avatar slot="avatar">
+            <img :src="detail.member.avatar_normal" alt="avatar">
+          </mu-avatar>
         </mu-card-header>
       </nuxt-link>
       <div class="mu-card-text" v-html="detail.content_rendered"></div>
       <mu-card-actions>
         <div class="chip-container">
           <mu-chip class="chip" @click="toNode(detail.node.name)">
-            <mu-avatar :size="32" :src="detail.node.avatar_normal | image"/>{{ detail.node.title }}
+            <mu-avatar :size="32">
+              <img :src="detail.node.avatar_normal | image" alt="avatar">
+            </mu-avatar>
+            {{ detail.node.title }}
           </mu-chip>
           <mu-chip class="chip">
-            <mu-avatar :size="32" icon="schedule"/>{{ detail.created | timeAgo }}
+            <mu-avatar :size="32">
+              <mu-icon value="schedule"></mu-icon>
+            </mu-avatar>
+            {{ detail.created | timeAgo }}
           </mu-chip>
           <mu-chip class="chip">
-            <mu-avatar :size="32" icon="comment"/>{{ detail.replies }}
+            <mu-avatar :size="32">
+              <mu-icon value="comment"></mu-icon>
+            </mu-avatar>
+            {{ detail.replies }}
           </mu-chip>
         </div>
       </mu-card-actions>

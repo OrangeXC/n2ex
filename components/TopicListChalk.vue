@@ -16,7 +16,9 @@
           </div>
           <div class="card-action">
             <el-button size="small" round @click="toNode(item.node.name)">
-              <mu-avatar :size="29" :src="item.node.avatar_normal | image" />
+              <mu-avatar :size="29">
+                <img :src="item.node.avatar_normal | image" alt="avatar">
+              </mu-avatar>
               <span>{{ item.node.title }}</span>
             </el-button>
             <el-badge :value="item.replies">

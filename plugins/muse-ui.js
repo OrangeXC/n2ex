@@ -1,4 +1,4 @@
 import Vue from 'vue'
-import MuseUI from 'muse-ui'
+import MuseUI from '../node_modules/muse-ui/dist/muse-ui.js'
 
 Vue.use(MuseUI)

@@ -20,7 +20,7 @@
     "cross-env": "^5.1.6",
     "element-ui": "^2.4.0",
     "koa": "^2.5.1",
-    "muse-ui": "^2.1.0",
+    "muse-ui": "^3.0.0-beta.1",
     "nuxt": "npm:nuxt-edge",
     "source-map-support": "^0.5.6"
   },
