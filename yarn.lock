@@ -2435,6 +2435,10 @@ date-now@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
 
+dayjs@^1.6.5:
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.6.5.tgz#d7c18785990f6d839161b84f4cc924d9324dfa33"
+
 de-indent@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/de-indent/-/de-indent-1.0.2.tgz#b2038e846dc33baa5796128d0804b455b8c1e21d"
@@ -5601,10 +5605,11 @@ ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
 
-muse-ui@^3.0.0-beta.1:
-  version "3.0.0-beta.1"
-  resolved "http://npm.zhaopin.com/muse-ui/-/muse-ui-3.0.0-beta.1.tgz#738641b698ce2d04104e0d87433b05bff9b79f31"
+muse-ui@^3.0.0-beta.3:
+  version "3.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/muse-ui/-/muse-ui-3.0.0-beta.3.tgz#8e6721229794557cc0f416bd2aab89de2b9ed7fe"
   dependencies:
+    dayjs "^1.6.5"
     keycode "^2.1.9"
     normalize-wheel "^1.0.1"
 
@@ -7591,9 +7596,9 @@ sass-graph@^2.2.4:
     scss-tokenizer "^0.2.3"
     yargs "^7.0.0"
 
-sass-loader@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-7.0.1.tgz#fd937259ccba3a9cfe0d5f8a98746d48adfcc261"
+sass-loader@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-7.0.2.tgz#036c322890f2fa389df8373f79e890327b74d1fb"
   dependencies:
     clone-deep "^2.0.1"
     loader-utils "^1.0.1"
