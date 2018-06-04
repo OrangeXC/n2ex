@@ -20,7 +20,7 @@
     "cross-env": "^5.1.6",
     "element-ui": "^2.4.0",
     "koa": "^2.5.1",
-    "muse-ui": "^3.0.0-beta.1",
+    "muse-ui": "^3.0.0-beta.3",
     "nuxt": "npm:nuxt-edge",
     "source-map-support": "^0.5.6"
   },
@@ -39,7 +39,7 @@
     "node-sass": "^4.9.0",
     "nodemon": "^1.17.5",
     "nuxt-jest-puppeteer": "^0.3.8",
-    "sass-loader": "^7.0.1",
+    "sass-loader": "^7.0.2",
     "scmp": "^2.0.0"
   }
 }
