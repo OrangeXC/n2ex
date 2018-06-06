@@ -39,7 +39,7 @@
     "node-sass": "^4.9.0",
     "nodemon": "^1.17.5",
     "nuxt-jest-puppeteer": "^0.3.8",
-    "sass-loader": "^7.0.2",
+    "sass-loader": "^7.0.3",
     "scmp": "^2.0.0"
   }
 }
