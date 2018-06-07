@@ -1,14 +1,14 @@
 <template>
   <div>
     <mu-appbar title="N2EX">
-      <mu-button icon @click="toggle(true)" slot="left">
+      <mu-button icon @click="toggle()" slot="left">
         <mu-icon value="menu"></mu-icon>
       </mu-button>
       <mu-button icon href="https://github.com/OrangeXC/n2ex" slot="right">
         <i class="muidocs-icon-custom-github"></i>
       </mu-button>
     </mu-appbar>
-    <mu-drawer :open="open" :docked="docked" @close="toggle()">
+    <mu-drawer :open.sync="open" :docked="docked">
       <mu-appbar title="Tabs"/>
       <mu-list @itemClick="docked ? '' : toggle()">
         <mu-list-item button @click="toTab('tech')">
@@ -52,13 +52,12 @@ export default {
   data () {
     return {
       open: false,
-      docked: true
+      docked: false
     }
   },
   methods: {
-    toggle (flag) {
+    toggle () {
       this.open = !this.open
-      this.docked = !flag
     },
     toHome () {
       this.$router.push('/m')
