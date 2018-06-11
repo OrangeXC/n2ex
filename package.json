@@ -10,7 +10,6 @@
     "start": "cross-env NODE_ENV=production node build/main.js",
     "precommit": "npm run lint",
     "lint": "eslint --ext .js,.vue --ignore-path .eslintignore .",
-    "test": "nuxt-jest-puppeteer",
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
@@ -20,8 +19,8 @@
     "cross-env": "^5.1.6",
     "element-ui": "^2.4.1",
     "koa": "^2.5.1",
-    "muse-ui": "^3.0.0-beta.3",
-    "nuxt": "npm:nuxt-edge",
+    "muse-ui": "^3.0.0-beta.5",
+    "nuxt": "^1.4.1",
     "source-map-support": "^0.5.6"
   },
   "devDependencies": {
