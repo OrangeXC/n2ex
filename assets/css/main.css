@@ -17,6 +17,10 @@
   margin: 10px 0;
 }
 
+.mu-card-text img {
+	max-width: 100%;
+}
+
 .mu-card-header-title {
 	word-break: break-all;
 }
