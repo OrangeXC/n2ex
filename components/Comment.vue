@@ -39,18 +39,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.comment /deep/ .mu-list {
-  .mu-item {
-    height: auto;
-    padding: 5px 16px;
-    align-items: start;
-  }
-
-  .mu-item-title {
-    line-height: 1;
-  }
-}
-
 .mu-card-html {
 	word-break: break-all;
 }

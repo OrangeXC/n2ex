@@ -21,6 +21,16 @@
 	word-break: break-all;
 }
 
+.mu-list .mu-item {
+	height: auto;
+	padding: 5px 16px;
+	align-items: start;
+}
+
+.mu-list .mu-item-title {
+	line-height: 1;
+}
+
 .chip-container {
   display: flex;
   flex-wrap: wrap;
