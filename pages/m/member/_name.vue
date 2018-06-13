@@ -4,7 +4,9 @@
       <mu-card class="user-card">
         <img class="card-background" :src="user.avatar_normal" alt="background">
         <mu-card-header :title="user.username" :subTitle="user.tagline">
-          <mu-avatar :src="user.avatar_normal" slot="avatar"/>
+          <mu-avatar slot="avatar">
+            <img :src="user.avatar_normal" alt="avatar">
+          </mu-avatar>
         </mu-card-header>
         <mu-card-actions>
           <div class="chip-container">
@@ -96,7 +98,6 @@ export default {
 <style lang="scss" scoped>
 .user-card {
   position: relative;
-  margin: -10px -10px -20px -10px;
   overflow: hidden;
 
   background-color: transparent;
