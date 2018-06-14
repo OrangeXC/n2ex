@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { sortByDate } from '~/utils'
+import { fetchTopicList } from '~/utils'
 import TopicListChalk from '~/components/TopicListChalk'
 
 export default {
@@ -13,15 +13,7 @@ export default {
     }
   },
   async asyncData ({ app }) {
-    const [all4all, exchange, free, dn, tuan] = await Promise.all([
-      app.$axios.get(`topics/show.json?node_name=all4all`).then(res => res.data),
-      app.$axios.get(`topics/show.json?node_name=exchange`).then(res => res.data),
-      app.$axios.get(`topics/show.json?node_name=free`).then(res => res.data),
-      app.$axios.get(`topics/show.json?node_name=dn`).then(res => res.data),
-      app.$axios.get(`topics/show.json?node_name=tuan`).then(res => res.data)
-    ])
-
-    const dealList = sortByDate([...all4all, ...exchange, ...free, ...dn, ...tuan])
+    const dealList =  await fetchTopicList(app.$axios, 'all4all', 'exchange', 'free', 'dn', 'tuan')
 
     return {
       dealList

@@ -12,7 +12,7 @@ export default {
     }
   },
   async asyncData ({ app }) {
-    const { data } = await app.$axios.get(`topics/hot.json`)
+    const { data } = await app.$axios.get('topics/hot.json')
 
     return {
       hotList: data

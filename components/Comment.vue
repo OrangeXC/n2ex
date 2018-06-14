@@ -12,7 +12,7 @@
             </mu-list-item-action>
             <mu-list-item-content>
               <mu-list-item-title>{{ item.member.username }}</mu-list-item-title>
-              <div class="mu-card-html" v-html="item.content_rendered"></div>
+              <div class="article" v-html="item.content_rendered"></div>
             </mu-list-item-content>
           </mu-list-item>
           <mu-divider inset />
@@ -37,14 +37,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.mu-card-html {
-	word-break: break-all;
-}
-
-.mu-card-html img {
-  max-width: 100%;
-}
-</style>
-

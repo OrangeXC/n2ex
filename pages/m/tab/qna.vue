@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import { fetchTopicList } from '~/utils'
 import TopicList from '~/components/TopicList'
 
 export default {
@@ -12,10 +13,10 @@ export default {
     }
   },
   async asyncData ({ app }) {
-    const { data } = await app.$axios.get(`topics/show.json?node_name=qna`)
+    const qnaList =  await fetchTopicList(app.$axios, 'qna')
 
     return {
-      qnaList: data
+      qnaList
     }
   },
   layout: 'mobile',

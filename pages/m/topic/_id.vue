@@ -8,7 +8,9 @@
           </mu-avatar>
         </mu-card-header>
       </nuxt-link>
-      <div class="mu-card-text" v-html="detail.content_rendered"></div>
+      <mu-card-text>
+        <article class="article" v-html="detail.content_rendered"></article>
+      </mu-card-text>
       <mu-card-actions>
         <div class="chip-container">
           <mu-chip class="chip" @click="toNode(detail.node.name)">

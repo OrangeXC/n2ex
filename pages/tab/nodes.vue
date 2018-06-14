@@ -18,7 +18,7 @@ export default {
     }
   },
   async asyncData ({ app }) {
-    const { data } = await app.$axios.get(`nodes/all.json`)
+    const { data } = await app.$axios.get('nodes/all.json')
 
     return {
       nodeList: data
@@ -35,12 +35,15 @@ export default {
     }
   },
   computed: {
-    nodes: function () {
+    nodes () {
       if (!this.searchString) return this.nodeList
 
       let searchString = this.searchString.trim().toLowerCase()
 
-      return this.nodeList.filter(({ title, name }) => title.toLowerCase().indexOf(searchString) !== -1 || name.toLowerCase().indexOf(searchString) !== -1)
+      return this.nodeList.filter(({ title, name }) =>
+        title.toLowerCase().indexOf(searchString) !== -1 ||
+        name.toLowerCase().indexOf(searchString) !== -1
+      )
     }
   }
 }
