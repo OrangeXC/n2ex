@@ -27,6 +27,9 @@ export default {
       titleTemplate: '%s - 话题详情'
     }
   },
+  validate ({ params }) {
+    return /^\d+$/.test(params.id)
+  },
   async asyncData ({ app, params }) {
     const [ detail, comments ] = await Promise.all([
       app.$axios.get(`topics/show.json?id=${params.id}`).then(res => res.data[0]),
@@ -37,9 +40,6 @@ export default {
       detail,
       comments
     }
-  },
-  validate ({ params }) {
-    return /^\d+$/.test(params.id)
   },
   methods: {
     toNode (name) {

@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { sortByDate } from '~/utils'
+import { fetchTopicList } from '~/utils'
 import TopicListChalk from '~/components/TopicListChalk'
 
 export default {
@@ -13,15 +13,7 @@ export default {
     }
   },
   async asyncData ({ app }) {
-    const [share, bb, games, travel, hardware] = await Promise.all([
-      app.$axios.get(`topics/show.json?node_name=share`).then(res => res.data),
-      app.$axios.get(`topics/show.json?node_name=bb`).then(res => res.data),
-      app.$axios.get(`topics/show.json?node_name=games`).then(res => res.data),
-      app.$axios.get(`topics/show.json?node_name=travel`).then(res => res.data),
-      app.$axios.get(`topics/show.json?node_name=hardware`).then(res => res.data)
-    ])
-
-    const playList = sortByDate([...share, ...bb, ...games, ...travel, ...hardware])
+    const playList =  await fetchTopicList(app.$axios, 'share', 'bb', 'games', 'travel', 'hardware')
 
     return {
       playList
