@@ -13,7 +13,7 @@ export default {
     }
   },
   async asyncData ({ app }) {
-    const jobList =  await fetchTopicList(app.$axios, 'jobs', 'cv', 'career', 'outsourcing')
+    const jobList = await fetchTopicList(app.$axios, 'jobs', 'cv', 'career', 'outsourcing')
 
     return {
       jobList

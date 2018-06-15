@@ -42,7 +42,7 @@ export default {
     toNode (name) {
       this.$router.push(`/m/node/${name}`)
     },
-    getSubTitle (time) {
+    getSubTitle (item) {
       return `by ${item.member.username} • ${timeAgo(item.created)}`
     }
   }

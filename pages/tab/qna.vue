@@ -13,7 +13,7 @@ export default {
     }
   },
   async asyncData ({ app }) {
-    const qnaList =  await fetchTopicList(app.$axios, 'qna')
+    const qnaList = await fetchTopicList(app.$axios, 'qna')
 
     return {
       qnaList
