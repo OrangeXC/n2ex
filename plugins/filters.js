@@ -13,11 +13,11 @@ export function timeAgo (time) {
   const between = Date.now() / 1000 - Number(time)
 
   if (between < 3600) {
-    return pluralize(~~(between / 60), ' 分钟前')
+    return `${~~(between / 60)} 分钟前`
   } else if (between < 86400) {
-    return pluralize(~~(between / 3600), ' 小时前')
+    return `${~~(between / 3600)} 小时前`
   } else {
-    return pluralize(~~(between / 86400), ' 天前')
+    return `${~~(between / 86400)} 天前`
   }
 }
 
@@ -38,10 +38,6 @@ export function image (url) {
   }
 }
 
-function pluralize (time, label) {
-  return time + label
-}
-
 const filters = {
   host,
   timeAgo,
@@ -49,8 +45,8 @@ const filters = {
   image
 }
 
-export default filters
-
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key])
 })
+
+export default filters

@@ -2,7 +2,7 @@
   <section class="container">
     <mu-card v-for="item in topicList" :key="item.id">
       <nuxt-link :to="'/m/topic/' + item.id">
-        <mu-card-header :title="item.title" :subTitle="`by ${item.member.username} • ${ago(item.created)}`">
+        <mu-card-header :title="item.title" :subTitle="getSubTitle(item)">
           <mu-avatar :src="item.member.avatar_normal" slot="avatar">
             <img :src="item.member.avatar_normal" alt="avatar">
           </mu-avatar>
@@ -42,8 +42,8 @@ export default {
     toNode (name) {
       this.$router.push(`/m/node/${name}`)
     },
-    ago (time) {
-      return timeAgo(time)
+    getSubTitle (item) {
+      return `by ${item.member.username} • ${timeAgo(item.created)}`
     }
   }
 }

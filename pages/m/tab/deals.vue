@@ -13,7 +13,7 @@ export default {
     }
   },
   async asyncData ({ app }) {
-    const dealList =  await fetchTopicList(app.$axios, 'all4all', 'exchange', 'free', 'dn', 'tuan')
+    const dealList = await fetchTopicList(app.$axios, 'all4all', 'exchange', 'free', 'dn', 'tuan')
 
     return {
       dealList

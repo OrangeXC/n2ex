@@ -10,7 +10,19 @@
     "start": "cross-env NODE_ENV=production node build/main.js",
     "precommit": "npm run lint",
     "lint": "eslint --ext .js,.vue --ignore-path .eslintignore .",
+    "test": "nyc ava",
+    "test:watch": "ava --verbose --watch",
     "heroku-postbuild": "npm run build"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
@@ -24,6 +36,7 @@
     "source-map-support": "^0.5.6"
   },
   "devDependencies": {
+    "ava": "1.0.0-beta.6",
     "babel-eslint": "^8.2.3",
     "babel-loader": "7.1.4",
     "babel-plugin-component": "^1.1.1",
@@ -37,7 +50,9 @@
     "eslint-plugin-standard": "^3.1.0",
     "node-sass": "^4.9.0",
     "nodemon": "^1.17.5",
+    "nyc": "^12.0.2",
     "sass-loader": "^7.0.3",
-    "scmp": "^2.0.0"
+    "scmp": "^2.0.0",
+    "sinon": "^6.0.0"
   }
 }

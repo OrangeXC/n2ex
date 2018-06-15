@@ -13,7 +13,7 @@ export default {
     }
   },
   async asyncData ({ app }) {
-    const techList =  await fetchTopicList(app.$axios, 'programmer', 'fe', 'js', 'nodejs', 'vue')
+    const techList = await fetchTopicList(app.$axios, 'programmer', 'fe', 'js', 'nodejs', 'vue')
 
     return {
       techList
