@@ -12,8 +12,7 @@ module.exports = {
     ]
   },
   css: [
-    '~assets/css/main.css',
-    'muse-ui/dist/muse-ui.css'
+    '~assets/css/main.css'
   ],
   loading: {
     color: '#ff4081'
@@ -39,12 +38,10 @@ module.exports = {
   build: {
     babel: {
       plugins: [
-        ['component', [
-          {
-            libraryName: 'element-ui',
-            styleLibraryName: 'theme-chalk'
-          }
-        ]]
+        ['component', {
+          libraryName: 'element-ui',
+          styleLibraryName: 'theme-chalk'
+        }]
       ]
     }
   }
