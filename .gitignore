@@ -19,3 +19,6 @@ build
 
 # System Files
 .DS_Store
+
+# nyc
+.nyc_output
