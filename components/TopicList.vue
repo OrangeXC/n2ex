@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <mu-card v-for="item in topicList" :key="item.id">
-      <nuxt-link :to="'/m/topic/' + item.id">
+      <nuxt-link :to="`/m/topic/${item.id}`">
         <mu-card-header :title="item.title" :subTitle="getSubTitle(item)">
           <mu-avatar :src="item.member.avatar_normal" slot="avatar">
             <img :src="item.member.avatar_normal" alt="avatar">
@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import { timeAgo } from '~/plugins/filters'
+import { timeAgo } from '../plugins/filters'
 
 export default {
   props: {

@@ -3,7 +3,7 @@ import sinon from 'sinon'
 import {
   sortByDate,
   fetchTopicList
-} from '../utils/index'
+} from '../../utils/index'
 
 test('sortByDate', t => {
   const topicList = [{
