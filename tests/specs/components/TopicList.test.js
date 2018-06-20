@@ -4,6 +4,7 @@ import sinon from 'sinon'
 import Vue from 'vue'
 import TopicList from '../../../components/TopicList'
 import { timeAgo } from '../../../plugins/filters'
+import mocks from '../__mocks__'
 
 test.before(t => {
   Vue.config.ignoredElements = [
@@ -16,35 +17,7 @@ test.before(t => {
     'mu-icon'
   ]
 
-  t.context.topicList = [{
-    id: 1,
-    title: 'title1',
-    member: {
-      username: 'frank',
-      avatar_normal: `frank's avatar`
-    },
-    node: {
-      name: 'node one',
-      title: 'node one title',
-      avatar_normal: 'node one avatar'
-    },
-    replies: '66',
-    created: 1529050000
-  }, {
-    id: 2,
-    title: 'title2',
-    member: {
-      username: 'jack',
-      avatar_normal: `jack's avatar`
-    },
-    node: {
-      name: 'node two',
-      title: 'node two title',
-      avatar_normal: 'node two avatar'
-    },
-    replies: '88',
-    created: 1529050000
-  }]
+  t.context.topicList = mocks.topicList
 })
 
 test('template', t => {

@@ -3,6 +3,7 @@ import test from 'ava'
 import sinon from 'sinon'
 import Vue from 'vue'
 import Comment from '../../../components/Comment'
+import mocks from '../__mocks__'
 
 test.before(t => {
   Vue.config.ignoredElements = [
@@ -17,19 +18,7 @@ test.before(t => {
     'mu-divider'
   ]
 
-  t.context.comments = [{
-    member: {
-      username: 'frank',
-      avatar_normal: 'frank avatar'
-    },
-    content_rendered: '<div>test</div>'
-  }, {
-    member: {
-      username: 'jack',
-      avatar_normal: 'jack avatar'
-    },
-    content_rendered: '<p>test</p>'
-  }]
+  t.context.comments = mocks.comments
 })
 
 test('template', t => {
