@@ -31,7 +31,7 @@ vue ssr v2ex，because it depends on nuxt so called n2ex
 
 ``` bash
 # install dependencies
-$ npm install # Or yarn install*[see note below]
+$ npm install # Or yarn
 
 # serve with hot reload at localhost:3000
 $ npm run dev
@@ -40,6 +40,9 @@ $ npm run dev
 $ npm run build
 $ npm start
 
-# generate static project
-$ npm run generate
+# eslint
+$ npm run lint
+
+# unit tests
+$ npm run test
 ```
