@@ -11,17 +11,11 @@
     "precommit": "npm run lint",
     "lint": "eslint --ext .js,.vue --ignore-path .eslintignore .",
     "test": "ava --verbose --watch",
-    "nyc": "nyc ava --verbose",
     "heroku-postbuild": "npm run build"
   },
   "ava": {
     "require": [
-      "@babel/register"
-    ]
-  },
-  "babel": {
-    "presets": [
-      "@ava/stage-4"
+      "./tests/helpers/setup.js"
     ]
   },
   "dependencies": {
@@ -36,13 +30,13 @@
     "source-map-support": "^0.5.6"
   },
   "devDependencies": {
-    "@ava/babel-preset-stage-4": "^1.1.0",
-    "@babel/register": "^7.0.0-beta.51",
+    "@vue/test-utils": "^1.0.0-beta.19",
     "ava": "1.0.0-beta.6",
     "babel-eslint": "^8.2.3",
     "babel-loader": "7.1.4",
     "babel-plugin-component": "^1.1.1",
     "backpack-core": "^0.7.0",
+    "browser-env": "^3.2.5",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^12.0.0-alpha.0",
     "eslint-plugin-html": "^4.0.3",
@@ -52,7 +46,9 @@
     "eslint-plugin-standard": "^3.1.0",
     "node-sass": "^4.9.0",
     "nodemon": "^1.17.5",
-    "nyc": "^12.0.2",
+    "require-extension-hooks": "^0.3.2",
+    "require-extension-hooks-babel": "^0.1.1",
+    "require-extension-hooks-vue": "^1.0.0",
     "sass-loader": "^7.0.3",
     "scmp": "^2.0.0",
     "sinon": "^6.0.0"

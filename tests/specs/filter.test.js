@@ -5,7 +5,7 @@ import {
   timeAgo,
   format,
   image
-} from '../plugins/filters'
+} from '../../plugins/filters'
 
 test('export functions', t => {
   t.is(typeof(host), 'function')
