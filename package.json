@@ -20,10 +20,10 @@
     ]
   },
   "babel": {
-		"presets": [
-			"@ava/stage-4"
-		]
-	},
+    "presets": [
+      "@ava/stage-4"
+    ]
+  },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
     "@nuxtjs/component-cache": "^1.1.2",
