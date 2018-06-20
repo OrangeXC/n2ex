@@ -8,7 +8,6 @@
     "dev": "backpack dev",
     "build": "nuxt build && backpack build",
     "start": "cross-env NODE_ENV=production node build/main.js",
-    "precommit": "npm run lint",
     "lint": "eslint --ext .js,.vue --ignore-path .eslintignore .",
     "test": "ava --verbose --watch",
     "heroku-postbuild": "npm run build"
