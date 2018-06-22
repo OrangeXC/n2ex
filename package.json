@@ -9,7 +9,7 @@
     "build": "nuxt build && backpack build",
     "start": "cross-env NODE_ENV=production node build/main.js",
     "lint": "eslint --ext .js,.vue --ignore-path .eslintignore .",
-    "test": "ava --verbose --watch",
+    "test": "ava --serial --verbose --watch",
     "heroku-postbuild": "npm run build"
   },
   "ava": {
@@ -47,7 +47,7 @@
     "nodemon": "^1.17.5",
     "require-extension-hooks": "^0.3.2",
     "require-extension-hooks-babel": "^0.1.1",
-    "require-extension-hooks-vue": "^1.0.0",
+    "require-extension-hooks-vue": "^1.0.1",
     "sass-loader": "^7.0.3",
     "scmp": "^2.0.0",
     "sinon": "^6.0.0"
