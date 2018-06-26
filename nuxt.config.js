@@ -15,7 +15,7 @@ module.exports = {
     '~assets/css/main.css'
   ],
   loading: {
-    color: '#ff4081'
+    color: '#409EFF'
   },
   modules: [
     '@nuxtjs/axios',
