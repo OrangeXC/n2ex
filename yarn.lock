@@ -1747,6 +1747,10 @@ body-parser@1.18.2:
     raw-body "2.3.2"
     type-is "~1.6.15"
 
+body-scroll-lock@^2.4.6:
+  version "2.4.6"
+  resolved "http://npm.zhaopin.com/body-scroll-lock/-/body-scroll-lock-2.4.6.tgz#3ab8f6aff309cc5ce5ad7702f58308f755e262f3"
+
 boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
@@ -5549,10 +5553,11 @@ multimatch@^2.1.0:
     arrify "^1.0.0"
     minimatch "^3.0.0"
 
-muse-ui@^3.0.0-rc.3:
-  version "3.0.0-rc.3"
-  resolved "https://registry.yarnpkg.com/muse-ui/-/muse-ui-3.0.0-rc.3.tgz#2363dcaaca2f7a7195bd4f52eb9f2c233af4dcbe"
+muse-ui@^3.0.0-rc.4:
+  version "3.0.0-rc.4"
+  resolved "http://npm.zhaopin.com/muse-ui/-/muse-ui-3.0.0-rc.4.tgz#7af5957eafc6d4ebda647bf9f4dd0b2be1bb7aa7"
   dependencies:
+    body-scroll-lock "^2.4.6"
     dayjs "^1.6.5"
     keycode "^2.1.9"
     normalize-wheel "^1.0.1"
