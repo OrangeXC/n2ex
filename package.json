@@ -24,32 +24,36 @@
     "cross-env": "^5.2.0",
     "element-ui": "^2.4.3",
     "koa": "^2.5.1",
-    "muse-ui": "^3.0.0-rc.4",
+    "muse-ui": "^3.0.0-rc.5",
     "nuxt": "npm:nuxt-edge",
-    "source-map-support": "^0.5.6"
+    "source-map-support": "^0.5.6",
+    "vue": "^2.5.16"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.20",
     "ava": "1.0.0-beta.6",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.5",
-    "babel-loader": "7.1.5",
+    "babel-loader": "^7.1.5",
     "babel-plugin-component": "^1.1.1",
     "backpack-core": "^0.7.0",
     "browser-env": "^3.2.5",
-    "eslint": "^5.0.1",
+    "eslint": "^5.1.0",
     "eslint-config-standard": "^12.0.0-alpha.0",
     "eslint-plugin-html": "^4.0.5",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
-    "node-sass": "^4.9.1",
+    "node-sass": "^4.9.2",
     "nodemon": "^1.17.5",
     "require-extension-hooks": "^0.3.2",
     "require-extension-hooks-babel": "^0.1.1",
     "require-extension-hooks-vue": "^1.0.1",
     "sass-loader": "^7.0.3",
     "scmp": "^2.0.0",
-    "sinon": "^6.1.0"
+    "sinon": "^6.1.3",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.15.1"
   }
 }
