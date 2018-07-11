@@ -46,7 +46,7 @@
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
     "node-sass": "^4.9.2",
-    "nodemon": "^1.17.5",
+    "nodemon": "^1.18.0",
     "require-extension-hooks": "^0.3.2",
     "require-extension-hooks-babel": "^0.1.1",
     "require-extension-hooks-vue": "^1.0.1",
