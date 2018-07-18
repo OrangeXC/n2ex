@@ -9081,7 +9081,7 @@ webpack@^4.10.2:
 
 webpack@^4.16.1:
   version "4.16.1"
-  resolved "http://npm.zhaopin.com/webpack/-/webpack-4.16.1.tgz#2c4b89ea648125c3e67bcca6adf49ce2c14b2d31"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.16.1.tgz#2c4b89ea648125c3e67bcca6adf49ce2c14b2d31"
   dependencies:
     "@webassemblyjs/ast" "1.5.13"
     "@webassemblyjs/helper-module-context" "1.5.13"
