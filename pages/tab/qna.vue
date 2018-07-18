@@ -13,7 +13,8 @@ export default {
     }
   },
   async asyncData ({ app }) {
-    const qnaList = await fetchTopicList(app.$axios, 'qna')
+    const nodes = ['qna']
+    const qnaList = await fetchTopicList(app.$axios, nodes)
 
     return {
       qnaList

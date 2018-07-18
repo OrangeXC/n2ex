@@ -24,18 +24,20 @@ export function timeAgo (time) {
 export function format (timestamp) {
   let date = new Date(timestamp * 1000)
   let Y = date.getFullYear() + '-'
-  let M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-'
-  let D = (date.getDate() < 10 ? '0' + (date.getDate()) : date.getDate())
+  let M = (date.getMonth() + 1 < 10
+    ? '0' + (date.getMonth() + 1)
+    : date.getMonth() + 1) + '-'
+  let D = (date.getDate() < 10
+    ? '0' + (date.getDate())
+    : date.getDate())
 
   return Y + M + D
 }
 
 export function image (url) {
-  if (url.indexOf('/static/img/') > -1) {
-    return `https://www.v2ex.com${url}`
-  } else {
-    return url
-  }
+  if (url.indexOf('/static/img/') === -1) return url
+
+  return `https://www.v2ex.com${url}`
 }
 
 const filters = {

@@ -13,7 +13,8 @@ export default {
     }
   },
   async asyncData ({ app }) {
-    const appleList = await fetchTopicList(app.$axios, 'apple', 'macos', 'ios', 'ipad', 'iphone', 'mbp')
+    const nodes = ['apple', 'macos', 'ios', 'ipad', 'iphone', 'mbp']
+    const appleList = await fetchTopicList(app.$axios, nodes)
 
     return {
       appleList

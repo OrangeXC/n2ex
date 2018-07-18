@@ -42,7 +42,7 @@ test('fetchTopicList', async t => {
     get: sinon.fake.resolves({ data: ['test'] })
   }
 
-  const list = await fetchTopicList(axios, 'a', 'b')
+  const list = await fetchTopicList(axios, ['a', 'b'])
 
   t.deepEqual(list, ['test', 'test'])
 })
