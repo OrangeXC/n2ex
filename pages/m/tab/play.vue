@@ -13,7 +13,8 @@ export default {
     }
   },
   async asyncData ({ app }) {
-    const playList = await fetchTopicList(app.$axios, 'share', 'bb', 'games', 'travel', 'hardware')
+    const nodes = ['share', 'bb', 'games', 'travel', 'hardware']
+    const playList = await fetchTopicList(app.$axios, nodes)
 
     return {
       playList

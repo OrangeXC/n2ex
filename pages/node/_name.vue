@@ -1,7 +1,11 @@
 <template>
   <section>
     <el-card>
-      <img class="card-background" :src="node.avatar_large" alt="background">
+      <img
+        class="card-background"
+        :src="node.avatar_large"
+        alt="background"
+      >
       <div slot="header" class="card card-header">
         <div class="avatar">
           <img :src="node.avatar_large | image" alt="avatar">

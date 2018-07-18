@@ -13,7 +13,8 @@ export default {
     }
   },
   async asyncData ({ app }) {
-    const dealList = await fetchTopicList(app.$axios, 'all4all', 'exchange', 'free', 'dn', 'tuan')
+    const nodes = ['all4all', 'exchange', 'free', 'dn', 'tuan']
+    const dealList = await fetchTopicList(app.$axios, nodes)
 
     return {
       dealList

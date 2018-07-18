@@ -2,7 +2,11 @@
   <div>
     <section class="container">
       <mu-card class="node-card">
-        <img class="card-background" :src="node.avatar_normal" alt="background">
+        <img
+          class="card-background"
+          :src="node.avatar_normal"
+          alt="background"
+        >
         <mu-card-header :title="node.title" :subTitle="node.header">
           <mu-avatar slot="avatar">
             <img :src="node.avatar_normal | image" alt="avatar">

@@ -13,7 +13,8 @@ export default {
     }
   },
   async asyncData ({ app }) {
-    const cityList = await fetchTopicList(app.$axios, 'beijing', 'shanghai', 'shenzhen', 'hangzhou', 'life')
+    const nodes = ['beijing', 'shanghai', 'shenzhen', 'hangzhou', 'life']
+    const cityList = await fetchTopicList(app.$axios, nodes)
 
     return {
       cityList

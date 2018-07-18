@@ -13,7 +13,8 @@ export default {
     }
   },
   async asyncData ({ app }) {
-    const creativeList = await fetchTopicList(app.$axios, 'create', 'design', 'ideas')
+    const nodes = ['create', 'design', 'ideas']
+    const creativeList = await fetchTopicList(app.$axios, nodes)
 
     return {
       creativeList

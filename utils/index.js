@@ -4,8 +4,8 @@ export function sortByDate (arr) {
   )
 }
 
-export async function fetchTopicList (axios, ...args) {
-  const allTopicList = await Promise.all(args.map(item =>
+export async function fetchTopicList (axios, nodes) {
+  const allTopicList = await Promise.all(nodes.map(item =>
     axios.get(`topics/show.json?node_name=${item}`).then(res => res.data)
   ))
 
