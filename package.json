@@ -22,7 +22,7 @@
     "@nuxtjs/component-cache": "^1.1.2",
     "@nuxtjs/pwa": "^2.0.8",
     "cross-env": "^5.2.0",
-    "element-ui": "^2.4.4",
+    "element-ui": "^2.4.5",
     "koa": "^2.5.2",
     "muse-ui": "^3.0.0-rc.6",
     "nuxt": "npm:nuxt-edge",
