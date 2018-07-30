@@ -488,9 +488,9 @@
     source-map "^0.5.6"
     vue-template-es2015-compiler "^1.6.0"
 
-"@vue/test-utils@^1.0.0-beta.21":
-  version "1.0.0-beta.21"
-  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-1.0.0-beta.21.tgz#fe1ee11ce16072da7ef29420df4aa5c11f4560ff"
+"@vue/test-utils@^1.0.0-beta.22":
+  version "1.0.0-beta.22"
+  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-1.0.0-beta.22.tgz#f630d556ead51c6ebc0584f7c15835f4508dc83f"
   dependencies:
     lodash "^4.17.4"
 
@@ -8987,9 +8987,9 @@ webpack@^4.14.0:
     watchpack "^1.5.0"
     webpack-sources "^1.0.1"
 
-webpack@^4.16.2:
-  version "4.16.2"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.16.2.tgz#c3e0e771adc94582e0543dd18d7436066051e885"
+webpack@^4.16.3:
+  version "4.16.3"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.16.3.tgz#861be3176d81e7e3d71c66c8acc9bba35588b525"
   dependencies:
     "@webassemblyjs/ast" "1.5.13"
     "@webassemblyjs/helper-module-context" "1.5.13"
