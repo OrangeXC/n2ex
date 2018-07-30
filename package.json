@@ -30,7 +30,7 @@
     "vue": "^2.5.16"
   },
   "devDependencies": {
-    "@vue/test-utils": "^1.0.0-beta.21",
+    "@vue/test-utils": "^1.0.0-beta.22",
     "ava": "1.0.0-beta.6",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
@@ -54,6 +54,6 @@
     "scmp": "^2.0.0",
     "sinon": "^6.1.4",
     "vue-template-compiler": "^2.5.16",
-    "webpack": "^4.16.2"
+    "webpack": "^4.16.3"
   }
 }
