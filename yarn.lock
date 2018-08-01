@@ -488,9 +488,9 @@
     source-map "^0.5.6"
     vue-template-es2015-compiler "^1.6.0"
 
-"@vue/test-utils@^1.0.0-beta.22":
-  version "1.0.0-beta.22"
-  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-1.0.0-beta.22.tgz#f630d556ead51c6ebc0584f7c15835f4508dc83f"
+"@vue/test-utils@^1.0.0-beta.23":
+  version "1.0.0-beta.23"
+  resolved "https://registry.yarnpkg.com/@vue%2ftest-utils/-/test-utils-1.0.0-beta.23.tgz#d6ead08f524c745255ecf3f1675e66149a014ef9"
   dependencies:
     lodash "^4.17.4"
 
@@ -5580,9 +5580,9 @@ multimatch@^2.1.0:
     arrify "^1.0.0"
     minimatch "^3.0.0"
 
-muse-ui@^3.0.0-rc.6:
-  version "3.0.0-rc.6"
-  resolved "https://registry.yarnpkg.com/muse-ui/-/muse-ui-3.0.0-rc.6.tgz#23987dd5d2a0c38696bd0f74eff6c80b5d93f022"
+muse-ui@^3.0.0-rc.7:
+  version "3.0.0-rc.7"
+  resolved "https://registry.yarnpkg.com/muse-ui/-/muse-ui-3.0.0-rc.7.tgz#bb4f8cb1893f57835e0d6fef2aad608335c6a1f6"
   dependencies:
     body-scroll-lock "^2.4.6"
     dayjs "^1.6.5"

@@ -24,13 +24,13 @@
     "cross-env": "^5.2.0",
     "element-ui": "^2.4.5",
     "koa": "^2.5.2",
-    "muse-ui": "^3.0.0-rc.6",
+    "muse-ui": "^3.0.0-rc.7",
     "nuxt": "npm:nuxt-edge",
     "source-map-support": "^0.5.6",
     "vue": "^2.5.16"
   },
   "devDependencies": {
-    "@vue/test-utils": "^1.0.0-beta.22",
+    "@vue/test-utils": "^1.0.0-beta.23",
     "ava": "1.0.0-beta.6",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
