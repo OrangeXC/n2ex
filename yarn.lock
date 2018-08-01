@@ -490,7 +490,7 @@
 
 "@vue/test-utils@^1.0.0-beta.23":
   version "1.0.0-beta.23"
-  resolved "http://npm.zhaopin.com/@vue%2ftest-utils/-/test-utils-1.0.0-beta.23.tgz#d6ead08f524c745255ecf3f1675e66149a014ef9"
+  resolved "https://registry.yarnpkg.com/@vue%2ftest-utils/-/test-utils-1.0.0-beta.23.tgz#d6ead08f524c745255ecf3f1675e66149a014ef9"
   dependencies:
     lodash "^4.17.4"
 
@@ -5582,7 +5582,7 @@ multimatch@^2.1.0:
 
 muse-ui@^3.0.0-rc.7:
   version "3.0.0-rc.7"
-  resolved "http://npm.zhaopin.com/muse-ui/-/muse-ui-3.0.0-rc.7.tgz#bb4f8cb1893f57835e0d6fef2aad608335c6a1f6"
+  resolved "https://registry.yarnpkg.com/muse-ui/-/muse-ui-3.0.0-rc.7.tgz#bb4f8cb1893f57835e0d6fef2aad608335c6a1f6"
   dependencies:
     body-scroll-lock "^2.4.6"
     dayjs "^1.6.5"
