@@ -50,7 +50,7 @@
     "require-extension-hooks": "^0.3.2",
     "require-extension-hooks-babel": "^0.1.1",
     "require-extension-hooks-vue": "^1.0.1",
-    "sass-loader": "^7.0.3",
+    "sass-loader": "^7.1.0",
     "scmp": "^2.0.0",
     "sinon": "^6.1.4",
     "vue-template-compiler": "^2.5.16",
