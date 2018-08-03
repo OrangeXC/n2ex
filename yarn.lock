@@ -8990,7 +8990,7 @@ webpack@^4.14.0:
 
 webpack@^4.16.4:
   version "4.16.4"
-  resolved "http://npm.zhaopin.com/webpack/-/webpack-4.16.4.tgz#6b020f76483bc66339164c296d89978aa100d37a"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.16.4.tgz#6b020f76483bc66339164c296d89978aa100d37a"
   dependencies:
     "@webassemblyjs/ast" "1.5.13"
     "@webassemblyjs/helper-module-context" "1.5.13"
