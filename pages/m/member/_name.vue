@@ -9,7 +9,7 @@
         >
         <mu-card-header :title="user.username" :subTitle="user.tagline">
           <mu-avatar slot="avatar">
-            <img :src="user.avatar_normal" alt="avatar">
+            <img :src="user.avatar_normal | largeAvatar" alt="avatar">
           </mu-avatar>
         </mu-card-header>
         <mu-card-actions>

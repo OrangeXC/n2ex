@@ -4,7 +4,8 @@ import {
   host,
   timeAgo,
   format,
-  image
+  image,
+  largeAvatar
 } from '../../plugins/filters'
 
 test('export functions', t => {
@@ -38,4 +39,10 @@ test('format', t => {
 test('image', t => {
   t.is(image('/static/img/node_mini.png'), 'https://www.v2ex.com/static/img/node_mini.png')
   t.is(image('test.png'), 'test.png')
+})
+
+test('largeAvatar', t => {
+  t.is(largeAvatar('https://cdn.v2ex.com/avatar/mini.png'), 'https://cdn.v2ex.com/avatar/large.png'),
+  t.is(largeAvatar('https://cdn.v2ex.com/gravatar?s=24'), 'https://cdn.v2ex.com/gravatar?s=60')
+  t.is(largeAvatar('https://cdn.v2ex.com/avatar.png'), 'https://cdn.v2ex.com/avatar.png')
 })

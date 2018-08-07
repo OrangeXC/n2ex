@@ -3,6 +3,7 @@ import test from 'ava'
 import sinon from 'sinon'
 import Vue from 'vue'
 import Comment from '../../../components/Comment'
+import { largeAvatar } from '../../../plugins/filters'
 import mocks from '../__mocks__'
 
 test.before(t => {
@@ -24,7 +25,8 @@ test.before(t => {
 test('template', t => {
   const { comments } = t.context
   const wrapper = shallowMount(Comment, {
-    propsData: { comments }
+    propsData: { comments },
+    filters: { largeAvatar }
   })
 
   t.is(wrapper.findAll('mu-list-item').length, comments.length)

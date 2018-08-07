@@ -7,7 +7,7 @@
           <mu-list-item>
             <mu-list-item-action>
               <mu-avatar @click="toMember(item.member.username)">
-                <img :src="item.member.avatar_normal" alt="avatar">
+                <img :src="item.member.avatar_normal | largeAvatar" alt="avatar">
               </mu-avatar>
             </mu-list-item-action>
             <mu-list-item-content>

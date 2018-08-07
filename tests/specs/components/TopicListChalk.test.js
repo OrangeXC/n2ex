@@ -3,6 +3,7 @@ import test from 'ava'
 import sinon from 'sinon'
 import Vue from 'vue'
 import TopicListChalk from '../../../components/TopicListChalk'
+import { largeAvatar } from '../../../plugins/filters'
 import mocks from '../__mocks__'
 
 test.before(t => {
@@ -21,7 +22,8 @@ test.before(t => {
 test('template', t => {
   const { topicList } = t.context
   const wrapper = shallowMount(TopicListChalk, {
-    propsData: { topicList }
+    propsData: { topicList },
+    filters: { largeAvatar }
   })
 
   t.is(wrapper.findAll('el-card').length, topicList.length)
@@ -62,7 +64,8 @@ test('methods: toTopic', t => {
     propsData: { topicList },
     mocks: {
       $router
-    }
+    },
+    filters: { largeAvatar }
   })
 
   topicList.forEach((item, index) => {
@@ -87,7 +90,8 @@ test('methods: toNode', t => {
     propsData: { topicList },
     mocks: {
       $router
-    }
+    },
+    filters: { largeAvatar }
   })
 
   topicList.forEach((item, index) => {
@@ -110,7 +114,8 @@ test('methods: toMember', t => {
     propsData: { topicList },
     mocks: {
       $router
-    }
+    },
+    filters: { largeAvatar }
   })
 
   topicList.forEach((item, index) => {

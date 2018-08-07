@@ -6,7 +6,7 @@
       </div>
       <div class="card-wrap">
         <div class="avatar">
-          <img :src="item.member.avatar_large" alt="avatar">
+          <img :src="item.member.avatar_large | largeAvatar" alt="avatar">
         </div>
         <div>
           <div class="card-content">

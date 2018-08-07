@@ -3,7 +3,7 @@
     <el-card>
       <div slot="header" class="card card-header">
         <div class="avatar">
-          <img :src="detail.member.avatar_large" alt="avatar">
+          <img :src="detail.member.avatar_large | largeAvatar" alt="avatar">
         </div>
         <div class="card-header-content">
           <div class="title">{{ detail.title }}</div>

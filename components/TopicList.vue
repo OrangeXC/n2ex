@@ -3,8 +3,8 @@
     <mu-card v-for="item in topicList" :key="item.id">
       <nuxt-link :to="`/m/topic/${item.id}`">
         <mu-card-header :title="item.title" :subTitle="getSubTitle(item)">
-          <mu-avatar :src="item.member.avatar_normal" slot="avatar">
-            <img :src="item.member.avatar_normal" alt="avatar">
+          <mu-avatar slot="avatar">
+            <img :src="item.member.avatar_normal | largeAvatar" alt="avatar">
           </mu-avatar>
         </mu-card-header>
       </nuxt-link>
