@@ -3,7 +3,7 @@ import test from 'ava'
 import sinon from 'sinon'
 import Vue from 'vue'
 import TopicList from '../../../components/TopicList'
-import { timeAgo } from '../../../plugins/filters'
+import { timeAgo, largeAvatar } from '../../../plugins/filters'
 import mocks from '../__mocks__'
 
 test.before(t => {
@@ -23,7 +23,8 @@ test.before(t => {
 test('template', t => {
   const { topicList } = t.context
   const wrapper = shallowMount(TopicList, {
-    propsData: { topicList }
+    propsData: { topicList },
+    filters: { largeAvatar }
   })
 
   t.is(wrapper.findAll('mu-card').length, topicList.length)
@@ -59,7 +60,8 @@ test('methods: toNode', t => {
     propsData: { topicList },
     mocks: {
       $router
-    }
+    },
+    filters: { largeAvatar }
   })
 
   topicList.forEach((item, index) => {
@@ -75,7 +77,8 @@ test('methods: getSubTitle', t => {
   const { topicList } = t.context
 
   const wrapper = shallowMount(TopicList, {
-    propsData: { topicList }
+    propsData: { topicList },
+    filters: { largeAvatar }
   })
 
   topicList.forEach(item => {

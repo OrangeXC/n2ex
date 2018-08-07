@@ -9,7 +9,7 @@
         >
         <div slot="header" class="card card-header">
           <div class="avatar">
-            <img :src="user.avatar_large" alt="avatar">
+            <img :src="user.avatar_large | largeAvatar" alt="avatar">
           </div>
           <div class="title">{{ user.username }}</div>
         </div>

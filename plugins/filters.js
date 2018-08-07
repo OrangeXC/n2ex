@@ -40,11 +40,24 @@ export function image (url) {
   return `https://www.v2ex.com${url}`
 }
 
+export function largeAvatar (url) {
+  if (url.indexOf('avatar') > -1 && url.indexOf('mini') > -1) {
+    return url.replace('mini', 'large')
+  }
+
+  if (url.indexOf('gravatar') > -1 && url.indexOf('s=24') > -1) {
+    return url.replace('s=24', 's=60')
+  }
+
+  return url
+}
+
 const filters = {
   host,
   timeAgo,
   format,
-  image
+  image,
+  largeAvatar
 }
 
 Object.keys(filters).forEach(key => {

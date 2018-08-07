@@ -4,7 +4,7 @@
       <nuxt-link :to="'/m/member/' + detail.member.username">
         <mu-card-header :title="detail.title" :subTitle="detail.member.username">
           <mu-avatar slot="avatar">
-            <img :src="detail.member.avatar_normal" alt="avatar">
+            <img :src="detail.member.avatar_normal | largeAvatar" alt="avatar">
           </mu-avatar>
         </mu-card-header>
       </nuxt-link>
