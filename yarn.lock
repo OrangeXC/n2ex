@@ -462,7 +462,7 @@
 
 "@sinonjs/commons@^1.0.1":
   version "1.0.2"
-  resolved "http://npm.zhaopin.com/@sinonjs%2fcommons/-/commons-1.0.2.tgz#3e0ac737781627b8844257fadc3d803997d0526e"
+  resolved "https://registry.yarnpkg.com/@sinonjs%2fcommons/-/commons-1.0.2.tgz#3e0ac737781627b8844257fadc3d803997d0526e"
   dependencies:
     type-detect "4.0.8"
 
@@ -3028,7 +3028,7 @@ electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.47:
 
 element-ui@^2.4.6:
   version "2.4.6"
-  resolved "http://npm.zhaopin.com/element-ui/-/element-ui-2.4.6.tgz#524d3d4cac0b68745dda87311ef0d8fe541b5fc4"
+  resolved "https://registry.yarnpkg.com/element-ui/-/element-ui-2.4.6.tgz#524d3d4cac0b68745dda87311ef0d8fe541b5fc4"
   dependencies:
     async-validator "~1.8.1"
     babel-helper-vue-jsx-merge-props "^2.0.0"
@@ -3271,7 +3271,7 @@ eslint-plugin-html@^4.0.5:
 
 eslint-plugin-import@^2.14.0:
   version "2.14.0"
-  resolved "http://npm.zhaopin.com/eslint-plugin-import/-/eslint-plugin-import-2.14.0.tgz#6b17626d2e3e6ad52cfce8807a845d15e22111a8"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.14.0.tgz#6b17626d2e3e6ad52cfce8807a845d15e22111a8"
   dependencies:
     contains-path "^0.1.0"
     debug "^2.6.8"
@@ -5599,7 +5599,7 @@ node-fetch@1.6.3:
 
 node-gyp@^3.8.0:
   version "3.8.0"
-  resolved "http://npm.zhaopin.com/node-gyp/-/node-gyp-3.8.0.tgz#540304261c330e80d0d5edce253a68cb3964218c"
+  resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-3.8.0.tgz#540304261c330e80d0d5edce253a68cb3964218c"
   dependencies:
     fstream "^1.0.0"
     glob "^7.0.3"
@@ -5659,7 +5659,7 @@ node-pre-gyp@^0.10.0:
 
 node-sass@^4.9.3:
   version "4.9.3"
-  resolved "http://npm.zhaopin.com/node-sass/-/node-sass-4.9.3.tgz#f407cf3d66f78308bb1e346b24fa428703196224"
+  resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.9.3.tgz#f407cf3d66f78308bb1e346b24fa428703196224"
   dependencies:
     async-foreach "^0.1.3"
     chalk "^1.1.1"
@@ -6883,7 +6883,7 @@ postcss@^6.0.23:
 
 postcss@^7.0.0:
   version "7.0.2"
-  resolved "http://npm.zhaopin.com/postcss/-/postcss-7.0.2.tgz#7b5a109de356804e27f95a960bef0e4d5bc9bb18"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.2.tgz#7b5a109de356804e27f95a960bef0e4d5bc9bb18"
   dependencies:
     chalk "^2.4.1"
     source-map "^0.6.1"
@@ -7389,7 +7389,7 @@ require-extension-hooks-babel@^0.1.1:
 
 require-extension-hooks-vue@^1.1.0:
   version "1.1.0"
-  resolved "http://npm.zhaopin.com/require-extension-hooks-vue/-/require-extension-hooks-vue-1.1.0.tgz#e39ccec502396e330045f716b144c6fb59aaa4a8"
+  resolved "https://registry.yarnpkg.com/require-extension-hooks-vue/-/require-extension-hooks-vue-1.1.0.tgz#e39ccec502396e330045f716b144c6fb59aaa4a8"
   dependencies:
     consolidate "^0.15.0"
     postcss "^7.0.0"
@@ -7712,7 +7712,7 @@ simple-swizzle@^0.2.2:
 
 sinon@^6.1.5:
   version "6.1.5"
-  resolved "http://npm.zhaopin.com/sinon/-/sinon-6.1.5.tgz#41451502d43cd5ffb9d051fbf507952400e81d09"
+  resolved "https://registry.yarnpkg.com/sinon/-/sinon-6.1.5.tgz#41451502d43cd5ffb9d051fbf507952400e81d09"
   dependencies:
     "@sinonjs/commons" "^1.0.1"
     "@sinonjs/formatio" "^2.0.0"
@@ -7804,7 +7804,7 @@ source-map-support@^0.5.6:
 
 source-map-support@^0.5.8:
   version "0.5.8"
-  resolved "http://npm.zhaopin.com/source-map-support/-/source-map-support-0.5.8.tgz#04f5581713a8a65612d0175fbf3a01f80a162613"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.8.tgz#04f5581713a8a65612d0175fbf3a01f80a162613"
   dependencies:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
