@@ -6577,9 +6577,9 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
-nuxt-edge@^2.0.0-25582919.567dc86:
-  version "2.0.0-25582919.567dc86"
-  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.0.0-25582919.567dc86.tgz#624d5c9104a5bfe3d0f569bb792d75bc02d483dd"
+nuxt-edge@^2.0.0-25584099.43f639b:
+  version "2.0.0-25584099.43f639b"
+  resolved "http://npm.zhaopin.com/nuxt-edge/-/nuxt-edge-2.0.0-25584099.43f639b.tgz#fd9372060f067e76ee4673aa8e80d86ce7328d42"
   dependencies:
     "@babel/core" "7.0.0-rc.1"
     "@nuxtjs/babel-preset-app" "^0.3.0"
