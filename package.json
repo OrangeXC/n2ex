@@ -20,12 +20,12 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
     "@nuxtjs/component-cache": "^1.1.2",
-    "@nuxtjs/pwa": "^2.0.8",
+    "@nuxtjs/pwa": "^2.3.2",
     "cross-env": "^5.2.0",
     "element-ui": "^2.4.6",
     "koa": "^2.5.2",
     "muse-ui": "^3.0.0",
-    "nuxt-edge": "^2.0.0-25584099.43f639b",
+    "nuxt-edge": "^2.0.0-25586998.83d9dc4",
     "source-map-support": "^0.5.9",
     "vue": "^2.5.17"
   },
