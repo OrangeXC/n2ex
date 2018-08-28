@@ -1,5 +1,5 @@
 import Koa from 'koa'
-import { Nuxt, Builder } from 'nuxt'
+import { Nuxt, Builder } from 'nuxt-edge'
 
 async function start () {
   const app = new Koa()
