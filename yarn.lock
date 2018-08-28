@@ -47,7 +47,7 @@
 
 "@babel/code-frame@^7.0.0":
   version "7.0.0"
-  resolved "http://npm.zhaopin.com/@babel%2fcode-frame/-/code-frame-7.0.0.tgz#06e2ab19bdb535385559aabb5ba59729482800f8"
+  resolved "https://registry.yarnpkg.com/@babel%2fcode-frame/-/code-frame-7.0.0.tgz#06e2ab19bdb535385559aabb5ba59729482800f8"
   dependencies:
     "@babel/highlight" "^7.0.0"
 
@@ -112,7 +112,7 @@
 
 "@babel/generator@^7.0.0":
   version "7.0.0"
-  resolved "http://npm.zhaopin.com/@babel%2fgenerator/-/generator-7.0.0.tgz#1efd58bffa951dc846449e58ce3a1d7f02d393aa"
+  resolved "https://registry.yarnpkg.com/@babel%2fgenerator/-/generator-7.0.0.tgz#1efd58bffa951dc846449e58ce3a1d7f02d393aa"
   dependencies:
     "@babel/types" "^7.0.0"
     jsesc "^2.5.1"
@@ -194,7 +194,7 @@
 
 "@babel/helper-function-name@^7.0.0":
   version "7.0.0"
-  resolved "http://npm.zhaopin.com/@babel%2fhelper-function-name/-/helper-function-name-7.0.0.tgz#a68cc8d04420ccc663dd258f9cc41b8261efa2d4"
+  resolved "https://registry.yarnpkg.com/@babel%2fhelper-function-name/-/helper-function-name-7.0.0.tgz#a68cc8d04420ccc663dd258f9cc41b8261efa2d4"
   dependencies:
     "@babel/helper-get-function-arity" "^7.0.0"
     "@babel/template" "^7.0.0"
@@ -214,7 +214,7 @@
 
 "@babel/helper-get-function-arity@^7.0.0":
   version "7.0.0"
-  resolved "http://npm.zhaopin.com/@babel%2fhelper-get-function-arity/-/helper-get-function-arity-7.0.0.tgz#83572d4320e2a4657263734113c42868b64e49c3"
+  resolved "https://registry.yarnpkg.com/@babel%2fhelper-get-function-arity/-/helper-get-function-arity-7.0.0.tgz#83572d4320e2a4657263734113c42868b64e49c3"
   dependencies:
     "@babel/types" "^7.0.0"
 
@@ -356,7 +356,7 @@
 
 "@babel/helper-split-export-declaration@^7.0.0":
   version "7.0.0"
-  resolved "http://npm.zhaopin.com/@babel%2fhelper-split-export-declaration/-/helper-split-export-declaration-7.0.0.tgz#3aae285c0311c2ab095d997b8c9a94cad547d813"
+  resolved "https://registry.yarnpkg.com/@babel%2fhelper-split-export-declaration/-/helper-split-export-declaration-7.0.0.tgz#3aae285c0311c2ab095d997b8c9a94cad547d813"
   dependencies:
     "@babel/types" "^7.0.0"
 
@@ -412,7 +412,7 @@
 
 "@babel/highlight@^7.0.0":
   version "7.0.0"
-  resolved "http://npm.zhaopin.com/@babel%2fhighlight/-/highlight-7.0.0.tgz#f710c38c8d458e6dd9a201afb637fcb781ce99e4"
+  resolved "https://registry.yarnpkg.com/@babel%2fhighlight/-/highlight-7.0.0.tgz#f710c38c8d458e6dd9a201afb637fcb781ce99e4"
   dependencies:
     chalk "^2.0.0"
     esutils "^2.0.2"
@@ -428,7 +428,7 @@
 
 "@babel/parser@^7.0.0":
   version "7.0.0"
-  resolved "http://npm.zhaopin.com/@babel%2fparser/-/parser-7.0.0.tgz#697655183394facffb063437ddf52c0277698775"
+  resolved "https://registry.yarnpkg.com/@babel%2fparser/-/parser-7.0.0.tgz#697655183394facffb063437ddf52c0277698775"
 
 "@babel/plugin-proposal-async-generator-functions@7.0.0-beta.51":
   version "7.0.0-beta.51"
@@ -878,7 +878,7 @@
 
 "@babel/template@^7.0.0":
   version "7.0.0"
-  resolved "http://npm.zhaopin.com/@babel%2ftemplate/-/template-7.0.0.tgz#c2bc9870405959c89a9c814376a2ecb247838c80"
+  resolved "https://registry.yarnpkg.com/@babel%2ftemplate/-/template-7.0.0.tgz#c2bc9870405959c89a9c814376a2ecb247838c80"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/parser" "^7.0.0"
@@ -915,7 +915,7 @@
 
 "@babel/traverse@^7.0.0":
   version "7.0.0"
-  resolved "http://npm.zhaopin.com/@babel%2ftraverse/-/traverse-7.0.0.tgz#b1fe9b6567fdf3ab542cfad6f3b31f854d799a61"
+  resolved "https://registry.yarnpkg.com/@babel%2ftraverse/-/traverse-7.0.0.tgz#b1fe9b6567fdf3ab542cfad6f3b31f854d799a61"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/generator" "^7.0.0"
@@ -953,7 +953,7 @@
 
 "@babel/types@^7.0.0":
   version "7.0.0"
-  resolved "http://npm.zhaopin.com/@babel%2ftypes/-/types-7.0.0.tgz#6e191793d3c854d19c6749989e3bc55f0e962118"
+  resolved "https://registry.yarnpkg.com/@babel%2ftypes/-/types-7.0.0.tgz#6e191793d3c854d19c6749989e3bc55f0e962118"
   dependencies:
     esutils "^2.0.2"
     lodash "^4.17.10"
@@ -1873,7 +1873,7 @@ babel-core@^6.21.0, babel-core@^6.25.0, babel-core@^6.26.0, babel-core@^6.26.3:
 
 babel-eslint@^9.0.0:
   version "9.0.0"
-  resolved "http://npm.zhaopin.com/babel-eslint/-/babel-eslint-9.0.0.tgz#7d9445f81ed9f60aff38115f838970df9f2b6220"
+  resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-9.0.0.tgz#7d9445f81ed9f60aff38115f838970df9f2b6220"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/parser" "^7.0.0"
@@ -2010,7 +2010,7 @@ babel-loader@^7.1.0:
 
 babel-loader@^8.0.0:
   version "8.0.0"
-  resolved "http://npm.zhaopin.com/babel-loader/-/babel-loader-8.0.0.tgz#c42f2bef268d0d8bb4ceec5d02b540a9055d58a0"
+  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-8.0.0.tgz#c42f2bef268d0d8bb4ceec5d02b540a9055d58a0"
   dependencies:
     find-cache-dir "^1.0.0"
     loader-utils "^1.0.2"
