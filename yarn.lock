@@ -6398,9 +6398,9 @@ nodemon@^1.11.0:
     undefsafe "^2.0.2"
     update-notifier "^2.3.0"
 
-nodemon@^1.18.3:
-  version "1.18.3"
-  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-1.18.3.tgz#46e681ee0dd1b590562e03019b4c5df234f906f9"
+nodemon@^1.18.4:
+  version "1.18.4"
+  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-1.18.4.tgz#873f65fdb53220eb166180cf106b1354ac5d714d"
   dependencies:
     chokidar "^2.0.2"
     debug "^3.1.0"
@@ -6508,9 +6508,9 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
-nuxt-edge@^2.0.0-25591531.67528f1:
-  version "2.0.0-25591531.67528f1"
-  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.0.0-25591531.67528f1.tgz#bbe62779868ed2bf7225d61c121b82e9726c0180"
+nuxt-edge@^2.0.0-25592089.aeb33e0:
+  version "2.0.0-25592089.aeb33e0"
+  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.0.0-25592089.aeb33e0.tgz#1013829eed3cfa0cd5c71f39189c382d97b22d91"
   dependencies:
     "@babel/core" "^7.0.0"
     "@nuxtjs/babel-preset-app" "^0.5.0"
