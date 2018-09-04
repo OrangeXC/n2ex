@@ -4,11 +4,11 @@
 
 "@ava/babel-plugin-throws-helper@^3.0.0":
   version "3.0.0"
-  resolved "http://npm.zhaopin.com/@ava%2fbabel-plugin-throws-helper/-/babel-plugin-throws-helper-3.0.0.tgz#2c933ec22da0c4ce1fc5369f2b95452c70420586"
+  resolved "https://registry.yarnpkg.com/@ava%2fbabel-plugin-throws-helper/-/babel-plugin-throws-helper-3.0.0.tgz#2c933ec22da0c4ce1fc5369f2b95452c70420586"
 
 "@ava/babel-preset-stage-4@^2.0.0":
   version "2.0.0"
-  resolved "http://npm.zhaopin.com/@ava%2fbabel-preset-stage-4/-/babel-preset-stage-4-2.0.0.tgz#2cd072ff818e4432b87fd4c5fd5c5d1a405a4343"
+  resolved "https://registry.yarnpkg.com/@ava%2fbabel-preset-stage-4/-/babel-preset-stage-4-2.0.0.tgz#2cd072ff818e4432b87fd4c5fd5c5d1a405a4343"
   dependencies:
     "@babel/plugin-proposal-async-generator-functions" "^7.0.0"
     "@babel/plugin-proposal-object-rest-spread" "^7.0.0"
@@ -20,7 +20,7 @@
 
 "@ava/babel-preset-transform-test-files@4.0.0-beta.9":
   version "4.0.0-beta.9"
-  resolved "http://npm.zhaopin.com/@ava%2fbabel-preset-transform-test-files/-/babel-preset-transform-test-files-4.0.0-beta.9.tgz#dc06a02d62a17b3afad9610168b8e3dba826edbe"
+  resolved "https://registry.yarnpkg.com/@ava%2fbabel-preset-transform-test-files/-/babel-preset-transform-test-files-4.0.0-beta.9.tgz#dc06a02d62a17b3afad9610168b8e3dba826edbe"
   dependencies:
     "@ava/babel-plugin-throws-helper" "^3.0.0"
     babel-plugin-espower "3.0.0-beta.2"
@@ -1208,7 +1208,7 @@ autoprefixer@^8.5.0:
 
 ava@1.0.0-beta.8:
   version "1.0.0-beta.8"
-  resolved "http://npm.zhaopin.com/ava/-/ava-1.0.0-beta.8.tgz#e6e225405be478476610161138db220f91dca460"
+  resolved "https://registry.yarnpkg.com/ava/-/ava-1.0.0-beta.8.tgz#e6e225405be478476610161138db220f91dca460"
   dependencies:
     "@ava/babel-preset-stage-4" "^2.0.0"
     "@ava/babel-preset-transform-test-files" "4.0.0-beta.9"
@@ -1518,7 +1518,7 @@ babel-plugin-component@^1.1.1:
 
 babel-plugin-espower@3.0.0-beta.2:
   version "3.0.0-beta.2"
-  resolved "http://npm.zhaopin.com/babel-plugin-espower/-/babel-plugin-espower-3.0.0-beta.2.tgz#424f1260beab9ecd90eec2a833ccdee30a4a0f4d"
+  resolved "https://registry.yarnpkg.com/babel-plugin-espower/-/babel-plugin-espower-3.0.0-beta.2.tgz#424f1260beab9ecd90eec2a833ccdee30a4a0f4d"
   dependencies:
     "@babel/generator" "^7.0.0-beta.54"
     "@babel/parser" "^7.0.0-beta.54"
@@ -2364,11 +2364,11 @@ ci-info@^1.0.0:
 
 ci-info@^1.3.0:
   version "1.4.0"
-  resolved "http://npm.zhaopin.com/ci-info/-/ci-info-1.4.0.tgz#4841d53cad49f11b827b648ebde27a6e189b412f"
+  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.4.0.tgz#4841d53cad49f11b827b648ebde27a6e189b412f"
 
 ci-parallel-vars@^1.0.0:
   version "1.0.0"
-  resolved "http://npm.zhaopin.com/ci-parallel-vars/-/ci-parallel-vars-1.0.0.tgz#af97729ed1c7381911ca37bcea263d62638701b3"
+  resolved "https://registry.yarnpkg.com/ci-parallel-vars/-/ci-parallel-vars-1.0.0.tgz#af97729ed1c7381911ca37bcea263d62638701b3"
 
 cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
   version "1.0.4"
@@ -3462,7 +3462,7 @@ elliptic@^6.0.0:
 
 emittery@^0.4.1:
   version "0.4.1"
-  resolved "http://npm.zhaopin.com/emittery/-/emittery-0.4.1.tgz#abe9d3297389ba424ac87e53d1c701962ce7433d"
+  resolved "https://registry.yarnpkg.com/emittery/-/emittery-0.4.1.tgz#abe9d3297389ba424ac87e53d1c701962ce7433d"
 
 emojis-list@^2.0.0:
   version "2.1.0"
@@ -3470,7 +3470,7 @@ emojis-list@^2.0.0:
 
 empower-core@^1.2.0:
   version "1.2.0"
-  resolved "http://npm.zhaopin.com/empower-core/-/empower-core-1.2.0.tgz#ce3fb2484d5187fa29c23fba8344b0b2fdf5601c"
+  resolved "https://registry.yarnpkg.com/empower-core/-/empower-core-1.2.0.tgz#ce3fb2484d5187fa29c23fba8344b0b2fdf5601c"
   dependencies:
     call-signature "0.0.2"
     core-js "^2.0.0"
@@ -4269,7 +4269,7 @@ get-caller-file@^1.0.1:
 
 get-port@^4.0.0:
   version "4.0.0"
-  resolved "http://npm.zhaopin.com/get-port/-/get-port-4.0.0.tgz#373c85960138ee20027c070e3cb08019fea29816"
+  resolved "https://registry.yarnpkg.com/get-port/-/get-port-4.0.0.tgz#373c85960138ee20027c070e3cb08019fea29816"
 
 get-stdin@^4.0.1:
   version "4.0.1"
@@ -4868,7 +4868,7 @@ is-ci@^1.0.10, is-ci@^1.1.0:
 
 is-ci@^1.2.0:
   version "1.2.0"
-  resolved "http://npm.zhaopin.com/is-ci/-/is-ci-1.2.0.tgz#3f4a08d6303a09882cef3f0fb97439c5f5ce2d53"
+  resolved "https://registry.yarnpkg.com/is-ci/-/is-ci-1.2.0.tgz#3f4a08d6303a09882cef3f0fb97439c5f5ce2d53"
   dependencies:
     ci-info "^1.3.0"
 
@@ -6248,7 +6248,7 @@ number-is-nan@^1.0.0:
 
 nuxt-edge@^2.0.0-25599455.3a0f094:
   version "2.0.0-25599455.3a0f094"
-  resolved "http://npm.zhaopin.com/nuxt-edge/-/nuxt-edge-2.0.0-25599455.3a0f094.tgz#cf13754f5db64b2dd7dc75dc95807a80953a8bc6"
+  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.0.0-25599455.3a0f094.tgz#cf13754f5db64b2dd7dc75dc95807a80953a8bc6"
   dependencies:
     "@babel/core" "^7.0.0"
     "@nuxtjs/babel-preset-app" "^0.5.0"
@@ -6421,7 +6421,7 @@ optionator@^0.8.1, optionator@^0.8.2:
 
 ora@^3.0.0:
   version "3.0.0"
-  resolved "http://npm.zhaopin.com/ora/-/ora-3.0.0.tgz#8179e3525b9aafd99242d63cc206fd64732741d0"
+  resolved "https://registry.yarnpkg.com/ora/-/ora-3.0.0.tgz#8179e3525b9aafd99242d63cc206fd64732741d0"
   dependencies:
     chalk "^2.3.1"
     cli-cursor "^2.1.0"
@@ -8773,7 +8773,7 @@ supports-color@^5.2.0, supports-color@^5.3.0, supports-color@^5.4.0:
 
 supports-color@^5.5.0:
   version "5.5.0"
-  resolved "http://npm.zhaopin.com/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
+  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
   dependencies:
     has-flag "^3.0.0"
 
@@ -9523,7 +9523,7 @@ webpack-sources@^1.0.1, webpack-sources@^1.1.0:
 
 webpack-sources@^1.2.0:
   version "1.2.0"
-  resolved "http://npm.zhaopin.com/webpack-sources/-/webpack-sources-1.2.0.tgz#18181e0d013fce096faf6f8e6d41eeffffdceac2"
+  resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-1.2.0.tgz#18181e0d013fce096faf6f8e6d41eeffffdceac2"
   dependencies:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
@@ -9587,7 +9587,7 @@ webpack@^4.17.1:
 
 webpack@^4.17.2:
   version "4.17.2"
-  resolved "http://npm.zhaopin.com/webpack/-/webpack-4.17.2.tgz#49feb20205bd15f0a5f1fe0a12097d5d9931878d"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.17.2.tgz#49feb20205bd15f0a5f1fe0a12097d5d9931878d"
   dependencies:
     "@webassemblyjs/ast" "1.5.13"
     "@webassemblyjs/helper-module-context" "1.5.13"
