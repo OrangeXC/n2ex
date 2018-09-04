@@ -25,13 +25,14 @@
     "element-ui": "^2.4.6",
     "koa": "^2.5.2",
     "muse-ui": "^3.0.0",
-    "nuxt-edge": "^2.0.0-25598366.31ec2a2",
+    "nuxt-edge": "^2.0.0-25599455.3a0f094",
     "source-map-support": "^0.5.9",
     "vue": "^2.5.17"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0",
     "@vue/test-utils": "^1.0.0-beta.24",
-    "ava": "1.0.0-beta.6",
+    "ava": "1.0.0-beta.8",
     "babel-core": "^6.26.3",
     "babel-eslint": "^9.0.0",
     "babel-loader": "^8.0.2",
@@ -54,6 +55,6 @@
     "scmp": "^2.0.0",
     "sinon": "^6.1.5",
     "vue-template-compiler": "^2.5.17",
-    "webpack": "^4.17.1"
+    "webpack": "^4.17.2"
   }
 }
