@@ -25,7 +25,7 @@
     "element-ui": "^2.4.6",
     "koa": "^2.5.2",
     "muse-ui": "^3.0.0",
-    "nuxt-edge": "^2.0.0-25599455.3a0f094",
+    "nuxt-edge": "^2.0.0-25601591.3ca2f02",
     "source-map-support": "^0.5.9",
     "vue": "^2.5.17"
   },
@@ -53,7 +53,7 @@
     "require-extension-hooks-vue": "^1.1.0",
     "sass-loader": "^7.1.0",
     "scmp": "^2.0.0",
-    "sinon": "^6.1.5",
+    "sinon": "^6.2.0",
     "vue-template-compiler": "^2.5.17",
     "webpack": "^4.17.2"
   }
