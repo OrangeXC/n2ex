@@ -10,7 +10,9 @@
         </div>
         <div>
           <div class="card-content">
-            <span class="link" @click="toMember(item.member.username)">{{ item.member.username }}</span>
+            <span class="link" @click="toMember(item.member.username)">
+              {{ item.member.username }}
+            </span>
             • {{ item.created | timeAgo }}
             • 最后访问 {{ item.last_touched | timeAgo }}
           </div>

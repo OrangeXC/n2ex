@@ -4,7 +4,8 @@
       <el-menu
         :default-active="activeIndex"
         mode="horizontal"
-        router>
+        router
+      >
         <el-menu-item index="/">最热</el-menu-item>
         <el-menu-item index="/new">最新</el-menu-item>
         <el-menu-item index="/tab/tech">技术</el-menu-item>
