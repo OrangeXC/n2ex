@@ -763,9 +763,9 @@
     source-map "^0.5.6"
     vue-template-es2015-compiler "^1.6.0"
 
-"@vue/test-utils@^1.0.0-beta.24":
-  version "1.0.0-beta.24"
-  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-1.0.0-beta.24.tgz#da7c3165f49f57f23fdb98caccba0f511effb76f"
+"@vue/test-utils@^1.0.0-beta.25":
+  version "1.0.0-beta.25"
+  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-1.0.0-beta.25.tgz#4703076de3076bac42cdd242cd53e6fb8752ed8c"
   dependencies:
     lodash "^4.17.4"
 
@@ -1979,9 +1979,9 @@ body-parser@1.18.2:
     raw-body "2.3.2"
     type-is "~1.6.15"
 
-body-scroll-lock@^2.4.6:
-  version "2.4.6"
-  resolved "https://registry.yarnpkg.com/body-scroll-lock/-/body-scroll-lock-2.4.6.tgz#3ab8f6aff309cc5ce5ad7702f58308f755e262f3"
+body-scroll-lock@^2.5.7:
+  version "2.5.7"
+  resolved "https://registry.yarnpkg.com/body-scroll-lock/-/body-scroll-lock-2.5.7.tgz#2a3ffc87ef3aa3954ba44073625e5318117cf968"
 
 boolbase@^1.0.0, boolbase@~1.0.0:
   version "1.0.0"
@@ -3086,6 +3086,15 @@ cssnano@^4.0.5:
     is-resolvable "^1.0.0"
     postcss "^6.0.0"
 
+cssnano@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/cssnano/-/cssnano-4.1.0.tgz#682c37b84b9b7df616450a5a8dc9269b9bd10734"
+  dependencies:
+    cosmiconfig "^5.0.0"
+    cssnano-preset-default "^4.0.0"
+    is-resolvable "^1.0.0"
+    postcss "^6.0.0"
+
 csso@^3.5.0:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/csso/-/csso-3.5.1.tgz#7b9eb8be61628973c1b261e169d2f024008e758b"
@@ -3699,9 +3708,9 @@ eslint-plugin-node@^7.0.1:
     resolve "^1.8.1"
     semver "^5.5.0"
 
-eslint-plugin-promise@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-4.0.0.tgz#bc15a4aa04fa6116113b6c47488c421821b758fc"
+eslint-plugin-promise@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-4.0.1.tgz#2d074b653f35a23d1ba89d8e976a985117d1c6a2"
 
 eslint-plugin-standard@^4.0.0:
   version "4.0.0"
@@ -5395,6 +5404,13 @@ koa@^2.5.2:
     type-is "^1.6.16"
     vary "^1.1.2"
 
+last-call-webpack-plugin@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/last-call-webpack-plugin/-/last-call-webpack-plugin-3.0.0.tgz#9742df0e10e3cf46e5c0381c2de90d3a7a2d7555"
+  dependencies:
+    lodash "^4.17.5"
+    webpack-sources "^1.1.0"
+
 latest-version@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/latest-version/-/latest-version-3.1.0.tgz#a205383fea322b33b5ae3b18abee0dc2f356ee15"
@@ -5951,11 +5967,11 @@ multimatch@^2.1.0:
     arrify "^1.0.0"
     minimatch "^3.0.0"
 
-muse-ui@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/muse-ui/-/muse-ui-3.0.0.tgz#903d78c9520c132f88440465e85b74e72722e7f8"
+muse-ui@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/muse-ui/-/muse-ui-3.0.1.tgz#6c22cc424f3573b7c8ddcc5a662d40f2e4c8caea"
   dependencies:
-    body-scroll-lock "^2.4.6"
+    body-scroll-lock "^2.5.7"
     dayjs "^1.6.5"
     keycode "^2.1.9"
     normalize-wheel "^1.0.1"
@@ -6253,9 +6269,9 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
-nuxt-edge@^2.0.0-25603961.baaf67d:
-  version "2.0.0-25603961.baaf67d"
-  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.0.0-25603961.baaf67d.tgz#e30edd38782148f7113e192df75ad2c86afd204c"
+nuxt-edge@^2.0.0-25607354.1e02195:
+  version "2.0.0-25607354.1e02195"
+  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.0.0-25607354.1e02195.tgz#8071c46398b32ab7fb732ab466f4aa5ac24bfeae"
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/polyfill" "^7.0.0"
@@ -6290,6 +6306,7 @@ nuxt-edge@^2.0.0-25603961.baaf67d:
     memory-fs "^0.4.1"
     mini-css-extract-plugin "^0.4.2"
     minimist "^1.2.0"
+    optimize-css-assets-webpack-plugin "^5.0.1"
     pify "^4.0.0"
     postcss "^6.0.22"
     postcss-import "^11.1.0"
@@ -6415,6 +6432,13 @@ only@~0.0.2:
 opener@^1.4.3:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/opener/-/opener-1.4.3.tgz#5c6da2c5d7e5831e8ffa3964950f8d6674ac90b8"
+
+optimize-css-assets-webpack-plugin@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/optimize-css-assets-webpack-plugin/-/optimize-css-assets-webpack-plugin-5.0.1.tgz#9eb500711d35165b45e7fd60ba2df40cb3eb9159"
+  dependencies:
+    cssnano "^4.1.0"
+    last-call-webpack-plugin "^3.0.0"
 
 optionator@^0.8.1, optionator@^0.8.2:
   version "0.8.2"
