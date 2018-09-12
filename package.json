@@ -23,14 +23,14 @@
     "@nuxtjs/pwa": "^2.5.0",
     "cross-env": "^5.2.0",
     "element-ui": "^2.4.6",
-    "koa": "^2.5.2",
+    "koa": "^2.5.3",
     "muse-ui": "^3.0.1",
     "nuxt-edge": "^2.0.0-25609473.c77fa47",
     "source-map-support": "^0.5.9",
     "vue": "^2.5.17"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
+    "@babel/core": "^7.0.1",
     "@vue/test-utils": "^1.0.0-beta.25",
     "ava": "1.0.0-beta.8",
     "babel-core": "^6.26.3",
