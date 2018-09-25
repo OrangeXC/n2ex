@@ -859,14 +859,239 @@
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
 
-"@nuxtjs/axios@^5.3.1":
-  version "5.3.1"
-  resolved "http://registry.npmjs.org/@nuxtjs/axios/-/axios-5.3.1.tgz#9f9e6c817dae44c16955af659f6d5ac2a8085148"
+"@jimp/bmp@^0.5.3":
+  version "0.5.3"
+  resolved "http://npm.zhaopin.com/@jimp%2fbmp/-/bmp-0.5.3.tgz#7f1a854dc47666072bbea285d61ff38941c2e38a"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    bmp-js "^0.1.0"
+    core-js "^2.5.7"
+
+"@jimp/core@^0.5.3":
+  version "0.5.3"
+  resolved "http://npm.zhaopin.com/@jimp%2fcore/-/core-0.5.3.tgz#f55e045e96e116d20dd57f47c43e7387a8583ff7"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    any-base "^1.1.0"
+    buffer "^5.2.0"
+    core-js "^2.5.7"
+    exif-parser "^0.1.12"
+    file-type "^9.0.0"
+    load-bmfont "^1.3.1"
+    mkdirp "0.5.1"
+    phin "^2.9.1"
+    pixelmatch "^4.0.2"
+    tinycolor2 "^1.4.1"
+
+"@jimp/custom@^0.5.3":
+  version "0.5.3"
+  resolved "http://npm.zhaopin.com/@jimp%2fcustom/-/custom-0.5.3.tgz#b932241e62d628bd465541efafaaddb0a720def6"
+  dependencies:
+    "@jimp/core" "^0.5.3"
+    core-js "^2.5.7"
+
+"@jimp/gif@^0.5.0":
+  version "0.5.0"
+  resolved "http://npm.zhaopin.com/@jimp%2fgif/-/gif-0.5.0.tgz#7543870b3d744c9758da76ca43fac4ee48fd6a00"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+    omggif "^1.0.9"
+
+"@jimp/jpeg@^0.5.3":
+  version "0.5.3"
+  resolved "http://npm.zhaopin.com/@jimp%2fjpeg/-/jpeg-0.5.3.tgz#61ec088dddb7d2e1e0bb1108a7b1fbbe965f76f6"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+    jpeg-js "^0.3.4"
+
+"@jimp/plugin-blit@^0.5.3":
+  version "0.5.3"
+  resolved "http://npm.zhaopin.com/@jimp%2fplugin-blit/-/plugin-blit-0.5.3.tgz#b65624ba54cbc2ca589fd702f9847910493ffd1e"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+
+"@jimp/plugin-blur@^0.5.0":
+  version "0.5.0"
+  resolved "http://npm.zhaopin.com/@jimp%2fplugin-blur/-/plugin-blur-0.5.0.tgz#c8222bdae8eb4cc86613c0adbcb26a92829739a2"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+
+"@jimp/plugin-color@^0.5.3":
+  version "0.5.3"
+  resolved "http://npm.zhaopin.com/@jimp%2fplugin-color/-/plugin-color-0.5.3.tgz#cf1561ddd82554651a065437e617d4c97db8f110"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+    tinycolor2 "^1.4.1"
+
+"@jimp/plugin-contain@^0.5.3":
+  version "0.5.3"
+  resolved "http://npm.zhaopin.com/@jimp%2fplugin-contain/-/plugin-contain-0.5.3.tgz#b67c183e5f680bd3ace5d186f2933f670f9d830a"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+
+"@jimp/plugin-cover@^0.5.3":
+  version "0.5.3"
+  resolved "http://npm.zhaopin.com/@jimp%2fplugin-cover/-/plugin-cover-0.5.3.tgz#da6f2ead2bca8ac0ea618f3b82d6ecb4f776bbea"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+
+"@jimp/plugin-crop@^0.5.3":
+  version "0.5.3"
+  resolved "http://npm.zhaopin.com/@jimp%2fplugin-crop/-/plugin-crop-0.5.3.tgz#30c5a06dc4ac3d4ecf0a38a44fe54d68f54a77c7"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+
+"@jimp/plugin-displace@^0.5.0":
+  version "0.5.0"
+  resolved "http://npm.zhaopin.com/@jimp%2fplugin-displace/-/plugin-displace-0.5.0.tgz#cb75d8588bdee45c1bdb1bec2323705d0e53d060"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+
+"@jimp/plugin-dither@^0.5.0":
+  version "0.5.0"
+  resolved "http://npm.zhaopin.com/@jimp%2fplugin-dither/-/plugin-dither-0.5.0.tgz#0f1f6b7dcd5aba8f908bbd4b60685fc29cc6a3ed"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+
+"@jimp/plugin-flip@^0.5.0":
+  version "0.5.0"
+  resolved "http://npm.zhaopin.com/@jimp%2fplugin-flip/-/plugin-flip-0.5.0.tgz#4a973c9c4bdc6dbcc7da66204a2bb2b12feb9381"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+
+"@jimp/plugin-gaussian@^0.5.0":
+  version "0.5.0"
+  resolved "http://npm.zhaopin.com/@jimp%2fplugin-gaussian/-/plugin-gaussian-0.5.0.tgz#02c9f07516108e01ba0f2938289b08e6e865c2c9"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+
+"@jimp/plugin-invert@^0.5.0":
+  version "0.5.0"
+  resolved "http://npm.zhaopin.com/@jimp%2fplugin-invert/-/plugin-invert-0.5.0.tgz#4496d2d67ab498c8fa3e89c4b6dd5892e7f14b9b"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+
+"@jimp/plugin-mask@^0.5.3":
+  version "0.5.3"
+  resolved "http://npm.zhaopin.com/@jimp%2fplugin-mask/-/plugin-mask-0.5.3.tgz#fde86357255c58db0ca4094ea2a8506ea6b33fe9"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+
+"@jimp/plugin-normalize@^0.5.3":
+  version "0.5.3"
+  resolved "http://npm.zhaopin.com/@jimp%2fplugin-normalize/-/plugin-normalize-0.5.3.tgz#d5470c87bba17807ab5847ddc8b3e2e044899218"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+
+"@jimp/plugin-print@^0.5.3":
+  version "0.5.3"
+  resolved "http://npm.zhaopin.com/@jimp%2fplugin-print/-/plugin-print-0.5.3.tgz#1ee6fca1bd67cc1675e23ea6e04ec636b5937247"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+    load-bmfont "^1.4.0"
+
+"@jimp/plugin-resize@^0.5.3":
+  version "0.5.3"
+  resolved "http://npm.zhaopin.com/@jimp%2fplugin-resize/-/plugin-resize-0.5.3.tgz#970c796469f6af9fb4d887c1e05d30e03d3a9529"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+
+"@jimp/plugin-rotate@^0.5.3":
+  version "0.5.3"
+  resolved "http://npm.zhaopin.com/@jimp%2fplugin-rotate/-/plugin-rotate-0.5.3.tgz#193af131c045e194c11ce24e77dd6cb0d9b50757"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+
+"@jimp/plugin-scale@^0.5.0":
+  version "0.5.0"
+  resolved "http://npm.zhaopin.com/@jimp%2fplugin-scale/-/plugin-scale-0.5.0.tgz#095f937e5a4887481b3074f5cd6a144d8f4f815e"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+
+"@jimp/plugins@^0.5.3":
+  version "0.5.3"
+  resolved "http://npm.zhaopin.com/@jimp%2fplugins/-/plugins-0.5.3.tgz#c9a5000c1d7051c715683c1c8ed61a290a75bc97"
+  dependencies:
+    "@jimp/plugin-blit" "^0.5.3"
+    "@jimp/plugin-blur" "^0.5.0"
+    "@jimp/plugin-color" "^0.5.3"
+    "@jimp/plugin-contain" "^0.5.3"
+    "@jimp/plugin-cover" "^0.5.3"
+    "@jimp/plugin-crop" "^0.5.3"
+    "@jimp/plugin-displace" "^0.5.0"
+    "@jimp/plugin-dither" "^0.5.0"
+    "@jimp/plugin-flip" "^0.5.0"
+    "@jimp/plugin-gaussian" "^0.5.0"
+    "@jimp/plugin-invert" "^0.5.0"
+    "@jimp/plugin-mask" "^0.5.3"
+    "@jimp/plugin-normalize" "^0.5.3"
+    "@jimp/plugin-print" "^0.5.3"
+    "@jimp/plugin-resize" "^0.5.3"
+    "@jimp/plugin-rotate" "^0.5.3"
+    "@jimp/plugin-scale" "^0.5.0"
+    core-js "^2.5.7"
+    timm "^1.6.1"
+
+"@jimp/png@^0.5.3":
+  version "0.5.3"
+  resolved "http://npm.zhaopin.com/@jimp%2fpng/-/png-0.5.3.tgz#a3c46e556525070daf760dfc389ac01a9b3faa50"
+  dependencies:
+    "@jimp/utils" "^0.5.0"
+    core-js "^2.5.7"
+    pngjs "^3.3.3"
+
+"@jimp/tiff@^0.5.3":
+  version "0.5.3"
+  resolved "http://npm.zhaopin.com/@jimp%2ftiff/-/tiff-0.5.3.tgz#e3c1677a166a19e1adeab1a86129dffe9f9254c6"
+  dependencies:
+    core-js "^2.5.7"
+    utif "^2.0.1"
+
+"@jimp/types@^0.5.3":
+  version "0.5.3"
+  resolved "http://npm.zhaopin.com/@jimp%2ftypes/-/types-0.5.3.tgz#bd3b2a9cf26e0b59a94a882bfd4b4f767592bd95"
+  dependencies:
+    "@jimp/bmp" "^0.5.3"
+    "@jimp/gif" "^0.5.0"
+    "@jimp/jpeg" "^0.5.3"
+    "@jimp/png" "^0.5.3"
+    "@jimp/tiff" "^0.5.3"
+    core-js "^2.5.7"
+    timm "^1.6.1"
+
+"@jimp/utils@^0.5.0":
+  version "0.5.0"
+  resolved "http://npm.zhaopin.com/@jimp%2futils/-/utils-0.5.0.tgz#ecb33259c75238053d6c7706a3e91f657dbabf91"
+  dependencies:
+    core-js "^2.5.7"
+
+"@nuxtjs/axios@^5.3.2":
+  version "5.3.2"
+  resolved "http://npm.zhaopin.com/@nuxtjs%2faxios/-/axios-5.3.2.tgz#0b04141f3177ccc83e71ee00b7c57c0d06a38290"
   dependencies:
     "@nuxtjs/proxy" "^1.2.4"
     axios "^0.18.0"
-    axios-retry "^3.0.2"
-    consola "^1.1.4"
+    axios-retry "^3.1.1"
+    consola "^1.4.3"
 
 "@nuxtjs/babel-preset-app@^0.7.0":
   version "0.7.0"
@@ -898,23 +1123,23 @@
     string-width "^2.0.0"
     strip-ansi "^4.0.0"
 
-"@nuxtjs/icon@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/icon/-/icon-2.5.0.tgz#a5be9c80bde02f0e7159a16d6cd767ff20ee6434"
+"@nuxtjs/icon@^2.6.0":
+  version "2.6.0"
+  resolved "http://npm.zhaopin.com/@nuxtjs%2ficon/-/icon-2.6.0.tgz#65295ee059794f01e41a52c4141c06e898e798bc"
   dependencies:
     fs-extra "^7.0.0"
     hash-sum "^1.0.2"
-    jimp "0.3.4"
+    jimp "^0.5.0"
 
-"@nuxtjs/manifest@^2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/manifest/-/manifest-2.4.0.tgz#78148c172f46d7c8e677cf67f8d6752def2542fe"
+"@nuxtjs/manifest@^2.6.0":
+  version "2.6.0"
+  resolved "http://npm.zhaopin.com/@nuxtjs%2fmanifest/-/manifest-2.6.0.tgz#eb2ffdf9335a882c08b259578c346cee72920077"
   dependencies:
     hash-sum "^1.0.2"
 
-"@nuxtjs/meta@^2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/meta/-/meta-2.4.0.tgz#910490c0cb7f204430663122218386472476bde3"
+"@nuxtjs/meta@^2.6.0":
+  version "2.6.0"
+  resolved "http://npm.zhaopin.com/@nuxtjs%2fmeta/-/meta-2.6.0.tgz#cc8fd2a019fb3e2e1feaa78abefee3a6a6aed477"
 
 "@nuxtjs/opencollective@^0.1.0":
   version "0.1.0"
@@ -932,19 +1157,20 @@
     consola "^1.1.4"
     http-proxy-middleware "^0.18.0"
 
-"@nuxtjs/pwa@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/pwa/-/pwa-2.5.0.tgz#deb97bca6f8afb23f9fcaa2695ebce03dd914873"
+"@nuxtjs/pwa@^2.6.0":
+  version "2.6.0"
+  resolved "http://npm.zhaopin.com/@nuxtjs%2fpwa/-/pwa-2.6.0.tgz#3138e1f32f4d080ccbe96dc0b206efea4e790199"
   dependencies:
-    "@nuxtjs/icon" "^2.5.0"
-    "@nuxtjs/manifest" "^2.4.0"
-    "@nuxtjs/meta" "^2.4.0"
-    "@nuxtjs/workbox" "^2.4.0"
+    "@nuxtjs/icon" "^2.6.0"
+    "@nuxtjs/manifest" "^2.6.0"
+    "@nuxtjs/meta" "^2.6.0"
+    "@nuxtjs/workbox" "^2.6.0"
 
-"@nuxtjs/workbox@^2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/workbox/-/workbox-2.4.0.tgz#61d3f6996e048a2e574cf0be07544dd040867969"
+"@nuxtjs/workbox@^2.6.0":
+  version "2.6.0"
+  resolved "http://npm.zhaopin.com/@nuxtjs%2fworkbox/-/workbox-2.6.0.tgz#eb057e7cbddc8f50bc181a5af9795cc93bd774d8"
   dependencies:
+    lodash "^4.17.11"
     workbox-build "^3.4.1"
 
 "@nuxtjs/youch@^4.2.3":
@@ -1522,9 +1748,9 @@ aws4@^1.6.0, aws4@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
 
-axios-retry@^3.0.2:
+axios-retry@^3.1.1:
   version "3.1.1"
-  resolved "https://registry.yarnpkg.com/axios-retry/-/axios-retry-3.1.1.tgz#88d2971f671a9023b21d887c5dcac6c54f332cde"
+  resolved "http://npm.zhaopin.com/axios-retry/-/axios-retry-3.1.1.tgz#88d2971f671a9023b21d887c5dcac6c54f332cde"
   dependencies:
     is-retry-allowed "^1.1.0"
 
@@ -2182,9 +2408,9 @@ bluebird@^3.1.1, bluebird@^3.5.1:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.2.tgz#1be0908e054a751754549c270489c1505d4ab15a"
 
-bmp-js@0.1.0:
+bmp-js@^0.1.0:
   version "0.1.0"
-  resolved "https://registry.yarnpkg.com/bmp-js/-/bmp-js-0.1.0.tgz#e05a63f796a6c1ff25f4771ec7adadc148c07233"
+  resolved "http://npm.zhaopin.com/bmp-js/-/bmp-js-0.1.0.tgz#e05a63f796a6c1ff25f4771ec7adadc148c07233"
 
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
   version "4.11.8"
@@ -3759,9 +3985,9 @@ eslint-plugin-es@^1.3.1:
     eslint-utils "^1.3.0"
     regexpp "^2.0.0"
 
-eslint-plugin-html@^4.0.5:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-html/-/eslint-plugin-html-4.0.5.tgz#e8ec7e16485124460f3bff312016feb0a54d9659"
+eslint-plugin-html@^4.0.6:
+  version "4.0.6"
+  resolved "http://npm.zhaopin.com/eslint-plugin-html/-/eslint-plugin-html-4.0.6.tgz#724bb9272efb4df007dfee8dfb269ed83577e5b4"
   dependencies:
     htmlparser2 "^3.8.2"
 
@@ -5231,24 +5457,15 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
-jimp@0.3.4:
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/jimp/-/jimp-0.3.4.tgz#df0bca587c28c263102dc72af712bda01a211c51"
+jimp@^0.5.0:
+  version "0.5.3"
+  resolved "http://npm.zhaopin.com/jimp/-/jimp-0.5.3.tgz#6f411ee4eb459686f6f8e11a31faa08c6dfac922"
   dependencies:
-    any-base "^1.1.0"
-    bmp-js "0.1.0"
-    buffer "^5.2.0"
-    exif-parser "^0.1.12"
-    file-type "^9.0.0"
-    jpeg-js "^0.3.4"
-    load-bmfont "^1.3.0"
-    mkdirp "0.5.1"
-    omggif "^1.0.9"
-    phin "^2.9.1"
-    pixelmatch "^4.0.2"
-    pngjs "^3.3.3"
-    tinycolor2 "^1.4.1"
-    utif "^2.0.0"
+    "@babel/polyfill" "^7.0.0"
+    "@jimp/custom" "^0.5.3"
+    "@jimp/plugins" "^0.5.3"
+    "@jimp/types" "^0.5.3"
+    core-js "^2.5.7"
 
 joi@^11.1.1:
   version "11.4.0"
@@ -5523,9 +5740,9 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-load-bmfont@^1.3.0:
+load-bmfont@^1.3.1, load-bmfont@^1.4.0:
   version "1.4.0"
-  resolved "https://registry.yarnpkg.com/load-bmfont/-/load-bmfont-1.4.0.tgz#75f17070b14a8c785fe7f5bee2e6fd4f98093b6b"
+  resolved "http://npm.zhaopin.com/load-bmfont/-/load-bmfont-1.4.0.tgz#75f17070b14a8c785fe7f5bee2e6fd4f98093b6b"
   dependencies:
     buffer-equal "0.0.1"
     mime "^1.3.4"
@@ -6327,9 +6544,9 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
-nuxt-edge@^2.0.0-25624683.7a68e1d:
-  version "2.0.0-25624683.7a68e1d"
-  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.0.0-25624683.7a68e1d.tgz#425139de70b7d23460402fa2e7ac08982c7079b7"
+nuxt@^2.0.0:
+  version "2.0.0"
+  resolved "http://npm.zhaopin.com/nuxt/-/nuxt-2.0.0.tgz#1fbe9dc446ed156cada77212926930c52f1efeae"
   dependencies:
     "@babel/core" "^7.1.0"
     "@babel/polyfill" "^7.0.0"
@@ -8827,6 +9044,10 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
+timm@^1.6.1:
+  version "1.6.1"
+  resolved "http://npm.zhaopin.com/timm/-/timm-1.6.1.tgz#5f8aafc932248c76caf2c6af60542a32d3c30701"
+
 timsort@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
@@ -9188,9 +9409,9 @@ use@^3.1.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
 
-utif@^2.0.0:
+utif@^2.0.1:
   version "2.0.1"
-  resolved "https://registry.yarnpkg.com/utif/-/utif-2.0.1.tgz#9e1582d9bbd20011a6588548ed3266298e711759"
+  resolved "http://npm.zhaopin.com/utif/-/utif-2.0.1.tgz#9e1582d9bbd20011a6588548ed3266298e711759"
   dependencies:
     pako "^1.0.5"
 
