@@ -25,7 +25,7 @@
     "element-ui": "^2.4.8",
     "koa": "^2.5.3",
     "muse-ui": "^3.0.1",
-    "nuxt": "^2.1.0",
+    "nuxt": "^2.2.0",
     "source-map-support": "^0.5.9",
     "vue": "^2.5.17"
   },
@@ -40,7 +40,7 @@
     "babel-plugin-component": "^1.1.1",
     "backpack-core": "^0.7.0",
     "browser-env": "^3.2.5",
-    "eslint": "^5.6.1",
+    "eslint": "^5.7.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-html": "^4.0.6",
     "eslint-plugin-import": "^2.14.0",
@@ -54,7 +54,7 @@
     "require-extension-hooks-vue": "^1.1.0",
     "sass-loader": "^7.1.0",
     "scmp": "^2.0.0",
-    "sinon": "^6.3.5",
+    "sinon": "^7.0.0",
     "vue-template-compiler": "^2.5.17",
     "webpack": "^4.20.2"
   }
