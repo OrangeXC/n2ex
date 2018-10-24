@@ -23,7 +23,7 @@
     "@nuxtjs/pwa": "^2.6.0",
     "cross-env": "^5.2.0",
     "element-ui": "^2.4.8",
-    "koa": "^2.5.3",
+    "koa": "^2.6.1",
     "muse-ui": "^3.0.1",
     "nuxt": "^2.2.0",
     "source-map-support": "^0.5.9",
