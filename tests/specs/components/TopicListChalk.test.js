@@ -1,4 +1,4 @@
-import { shallowMount } from '@vue/test-utils'
+import { mount } from '@vue/test-utils'
 import test from 'ava'
 import sinon from 'sinon'
 import Vue from 'vue'
@@ -21,7 +21,7 @@ test.before(t => {
 
 test('template', t => {
   const { topicList } = t.context
-  const wrapper = shallowMount(TopicListChalk, {
+  const wrapper = mount(TopicListChalk, {
     propsData: { topicList },
     filters: { largeAvatar }
   })
@@ -60,7 +60,7 @@ test('methods: toTopic', t => {
   }
   const spy = sinon.spy($router, 'push')
 
-  const wrapper = shallowMount(TopicListChalk, {
+  const wrapper = mount(TopicListChalk, {
     propsData: { topicList },
     mocks: {
       $router
@@ -86,7 +86,7 @@ test('methods: toNode', t => {
   }
   const spy = sinon.spy($router, 'push')
 
-  const wrapper = shallowMount(TopicListChalk, {
+  const wrapper = mount(TopicListChalk, {
     propsData: { topicList },
     mocks: {
       $router
@@ -110,7 +110,7 @@ test('methods: toMember', t => {
   }
   const spy = sinon.spy($router, 'push')
 
-  const wrapper = shallowMount(TopicListChalk, {
+  const wrapper = mount(TopicListChalk, {
     propsData: { topicList },
     mocks: {
       $router
