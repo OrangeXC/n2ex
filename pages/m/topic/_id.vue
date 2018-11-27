@@ -1,40 +1,59 @@
 <template>
   <section class="container">
-    <mu-card>
-      <nuxt-link :to="'/m/member/' + detail.member.username">
-        <mu-card-header :title="detail.title" :subTitle="detail.member.username">
-          <mu-avatar slot="avatar">
-            <img :src="detail.member.avatar_normal | largeAvatar" alt="avatar">
-          </mu-avatar>
-        </mu-card-header>
-      </nuxt-link>
-      <mu-card-text>
-        <article class="article" v-html="detail.content_rendered"></article>
-      </mu-card-text>
-      <mu-card-actions>
+    <MuCard>
+      <NuxtLink :to="'/m/member/' + detail.member.username">
+        <MuCardHeader
+          :title="detail.title"
+          :sub-title="detail.member.username"
+        >
+          <MuAvatar slot="avatar">
+            <img
+              :src="detail.member.avatar_normal | largeAvatar"
+              alt="avatar"
+            >
+          </MuAvatar>
+        </MuCardHeader>
+      </NuxtLink>
+      <MuCardText>
+        <!-- eslint-disable -->
+        <article
+          class="article"
+          v-html="detail.content_rendered"
+        />
+      </MuCardText>
+      <MuCardActions>
         <div class="chip-container">
-          <mu-chip class="chip" @click="toNode(detail.node.name)">
-            <mu-avatar :size="32">
-              <img :src="detail.node.avatar_normal | image" alt="avatar">
-            </mu-avatar>
+          <MuChip
+            class="chip"
+            @click="toNode(detail.node.name)"
+          >
+            <MuAvatar :size="32">
+              <img
+                :src="detail.node.avatar_normal | image"
+                alt="avatar"
+              >
+            </MuAvatar>
             {{ detail.node.title }}
-          </mu-chip>
-          <mu-chip class="chip">
-            <mu-avatar :size="32">
-              <mu-icon value="schedule"></mu-icon>
-            </mu-avatar>
+          </MuChip>
+          <MuChip class="chip">
+            <MuAvatar :size="32">
+              <MuIcon value="schedule" />
+            </MuAvatar>
             {{ detail.created | timeAgo }}
-          </mu-chip>
-          <mu-chip class="chip">
-            <mu-avatar :size="32">
-              <mu-icon value="comment"></mu-icon>
-            </mu-avatar>
+          </MuChip>
+          <MuChip class="chip">
+            <MuAvatar :size="32">
+              <MuIcon value="comment" />
+            </MuAvatar>
             {{ detail.replies }}
-          </mu-chip>
+          </MuChip>
         </div>
-      </mu-card-actions>
-    </mu-card>
-    <comment :comments="comments" v-if="comments.length" />
+      </MuCardActions>
+    </MuCard>
+    <Comment
+      v-if="comments.length"
+      :comments="comments"
+    />
   </section>
 </template>
 
@@ -61,14 +80,14 @@ export default {
   validate ({ params }) {
     return /^\d+$/.test(params.id)
   },
+  components: {
+    Comment
+  },
   methods: {
     toNode (name) {
       this.$router.push(`/node/${name}`)
     }
   },
-  layout: 'mobile',
-  components: {
-    Comment
-  }
+  layout: 'mobile'
 }
 </script>

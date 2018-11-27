@@ -1,36 +1,62 @@
 <template>
-  <el-container>
-    <el-header>
-      <el-menu
+  <ElContainer>
+    <ElHeader>
+      <ElMenu
         :default-active="activeIndex"
         mode="horizontal"
         router
       >
-        <el-menu-item index="/">最热</el-menu-item>
-        <el-menu-item index="/new">最新</el-menu-item>
-        <el-menu-item index="/tab/tech">技术</el-menu-item>
-        <el-menu-item index="/tab/creative">创意</el-menu-item>
-        <el-menu-item index="/tab/play">好玩</el-menu-item>
-        <el-menu-item index="/tab/apple">Apple</el-menu-item>
-        <el-menu-item index="/tab/jobs">酷工作</el-menu-item>
-        <el-menu-item index="/tab/deals">交易</el-menu-item>
-        <el-menu-item index="/tab/city">城市</el-menu-item>
-        <el-menu-item index="/tab/qna">问与答</el-menu-item>
-        <el-menu-item index="/tab/nodes">节点</el-menu-item>
-      </el-menu>
-    </el-header>
-    <el-main>
-      <nuxt keep-alive />
-    </el-main>
-    <el-footer>
+        <ElMenuItem index="/">
+          最热
+        </ElMenuItem>
+        <ElMenuItem index="/new">
+          最新
+        </ElMenuItem>
+        <ElMenuItem index="/tab/tech">
+          技术
+        </ElMenuItem>
+        <ElMenuItem index="/tab/creative">
+          创意
+        </ElMenuItem>
+        <ElMenuItem index="/tab/play">
+          好玩
+        </ElMenuItem>
+        <ElMenuItem index="/tab/apple">
+          Apple
+        </ElMenuItem>
+        <ElMenuItem index="/tab/jobs">
+          酷工作
+        </ElMenuItem>
+        <ElMenuItem index="/tab/deals">
+          交易
+        </ElMenuItem>
+        <ElMenuItem index="/tab/city">
+          城市
+        </ElMenuItem>
+        <ElMenuItem index="/tab/qna">
+          问与答
+        </ElMenuItem>
+        <ElMenuItem index="/tab/nodes">
+          节点
+        </ElMenuItem>
+      </ElMenu>
+    </ElHeader>
+    <ElMain>
+      <Nuxt keep-alive />
+    </ElMain>
+    <ElFooter>
       <span>
         Copyright © 2016-2018 Orange
       </span>
-      <a class="github" href="https://github.com/OrangeXC/n2ex" target="_blank">
-        <i class="muidocs-icon-custom-github"></i>
+      <a
+        class="github"
+        href="https://github.com/OrangeXC/n2ex"
+        target="_blank"
+      >
+        <i class="muidocs-icon-custom-github" />
       </a>
-    </el-footer>
-  </el-container>
+    </ElFooter>
+  </ElContainer>
 </template>
 
 <script>

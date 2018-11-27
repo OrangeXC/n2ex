@@ -1,20 +1,45 @@
 <template>
   <section>
-    <el-card>
-      <div slot="header" class="card card-header">
+    <ElCard>
+      <div
+        slot="header"
+        class="card card-header"
+      >
         <div class="avatar">
-          <img :src="detail.member.avatar_large | largeAvatar" alt="avatar">
+          <img
+            :src="detail.member.avatar_large | largeAvatar"
+            alt="avatar"
+          >
         </div>
         <div class="card-header-content">
-          <div class="title">{{ detail.title }}</div>
-          <el-tag size="small" @click.native="toNode(detail.node.name)">{{ detail.node.title }}</el-tag>
-          <span class="link" @click="toMember(detail.member.username)">{{ detail.member.username }}</span>
+          <div class="title">
+            {{ detail.title }}
+          </div>
+          <ElTag
+            size="small"
+            @click.native="toNode(detail.node.name)"
+          >
+            {{ detail.node.title }}
+          </ElTag>
+          <span
+            class="link"
+            @click="toMember(detail.member.username)"
+          >
+            {{ detail.member.username }}
+          </span>
           • {{ detail.created | timeAgo }}
         </div>
       </div>
-      <article class="article" v-html="detail.content_rendered"></article>
-    </el-card>
-    <comment :comments="comments" v-if="comments.length" />
+      <!-- eslint-disable -->
+      <article
+        class="article"
+        v-html="detail.content_rendered"
+      />
+    </ElCard>
+    <Comment
+      v-if="comments.length"
+      :comments="comments"
+    />
   </section>
 </template>
 
@@ -41,6 +66,9 @@ export default {
       comments
     }
   },
+  components: {
+    Comment
+  },
   methods: {
     toNode (name) {
       this.$router.push(`/node/${name}`)
@@ -48,9 +76,6 @@ export default {
     toMember (name) {
       this.$router.push(`/member/${name}`)
     }
-  },
-  components: {
-    Comment
   }
 }
 </script>

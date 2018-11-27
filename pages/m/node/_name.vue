@@ -1,36 +1,54 @@
 <template>
   <div>
     <section class="container">
-      <mu-card class="node-card">
+      <MuCard class="node-card">
         <img
           class="card-background"
           :src="node.avatar_normal"
           alt="background"
         >
-        <mu-card-header :title="node.title" :subTitle="node.header">
-          <mu-avatar slot="avatar">
-            <img :src="node.avatar_normal | image" alt="avatar">
-          </mu-avatar>
-        </mu-card-header>
-        <mu-card-actions>
+        <MuCardHeader
+          :title="node.title"
+          :sub-title="node.header"
+        >
+          <MuAvatar slot="avatar">
+            <img
+              :src="node.avatar_normal | image"
+              alt="avatar"
+            >
+          </MuAvatar>
+        </MuCardHeader>
+        <MuCardActions>
           <div class="chip-container">
-            <mu-chip class="chip" color="amberA100">
-              <mu-avatar :size="32" color="orangeA400">
-                <mu-icon value="star"></mu-icon>
-              </mu-avatar>
+            <MuChip
+              class="chip"
+              color="amberA100"
+            >
+              <MuAvatar
+                :size="32"
+                color="orangeA400"
+              >
+                <MuIcon value="star" />
+              </MuAvatar>
               {{ node.stars }}
-            </mu-chip>
-            <mu-chip class="chip" color="blue300">
-              <mu-avatar :size="32" color="indigo900">
-                <mu-icon value="schedule"></mu-icon>
-              </mu-avatar>
+            </MuChip>
+            <MuChip
+              class="chip"
+              color="blue300"
+            >
+              <MuAvatar
+                :size="32"
+                color="indigo900"
+              >
+                <MuIcon value="schedule" />
+              </MuAvatar>
               {{ node.created | format }}
-            </mu-chip>
+            </MuChip>
           </div>
-        </mu-card-actions>
-      </mu-card>
+        </MuCardActions>
+      </MuCard>
     </section>
-    <topic-list :topicList="topicList" />
+    <TopicList :topic-list="topicList" />
   </div>
 </template>
 

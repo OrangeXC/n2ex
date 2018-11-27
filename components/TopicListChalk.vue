@@ -1,35 +1,64 @@
 <template>
   <section class="main-container">
-    <el-card v-for="item in topicList" :key="item.id">
-      <div slot="header" class="clearfix">
-        <span class="link" @click="toTopic(item.id)">{{ item.title }}</span>
+    <ElCard
+      v-for="item in topicList"
+      :key="item.id"
+    >
+      <div
+        slot="header"
+        class="clearfix"
+      >
+        <span
+          class="link"
+          @click="toTopic(item.id)"
+        >
+          {{ item.title }}
+        </span>
       </div>
       <div class="card-wrap">
         <div class="avatar">
-          <img :src="item.member.avatar_large | largeAvatar" alt="avatar">
+          <img
+            :src="item.member.avatar_large | largeAvatar"
+            alt="avatar"
+          >
         </div>
         <div>
           <div class="card-content">
-            <span class="link" @click="toMember(item.member.username)">
+            <span
+              class="link"
+              @click="toMember(item.member.username)"
+            >
               {{ item.member.username }}
             </span>
             • {{ item.created | timeAgo }}
             • 最后访问 {{ item.last_touched | timeAgo }}
           </div>
           <div class="card-action">
-            <el-button size="small" round @click="toNode(item.node.name)">
-              <mu-avatar :size="29">
-                <img :src="item.node.avatar_normal | image" alt="avatar">
-              </mu-avatar>
+            <ElButton
+              size="small"
+              round
+              @click="toNode(item.node.name)"
+            >
+              <MuAvatar :size="29">
+                <img
+                  :src="item.node.avatar_normal | image"
+                  alt="avatar"
+                >
+              </MuAvatar>
               <span>{{ item.node.title }}</span>
-            </el-button>
-            <el-badge :value="item.replies">
-              <el-button size="small" @click="toTopic(item.id)">评论</el-button>
-            </el-badge>
+            </ElButton>
+            <ElBadge :value="item.replies">
+              <ElButton
+                size="small"
+                @click="toTopic(item.id)"
+              >
+                评论
+              </ElButton>
+            </ElBadge>
           </div>
         </div>
       </div>
-    </el-card>
+    </ElCard>
   </section>
 </template>
 

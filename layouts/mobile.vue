@@ -1,49 +1,90 @@
 <template>
   <div>
-    <mu-appbar title="N2EX">
-      <mu-button icon @click="toggle()" slot="left">
-        <mu-icon value="menu"></mu-icon>
-      </mu-button>
-      <mu-button icon href="https://github.com/OrangeXC/n2ex" slot="right">
-        <i class="muidocs-icon-custom-github"></i>
-      </mu-button>
-    </mu-appbar>
-    <mu-drawer :open.sync="open" :docked="docked">
-      <mu-appbar title="Tabs"/>
-      <mu-list @itemClick="docked ? '' : toggle()">
-        <mu-list-item button @click="toTab('tech')">
-          <mu-list-item-title>技术</mu-list-item-title>
-        </mu-list-item>
-        <mu-list-item button @click="toTab('play')">
-          <mu-list-item-title>好玩</mu-list-item-title>
-        </mu-list-item>
-        <mu-list-item button @click="toTab('apple')">
-          <mu-list-item-title>Apple</mu-list-item-title>
-        </mu-list-item>
-        <mu-list-item button @click="toTab('jobs')">
-          <mu-list-item-title>酷工作</mu-list-item-title>
-        </mu-list-item>
-        <mu-list-item button @click="toTab('deals')">
-          <mu-list-item-title>交易</mu-list-item-title>
-        </mu-list-item>
-        <mu-list-item button @click="toTab('city')">
-          <mu-list-item-title>城市</mu-list-item-title>
-        </mu-list-item>
-        <mu-list-item button @click="toTab('qna')">
-          <mu-list-item-title>问与答</mu-list-item-title>
-        </mu-list-item>
-        <mu-list-item button @click="toHome()">
-          <mu-list-item-title>最热</mu-list-item-title>
-        </mu-list-item>
-        <mu-list-item button @click="toNew()">
-          <mu-list-item-title>最新</mu-list-item-title>
-        </mu-list-item>
-        <mu-list-item button @click="toTab('nodes')">
-          <mu-list-item-title>节点</mu-list-item-title>
-        </mu-list-item>
-      </mu-list>
-    </mu-drawer>
-    <nuxt keep-alive />
+    <MuAppbar title="N2EX">
+      <MuButton
+        slot="left"
+        icon
+        @click="toggle()"
+      >
+        <MuIcon value="menu" />
+      </MuButton>
+      <MuButton
+        slot="right"
+        icon
+        href="https://github.com/OrangeXC/n2ex"
+      >
+        <i class="muidocs-icon-custom-github" />
+      </MuButton>
+    </MuAppbar>
+    <MuDrawer
+      :open.sync="open"
+      :docked="docked"
+    >
+      <MuAppbar title="Tabs" />
+      <MuList @itemClick="docked ? '' : toggle()">
+        <MuListItem
+          button
+          @click="toTab('tech')"
+        >
+          <MuListItemTitle>技术</MuListItemTitle>
+        </MuListItem>
+        <MuListItem
+          button
+          @click="toTab('play')"
+        >
+          <MuListItemTitle>好玩</MuListItemTitle>
+        </MuListItem>
+        <MuListItem
+          button
+          @click="toTab('apple')"
+        >
+          <MuListItemTitle>Apple</MuListItemTitle>
+        </MuListItem>
+        <MuListItem
+          button
+          @click="toTab('jobs')"
+        >
+          <MuListItemTitle>酷工作</MuListItemTitle>
+        </MuListItem>
+        <MuListItem
+          button
+          @click="toTab('deals')"
+        >
+          <MuListItemTitle>交易</MuListItemTitle>
+        </MuListItem>
+        <MuListItem
+          button
+          @click="toTab('city')"
+        >
+          <MuListItemTitle>城市</MuListItemTitle>
+        </MuListItem>
+        <MuListItem
+          button
+          @click="toTab('qna')"
+        >
+          <MuListItemTitle>问与答</MuListItemTitle>
+        </MuListItem>
+        <MuListItem
+          button
+          @click="toHome()"
+        >
+          <MuListItemTitle>最热</MuListItemTitle>
+        </MuListItem>
+        <MuListItem
+          button
+          @click="toNew()"
+        >
+          <MuListItemTitle>最新</MuListItemTitle>
+        </MuListItem>
+        <MuListItem
+          button
+          @click="toTab('nodes')"
+        >
+          <MuListItemTitle>节点</MuListItemTitle>
+        </MuListItem>
+      </MuList>
+    </MuDrawer>
+    <Nuxt keep-alive />
   </div>
 </template>
 

@@ -1,12 +1,21 @@
 <template>
   <section class="container">
-    <mu-text-field hintText="搜索" v-model="searchString" placeholder="搜索" />
-    <mu-sub-header>
+    <MuTextField
+      v-model="searchString"
+      hint-text="搜索"
+      placeholder="搜索"
+    />
+    <MuSubHeader>
       已为您找到 {{ nodes.length }} 个节点.
-    </mu-sub-header>
-    <mu-chip class="chip" v-for="node in nodes" :key="node.id" @click="toNode(node.name)">
+    </MuSubHeader>
+    <MuChip
+      v-for="node in nodes"
+      :key="node.id"
+      class="chip"
+      @click="toNode(node.name)"
+    >
       {{ node.title }}
-    </mu-chip>
+    </MuChip>
   </section>
 </template>
 
@@ -29,11 +38,6 @@ export default {
       searchString: ''
     }
   },
-  methods: {
-    toNode (name) {
-      this.$router.push(`/node/${name}`)
-    }
-  },
   computed: {
     nodes () {
       if (!this.searchString) return this.nodeList
@@ -44,6 +48,11 @@ export default {
         title.toLowerCase().indexOf(searchString) !== -1 ||
         name.toLowerCase().indexOf(searchString) !== -1
       )
+    }
+  },
+  methods: {
+    toNode (name) {
+      this.$router.push(`/node/${name}`)
     }
   },
   layout: 'mobile'

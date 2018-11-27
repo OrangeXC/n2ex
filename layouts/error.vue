@@ -8,17 +8,25 @@
         <span style="color:#d65562;">
           if
         </span>
-        (<span style="color:#4ca8ef;">!</span><span style="font-style: italic;color:#bdbdbd;">found</span>)
+        (<span style="color:#4ca8ef;">
+          !
+        </span><span style="font-style: italic;color:#bdbdbd;">
+          found
+        </span>)
         {
       </span>
       <span>
         <span style="padding-left: 15px;color:#2796ec">
-          <i style="width: 10px;display:inline-block"></i>throw
+          <i style="width: 10px;display:inline-block" />throw
         </span>
         <span>
-          (<span style="color: #a6a61f">"(╯°□°)╯︵ ┻━┻"</span>);
+          (<span style="color: #a6a61f">
+            "(╯°□°)╯︵ ┻━┻"
+          </span>);
         </span>
-        <span style="display:block">}</span>
+        <span style="display:block">
+          }
+        </span>
       </span>
     </div>
   </div>
@@ -26,7 +34,13 @@
 
 <script>
 export default {
-  props: ['error']
+  props: {
+    error: {
+      type: Object,
+      required: true,
+      default: () => {}
+    }
+  }
 }
 </script>
 
@@ -69,11 +83,11 @@ export default {
   .code-area {
     width: 95%;
     min-width: auto;
-		margin: auto;
-		padding: 5px;
-		padding-left: 10px;
+    margin: auto;
+    padding: 5px;
+    padding-left: 10px;
 
-		line-height: 6.5vw;
+    line-height: 6.5vw;
 
     font-size: 5vw;
   }
