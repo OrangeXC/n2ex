@@ -1,11 +1,19 @@
 <template>
   <section class="container">
-    <el-input v-model="searchString" suffix-icon="el-icon-search" placeholder="请输入搜索内容"></el-input>
+    <ElInput
+      v-model="searchString"
+      suffix-icon="el-icon-search"
+      placeholder="请输入搜索内容"
+    />
     <p>已为您找到 {{ nodes.length }} 个节点</p>
     <div class="tags">
-      <el-tag v-for="node in nodes" :key="node.id" @click.native="toNode(node.name)">
+      <ElTag
+        v-for="node in nodes"
+        :key="node.id"
+        @click.native="toNode(node.name)"
+      >
         {{ node.title }}
-      </el-tag>
+      </ElTag>
     </div>
   </section>
 </template>
@@ -29,11 +37,6 @@ export default {
       searchString: ''
     }
   },
-  methods: {
-    toNode (name) {
-      this.$router.push(`/node/${name}`)
-    }
-  },
   computed: {
     nodes () {
       if (!this.searchString) return this.nodeList
@@ -44,6 +47,11 @@ export default {
         title.toLowerCase().indexOf(searchString) !== -1 ||
         name.toLowerCase().indexOf(searchString) !== -1
       )
+    }
+  },
+  methods: {
+    toNode (name) {
+      this.$router.push(`/node/${name}`)
     }
   }
 }

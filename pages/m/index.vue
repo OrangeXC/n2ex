@@ -1,5 +1,5 @@
 <template>
-  <topic-list :topicList="hotList" />
+  <TopicList :topic-list="hotList" />
 </template>
 
 <script>

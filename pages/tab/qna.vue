@@ -1,5 +1,5 @@
 <template>
-  <topic-list-chalk :topicList="qnaList"></topic-list-chalk>
+  <TopicListChalk :topic-list="qnaList" />
 </template>
 
 <script>

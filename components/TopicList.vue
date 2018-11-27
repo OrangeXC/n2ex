@@ -1,30 +1,45 @@
 <template>
   <section class="container">
-    <mu-card v-for="item in topicList" :key="item.id">
-      <nuxt-link :to="`/m/topic/${item.id}`">
-        <mu-card-header :title="item.title" :subTitle="getSubTitle(item)">
-          <mu-avatar slot="avatar">
-            <img :src="item.member.avatar_normal | largeAvatar" alt="avatar">
-          </mu-avatar>
-        </mu-card-header>
-      </nuxt-link>
-      <mu-card-actions>
+    <MuCard
+      v-for="item in topicList"
+      :key="item.id"
+    >
+      <NuxtLink :to="`/m/topic/${item.id}`">
+        <MuCardHeader
+          :title="item.title"
+          :sub-title="getSubTitle(item)"
+        >
+          <MuAvatar slot="avatar">
+            <img
+              :src="item.member.avatar_normal | largeAvatar"
+              alt="avatar"
+            >
+          </MuAvatar>
+        </MuCardHeader>
+      </NuxtLink>
+      <MuCardActions>
         <div class="chip-container">
-          <mu-chip class="chip" @click="toNode(item.node.name)">
-            <mu-avatar :size="32">
-              <img :src="item.node.avatar_normal | image" alt="avatar">
-            </mu-avatar>
+          <MuChip
+            class="chip"
+            @click="toNode(item.node.name)"
+          >
+            <MuAvatar :size="32">
+              <img
+                :src="item.node.avatar_normal | image"
+                alt="avatar"
+              >
+            </MuAvatar>
             {{ item.node.title }}
-          </mu-chip>
-          <mu-chip class="chip">
-            <mu-avatar :size="32">
-              <mu-icon value="comment"></mu-icon>
-            </mu-avatar>
+          </MuChip>
+          <MuChip class="chip">
+            <MuAvatar :size="32">
+              <MuIcon value="comment" />
+            </MuAvatar>
             {{ item.replies }}
-          </mu-chip>
+          </MuChip>
         </div>
-      </mu-card-actions>
-    </mu-card>
+      </MuCardActions>
+    </MuCard>
   </section>
 </template>
 

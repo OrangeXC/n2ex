@@ -1,21 +1,30 @@
 <template>
   <section>
-    <el-card>
+    <ElCard>
       <img
         class="card-background"
         :src="node.avatar_large"
         alt="background"
       >
-      <div slot="header" class="card card-header">
+      <div
+        slot="header"
+        class="card card-header"
+      >
         <div class="avatar">
-          <img :src="node.avatar_large | image" alt="avatar">
+          <img
+            :src="node.avatar_large | image"
+            alt="avatar"
+          >
         </div>
-        <div class="title">{{ node.title }}</div>
+        <div class="title">
+          {{ node.title }}
+        </div>
         <p>关注 {{ node.stars }} • 创建于 {{ node.created | format }}</p>
       </div>
-      <div v-html="node.header"></div>
-    </el-card>
-    <topic-list-chalk :topicList="topicList"></topic-list-chalk>
+      <!-- eslint-disable -->
+      <div v-html="node.header" />
+    </ElCard>
+    <TopicListChalk :topic-list="topicList" />
   </section>
 </template>
 
