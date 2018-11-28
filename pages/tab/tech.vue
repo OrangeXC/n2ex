@@ -1,5 +1,5 @@
 <template>
-  <TopicListChalk :topic-list="techList" />
+  <topic-list-chalk :topic-list="techList" />
 </template>
 
 <script>

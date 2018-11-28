@@ -1,34 +1,34 @@
 <template>
   <div class="comment">
-    <MuCard>
-      <MuList>
-        <MuSubHeader>全部评论</MuSubHeader>
+    <mu-card>
+      <mu-list>
+        <mu-sub-header>全部评论</mu-sub-header>
         <div
           v-for="(item, index) in comments"
           :key="index"
         >
-          <MuListItem>
-            <MuListItemAction>
-              <MuAvatar @click="toMember(item.member.username)">
+          <mu-list-item>
+            <mu-list-item-action>
+              <mu-avatar @click="toMember(item.member.username)">
                 <img
                   :src="item.member.avatar_normal | largeAvatar"
                   alt="avatar"
                 >
-              </MuAvatar>
-            </MuListItemAction>
-            <MuListItemContent>
-              <MuListItemTitle>{{ item.member.username }}</MuListItemTitle>
+              </mu-avatar>
+            </mu-list-item-action>
+            <mu-list-item-content>
+              <mu-list-item-title>{{ item.member.username }}</mu-list-item-title>
               <!-- eslint-disable -->
               <div
                 class="article"
                 v-html="item.content_rendered"
               />
-            </MuListItemContent>
-          </MuListItem>
+            </mu-list-item-content>
+          </mu-list-item>
           <MuDivider inset />
         </div>
-      </MuList>
-    </MuCard>
+      </mu-list>
+    </mu-card>
   </div>
 </template>
 

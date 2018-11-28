@@ -1,50 +1,50 @@
 <template>
-  <ElContainer>
-    <ElHeader>
-      <ElMenu
+  <el-container>
+    <el-header>
+      <el-menu
         :default-active="activeIndex"
         mode="horizontal"
         router
       >
-        <ElMenuItem index="/">
+        <el-menu-item index="/">
           最热
-        </ElMenuItem>
-        <ElMenuItem index="/new">
+        </el-menu-item>
+        <el-menu-item index="/new">
           最新
-        </ElMenuItem>
-        <ElMenuItem index="/tab/tech">
+        </el-menu-item>
+        <el-menu-item index="/tab/tech">
           技术
-        </ElMenuItem>
-        <ElMenuItem index="/tab/creative">
+        </el-menu-item>
+        <el-menu-item index="/tab/creative">
           创意
-        </ElMenuItem>
-        <ElMenuItem index="/tab/play">
+        </el-menu-item>
+        <el-menu-item index="/tab/play">
           好玩
-        </ElMenuItem>
-        <ElMenuItem index="/tab/apple">
+        </el-menu-item>
+        <el-menu-item index="/tab/apple">
           Apple
-        </ElMenuItem>
-        <ElMenuItem index="/tab/jobs">
+        </el-menu-item>
+        <el-menu-item index="/tab/jobs">
           酷工作
-        </ElMenuItem>
-        <ElMenuItem index="/tab/deals">
+        </el-menu-item>
+        <el-menu-item index="/tab/deals">
           交易
-        </ElMenuItem>
-        <ElMenuItem index="/tab/city">
+        </el-menu-item>
+        <el-menu-item index="/tab/city">
           城市
-        </ElMenuItem>
-        <ElMenuItem index="/tab/qna">
+        </el-menu-item>
+        <el-menu-item index="/tab/qna">
           问与答
-        </ElMenuItem>
-        <ElMenuItem index="/tab/nodes">
+        </el-menu-item>
+        <el-menu-item index="/tab/nodes">
           节点
-        </ElMenuItem>
-      </ElMenu>
-    </ElHeader>
-    <ElMain>
-      <Nuxt keep-alive />
-    </ElMain>
-    <ElFooter>
+        </el-menu-item>
+      </el-menu>
+    </el-header>
+    <el-main>
+      <nuxt keep-alive />
+    </el-main>
+    <el-footer>
       <span>
         Copyright © 2016-2018 Orange
       </span>
@@ -55,8 +55,8 @@
       >
         <i class="muidocs-icon-custom-github" />
       </a>
-    </ElFooter>
-  </ElContainer>
+    </el-footer>
+  </el-container>
 </template>
 
 <script>

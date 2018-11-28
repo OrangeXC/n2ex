@@ -1,6 +1,6 @@
 <template>
   <section class="main-container">
-    <ElCard
+    <el-card
       v-for="item in topicList"
       :key="item.id"
     >
@@ -34,31 +34,31 @@
             • 最后访问 {{ item.last_touched | timeAgo }}
           </div>
           <div class="card-action">
-            <ElButton
+            <el-button
               size="small"
               round
               @click="toNode(item.node.name)"
             >
-              <MuAvatar :size="29">
+              <mu-avatar :size="29">
                 <img
                   :src="item.node.avatar_normal | image"
                   alt="avatar"
                 >
-              </MuAvatar>
+              </mu-avatar>
               <span>{{ item.node.title }}</span>
-            </ElButton>
-            <ElBadge :value="item.replies">
-              <ElButton
+            </el-button>
+            <el-badge :value="item.replies">
+              <el-button
                 size="small"
                 @click="toTopic(item.id)"
               >
                 评论
-              </ElButton>
-            </ElBadge>
+              </el-button>
+            </el-badge>
           </div>
         </div>
       </div>
-    </ElCard>
+    </el-card>
   </section>
 </template>
 
