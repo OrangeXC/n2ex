@@ -1,21 +1,21 @@
 <template>
   <section class="container">
-    <MuTextField
+    <mu-text-field
       v-model="searchString"
       hint-text="搜索"
       placeholder="搜索"
     />
-    <MuSubHeader>
+    <mu-sub-header>
       已为您找到 {{ nodes.length }} 个节点.
-    </MuSubHeader>
-    <MuChip
+    </mu-sub-header>
+    <mu-chip
       v-for="node in nodes"
       :key="node.id"
       class="chip"
       @click="toNode(node.name)"
     >
       {{ node.title }}
-    </MuChip>
+    </mu-chip>
   </section>
 </template>
 

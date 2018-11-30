@@ -1,45 +1,45 @@
 <template>
   <section class="container">
-    <MuCard
+    <mu-card
       v-for="item in topicList"
       :key="item.id"
     >
-      <NuxtLink :to="`/m/topic/${item.id}`">
-        <MuCardHeader
+      <nuxt-link :to="`/m/topic/${item.id}`">
+        <mu-card-header
           :title="item.title"
           :sub-title="getSubTitle(item)"
         >
-          <MuAvatar slot="avatar">
+          <mu-avatar slot="avatar">
             <img
               :src="item.member.avatar_normal | largeAvatar"
               alt="avatar"
             >
-          </MuAvatar>
-        </MuCardHeader>
-      </NuxtLink>
-      <MuCardActions>
+          </mu-avatar>
+        </mu-card-header>
+      </nuxt-link>
+      <mu-card-actions>
         <div class="chip-container">
-          <MuChip
+          <mu-chip
             class="chip"
             @click="toNode(item.node.name)"
           >
-            <MuAvatar :size="32">
+            <mu-avatar :size="32">
               <img
                 :src="item.node.avatar_normal | image"
                 alt="avatar"
               >
-            </MuAvatar>
+            </mu-avatar>
             {{ item.node.title }}
-          </MuChip>
-          <MuChip class="chip">
-            <MuAvatar :size="32">
-              <MuIcon value="comment" />
-            </MuAvatar>
+          </mu-chip>
+          <mu-chip class="chip">
+            <mu-avatar :size="32">
+              <mu-icon value="comment" />
+            </mu-avatar>
             {{ item.replies }}
-          </MuChip>
+          </mu-chip>
         </div>
-      </MuCardActions>
-    </MuCard>
+      </mu-card-actions>
+    </mu-card>
   </section>
 </template>
 

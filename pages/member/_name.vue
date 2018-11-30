@@ -1,7 +1,7 @@
 <template>
   <div>
     <section>
-      <ElCard>
+      <el-card>
         <img
           class="card-background"
           :src="user.avatar_large"
@@ -21,43 +21,43 @@
             {{ user.username }}
           </div>
         </div>
-        <MuCardActions>
+        <mu-card-actions>
           <div class="chip-container">
-            <MuChip
+            <mu-chip
               v-if="user.website"
               class="chip"
               color="greenA100"
               @click="toWebsite(user.website)"
             >
-              <MuAvatar
+              <mu-avatar
                 :size="32"
                 color="greenA700"
               >
-                <MuIcon value="public" />
-              </MuAvatar>
+                <mu-icon value="public" />
+              </mu-avatar>
               {{ user.website }}
-            </MuChip>
-            <MuChip
+            </mu-chip>
+            <mu-chip
               v-if="user.twitter"
               class="chip"
               color="lightBlue100"
               @click="toTwitter(user.twitter)"
             >
-              <MuAvatar :size="32">
+              <mu-avatar :size="32">
                 <img
                   src="~/assets/img/twitter.png"
                   alt="twitter"
                 >
-              </MuAvatar>
+              </mu-avatar>
               {{ user.twitter }}
-            </MuChip>
-            <MuChip
+            </mu-chip>
+            <mu-chip
               v-if="user.github"
               class="chip"
               color="grey300"
               @click="toGithub(user.github)"
             >
-              <MuAvatar
+              <mu-avatar
                 :size="32"
                 color="#fff"
               >
@@ -65,40 +65,40 @@
                   src="~/assets/img/github.png"
                   alt="github"
                 >
-              </MuAvatar>
+              </mu-avatar>
               {{ user.github }}
-            </MuChip>
-            <MuChip
+            </mu-chip>
+            <mu-chip
               v-if="user.location"
               class="chip"
               color="deepOrange100"
               @click="toMap(user.location)"
             >
-              <MuAvatar
+              <mu-avatar
                 :size="32"
                 color="deepOrange800"
               >
-                <MuIcon value="location_city" />
-              </MuAvatar>
+                <mu-icon value="location_city" />
+              </mu-avatar>
               {{ user.location }}
-            </MuChip>
-            <MuChip
+            </mu-chip>
+            <mu-chip
               class="chip"
               color="blue300"
             >
-              <MuAvatar
+              <mu-avatar
                 :size="32"
                 color="indigo900"
               >
-                <MuIcon value="schedule" />
-              </MuAvatar>
+                <mu-icon value="schedule" />
+              </mu-avatar>
               {{ user.created | format }}
-            </MuChip>
+            </mu-chip>
           </div>
-        </MuCardActions>
-      </ElCard>
+        </mu-card-actions>
+      </el-card>
     </section>
-    <TopicListChalk :topic-list="topicList" />
+    <topic-list-chalk :topic-list="topicList" />
   </div>
 </template>
 

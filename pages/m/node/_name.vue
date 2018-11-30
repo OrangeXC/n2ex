@@ -1,54 +1,54 @@
 <template>
   <div>
     <section class="container">
-      <MuCard class="node-card">
+      <mu-card class="node-card">
         <img
           class="card-background"
           :src="node.avatar_normal"
           alt="background"
         >
-        <MuCardHeader
+        <mu-card-header
           :title="node.title"
           :sub-title="node.header"
         >
-          <MuAvatar slot="avatar">
+          <mu-avatar slot="avatar">
             <img
               :src="node.avatar_normal | image"
               alt="avatar"
             >
-          </MuAvatar>
-        </MuCardHeader>
-        <MuCardActions>
+          </mu-avatar>
+        </mu-card-header>
+        <mu-card-actions>
           <div class="chip-container">
-            <MuChip
+            <mu-chip
               class="chip"
               color="amberA100"
             >
-              <MuAvatar
+              <mu-avatar
                 :size="32"
                 color="orangeA400"
               >
-                <MuIcon value="star" />
-              </MuAvatar>
+                <mu-icon value="star" />
+              </mu-avatar>
               {{ node.stars }}
-            </MuChip>
-            <MuChip
+            </mu-chip>
+            <mu-chip
               class="chip"
               color="blue300"
             >
-              <MuAvatar
+              <mu-avatar
                 :size="32"
                 color="indigo900"
               >
-                <MuIcon value="schedule" />
-              </MuAvatar>
+                <mu-icon value="schedule" />
+              </mu-avatar>
               {{ node.created | format }}
-            </MuChip>
+            </mu-chip>
           </div>
-        </MuCardActions>
-      </MuCard>
+        </mu-card-actions>
+      </mu-card>
     </section>
-    <TopicList :topic-list="topicList" />
+    <topic-list :topic-list="topicList" />
   </div>
 </template>
 

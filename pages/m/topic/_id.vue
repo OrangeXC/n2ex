@@ -1,26 +1,26 @@
 <template>
   <section class="container">
-    <MuCard>
-      <NuxtLink :to="'/m/member/' + detail.member.username">
-        <MuCardHeader
+    <mu-card>
+      <nuxt-link :to="'/m/member/' + detail.member.username">
+        <mu-card-header
           :title="detail.title"
           :sub-title="detail.member.username"
         >
-          <MuAvatar slot="avatar">
+          <mu-avatar slot="avatar">
             <img
               :src="detail.member.avatar_normal | largeAvatar"
               alt="avatar"
             >
-          </MuAvatar>
-        </MuCardHeader>
-      </NuxtLink>
-      <MuCardText>
+          </mu-avatar>
+        </mu-card-header>
+      </nuxt-link>
+      <mu-card-text>
         <!-- eslint-disable -->
         <article
           class="article"
           v-html="detail.content_rendered"
         />
-      </MuCardText>
+      </mu-card-text>
       <MuCardActions>
         <div class="chip-container">
           <MuChip
@@ -49,7 +49,7 @@
           </MuChip>
         </div>
       </MuCardActions>
-    </MuCard>
+    </mu-card>
     <Comment
       v-if="comments.length"
       :comments="comments"

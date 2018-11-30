@@ -1,19 +1,19 @@
 <template>
   <section class="container">
-    <ElInput
+    <el-input
       v-model="searchString"
       suffix-icon="el-icon-search"
       placeholder="请输入搜索内容"
     />
     <p>已为您找到 {{ nodes.length }} 个节点</p>
     <div class="tags">
-      <ElTag
+      <el-tag
         v-for="node in nodes"
         :key="node.id"
         @click.native="toNode(node.name)"
       >
         {{ node.title }}
-      </ElTag>
+      </el-tag>
     </div>
   </section>
 </template>

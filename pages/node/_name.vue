@@ -1,6 +1,6 @@
 <template>
   <section>
-    <ElCard>
+    <el-card>
       <img
         class="card-background"
         :src="node.avatar_large"
@@ -23,7 +23,7 @@
       </div>
       <!-- eslint-disable -->
       <div v-html="node.header" />
-    </ElCard>
+    </el-card>
     <TopicListChalk :topic-list="topicList" />
   </section>
 </template>

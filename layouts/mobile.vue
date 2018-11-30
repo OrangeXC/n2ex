@@ -1,90 +1,90 @@
 <template>
   <div>
-    <MuAppbar title="N2EX">
-      <MuButton
+    <mu-appbar title="N2EX">
+      <mu-button
         slot="left"
         icon
         @click="toggle()"
       >
-        <MuIcon value="menu" />
-      </MuButton>
-      <MuButton
+        <mu-icon value="menu" />
+      </mu-button>
+      <mu-button
         slot="right"
         icon
         href="https://github.com/OrangeXC/n2ex"
       >
         <i class="muidocs-icon-custom-github" />
-      </MuButton>
-    </MuAppbar>
-    <MuDrawer
+      </mu-button>
+    </mu-appbar>
+    <mu-drawer
       :open.sync="open"
       :docked="docked"
     >
-      <MuAppbar title="Tabs" />
-      <MuList @itemClick="docked ? '' : toggle()">
-        <MuListItem
+      <mu-appbar title="Tabs" />
+      <mu-list @itemClick="docked ? '' : toggle()">
+        <mu-list-item
           button
           @click="toTab('tech')"
         >
-          <MuListItemTitle>技术</MuListItemTitle>
-        </MuListItem>
-        <MuListItem
+          <mu-list-item-title>技术</mu-list-item-title>
+        </mu-list-item>
+        <mu-list-item
           button
           @click="toTab('play')"
         >
-          <MuListItemTitle>好玩</MuListItemTitle>
-        </MuListItem>
-        <MuListItem
+          <mu-list-item-title>好玩</mu-list-item-title>
+        </mu-list-item>
+        <mu-list-item
           button
           @click="toTab('apple')"
         >
-          <MuListItemTitle>Apple</MuListItemTitle>
-        </MuListItem>
-        <MuListItem
+          <mu-list-item-title>Apple</mu-list-item-title>
+        </mu-list-item>
+        <mu-list-item
           button
           @click="toTab('jobs')"
         >
-          <MuListItemTitle>酷工作</MuListItemTitle>
-        </MuListItem>
-        <MuListItem
+          <mu-list-item-title>酷工作</mu-list-item-title>
+        </mu-list-item>
+        <mu-list-item
           button
           @click="toTab('deals')"
         >
-          <MuListItemTitle>交易</MuListItemTitle>
-        </MuListItem>
-        <MuListItem
+          <mu-list-item-title>交易</mu-list-item-title>
+        </mu-list-item>
+        <mu-list-item
           button
           @click="toTab('city')"
         >
-          <MuListItemTitle>城市</MuListItemTitle>
-        </MuListItem>
-        <MuListItem
+          <mu-list-item-title>城市</mu-list-item-title>
+        </mu-list-item>
+        <mu-list-item
           button
           @click="toTab('qna')"
         >
-          <MuListItemTitle>问与答</MuListItemTitle>
-        </MuListItem>
-        <MuListItem
+          <mu-list-item-title>问与答</mu-list-item-title>
+        </mu-list-item>
+        <mu-list-item
           button
           @click="toHome()"
         >
-          <MuListItemTitle>最热</MuListItemTitle>
-        </MuListItem>
-        <MuListItem
+          <mu-list-item-title>最热</mu-list-item-title>
+        </mu-list-item>
+        <mu-list-item
           button
           @click="toNew()"
         >
-          <MuListItemTitle>最新</MuListItemTitle>
-        </MuListItem>
-        <MuListItem
+          <mu-list-item-title>最新</mu-list-item-title>
+        </mu-list-item>
+        <mu-list-item
           button
           @click="toTab('nodes')"
         >
-          <MuListItemTitle>节点</MuListItemTitle>
-        </MuListItem>
-      </MuList>
-    </MuDrawer>
-    <Nuxt keep-alive />
+          <mu-list-item-title>节点</mu-list-item-title>
+        </mu-list-item>
+      </mu-list>
+    </mu-drawer>
+    <nuxt keep-alive />
   </div>
 </template>
 

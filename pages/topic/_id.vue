@@ -1,6 +1,6 @@
 <template>
   <section>
-    <ElCard>
+    <el-card>
       <div
         slot="header"
         class="card card-header"
@@ -15,12 +15,12 @@
           <div class="title">
             {{ detail.title }}
           </div>
-          <ElTag
+          <el-tag
             size="small"
             @click.native="toNode(detail.node.name)"
           >
             {{ detail.node.title }}
-          </ElTag>
+          </el-tag>
           <span
             class="link"
             @click="toMember(detail.member.username)"
@@ -35,7 +35,7 @@
         class="article"
         v-html="detail.content_rendered"
       />
-    </ElCard>
+    </el-card>
     <Comment
       v-if="comments.length"
       :comments="comments"
