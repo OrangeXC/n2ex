@@ -25,7 +25,7 @@
               />
             </mu-list-item-content>
           </mu-list-item>
-          <MuDivider inset />
+          <mu-divider inset />
         </div>
       </mu-list>
     </mu-card>
