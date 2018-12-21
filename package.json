@@ -1,16 +1,18 @@
 {
   "name": "n2ex",
   "version": "2.0.0",
-  "description": "Nuxt.js project",
-  "author": "OrangeXC <842012622@qq.com>",
+  "description": "v2ex base nuxt.js",
+  "author": "OrangeXC",
   "private": true,
   "scripts": {
-    "dev": "backpack dev",
-    "build": "nuxt build && backpack build",
-    "start": "cross-env NODE_ENV=production node build/main.js",
-    "lint": "eslint . --ext .js,.vue --fix",
-    "test": "ava --serial --verbose --watch",
-    "heroku-postbuild": "npm run build"
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate",
+    "lint": "eslint . --ext .js,.vue",
+    "test": "ava --serial --verbose",
+    "heroku-postbuild": "npm run build",
+    "precommit": "npm run lint"
   },
   "ava": {
     "require": [
@@ -29,17 +31,14 @@
     "source-map-support": "^0.5.9"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-syntax-jsx": "^7.2.0",
     "@vue/test-utils": "^1.0.0-beta.27",
     "ava": "1.0.1",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.4",
+    "babel-eslint": "^10.0.1",
     "babel-plugin-component": "^1.1.1",
-    "backpack-core": "^0.8.3",
     "browser-env": "^3.2.5",
     "eslint": "^5.10.0",
     "eslint-config-standard": "^12.0.0",
+    "eslint-loader": "^2.1.1",
     "eslint-plugin-html": "^5.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^8.0.0",

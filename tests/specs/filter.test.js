@@ -9,10 +9,10 @@ import {
 } from '../../plugins/filters'
 
 test('export functions', t => {
-  t.is(typeof(host), 'function')
-  t.is(typeof(timeAgo), 'function')
-  t.is(typeof(format), 'function')
-  t.is(typeof(image), 'function')
+  t.is(typeof (host), 'function')
+  t.is(typeof (timeAgo), 'function')
+  t.is(typeof (format), 'function')
+  t.is(typeof (image), 'function')
 })
 
 test('host', t => {
