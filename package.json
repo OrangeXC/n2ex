@@ -28,11 +28,11 @@
     "koa": "^2.6.2",
     "muse-ui": "^3.0.1",
     "nuxt": "^2.3.4",
-    "source-map-support": "^0.5.9"
+    "source-map-support": "^0.5.10"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.28",
-    "ava": "1.0.1",
+    "ava": "1.1.0",
     "babel-eslint": "^10.0.1",
     "babel-plugin-component": "^1.1.1",
     "browser-env": "^3.2.5",
@@ -53,6 +53,6 @@
     "sass-loader": "^7.1.0",
     "scmp": "^2.0.0",
     "sinon": "^7.2.2",
-    "webpack": "^4.28.3"
+    "webpack": "^4.28.4"
   }
 }
