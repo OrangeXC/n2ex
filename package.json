@@ -36,7 +36,7 @@
     "babel-eslint": "^10.0.1",
     "babel-plugin-component": "^1.1.1",
     "browser-env": "^3.2.5",
-    "eslint": "^5.12.0",
+    "eslint": "^5.12.1",
     "eslint-config-standard": "^12.0.0",
     "eslint-loader": "^2.1.1",
     "eslint-plugin-html": "^5.0.0",
@@ -52,7 +52,7 @@
     "require-extension-hooks-vue": "^2.0.0",
     "sass-loader": "^7.1.0",
     "scmp": "^2.0.0",
-    "sinon": "^7.2.2",
-    "webpack": "^4.28.4"
+    "sinon": "^7.2.3",
+    "webpack": "^4.29.0"
   }
 }
