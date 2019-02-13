@@ -10,14 +10,9 @@
     "start": "cross-env NODE_ENV=production node server/index.js",
     "generate": "nuxt generate",
     "lint": "eslint . --ext .js,.vue",
-    "test": "ava --serial --verbose",
+    "test": "jest",
     "heroku-postbuild": "npm run build",
     "precommit": "npm run lint"
-  },
-  "ava": {
-    "require": [
-      "./tests/helpers/setup.js"
-    ]
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
@@ -28,15 +23,13 @@
     "koa": "^2.7.0",
     "muse-ui": "^3.0.2",
     "nuxt": "^2.4.3",
-    "source-map-support": "^0.5.10",
-    "vue-template-compiler": "^2.5.22"
+    "source-map-support": "^0.5.10"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.29",
-    "ava": "1.2.1",
+    "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
-    "babel-plugin-component": "^1.1.1",
-    "browser-env": "^3.2.5",
+    "babel-jest": "^24.1.0",
     "eslint": "^5.13.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-loader": "^2.1.2",
@@ -46,14 +39,11 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^5.1.0",
+    "jest": "^24.1.0",
     "node-sass": "^4.11.0",
     "nodemon": "^1.18.10",
-    "require-extension-hooks": "^0.3.3",
-    "require-extension-hooks-babel": "^0.1.1",
-    "require-extension-hooks-vue": "^2.0.0",
     "sass-loader": "^7.1.0",
-    "scmp": "^2.0.0",
-    "sinon": "^7.2.3",
-    "webpack": "^4.29.3"
+    "vue-jest": "^3.0.3",
+    "vue-template-compiler": "^2.6.6"
   }
 }
