@@ -64,8 +64,8 @@ export default {
 }
 
 .code-area {
-  width: 320px;
-  min-width: 320px;
+  width: 340px;
+  min-width: 340px;
   position: absolute;
   top: 50%;
   left: 50%;
