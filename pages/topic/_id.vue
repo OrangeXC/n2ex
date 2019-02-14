@@ -55,11 +55,17 @@ export default {
   validate ({ params }) {
     return /^\d+$/.test(params.id)
   },
-  async asyncData ({ app, params }) {
+  async asyncData ({ app, params, error }) {
     const [ detail, comments ] = await Promise.all([
       app.$axios.get(`topics/show.json?id=${params.id}`).then(res => res.data[0]),
       app.$axios.get(`replies/show.json?topic_id=${params.id}`).then(res => res.data)
     ])
+
+    if (!detail) {
+      error({ statusCode: 404, message: 'Topic not found' })
+
+      return
+    }
 
     return {
       detail,
