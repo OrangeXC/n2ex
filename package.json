@@ -43,7 +43,6 @@
     "node-sass": "^4.11.0",
     "nodemon": "^1.18.10",
     "sass-loader": "^7.1.0",
-    "vue-jest": "^3.0.3",
-    "vue-template-compiler": "^2.6.6"
+    "vue-jest": "^3.0.3"
   }
 }
