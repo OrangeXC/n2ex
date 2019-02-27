@@ -11,6 +11,9 @@ export default {
       titleTemplate: '%s - 最新'
     }
   },
+  components: {
+    TopicList
+  },
   async asyncData ({ app }) {
     const { data } = await app.$axios.get('topics/latest.json')
 
@@ -18,9 +21,6 @@ export default {
       newList: data
     }
   },
-  layout: 'mobile',
-  components: {
-    TopicList
-  }
+  layout: 'mobile'
 }
 </script>

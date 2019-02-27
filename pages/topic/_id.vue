@@ -55,6 +55,9 @@ export default {
   validate ({ params }) {
     return /^\d+$/.test(params.id)
   },
+  components: {
+    Comment
+  },
   async asyncData ({ app, params, error }) {
     const [ detail, comments ] = await Promise.all([
       app.$axios.get(`topics/show.json?id=${params.id}`).then(res => res.data[0]),
@@ -71,9 +74,6 @@ export default {
       detail,
       comments
     }
-  },
-  components: {
-    Comment
   },
   methods: {
     toNode (name) {

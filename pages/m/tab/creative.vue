@@ -12,6 +12,9 @@ export default {
       titleTemplate: '%s - 创意'
     }
   },
+  components: {
+    TopicList
+  },
   async asyncData ({ app }) {
     const nodes = ['create', 'design', 'ideas']
     const creativeList = await fetchTopicList(app.$axios, nodes)
@@ -20,9 +23,6 @@ export default {
       creativeList
     }
   },
-  layout: 'mobile',
-  components: {
-    TopicList
-  }
+  layout: 'mobile'
 }
 </script>

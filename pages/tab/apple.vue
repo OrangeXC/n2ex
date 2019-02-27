@@ -12,6 +12,9 @@ export default {
       titleTemplate: '%s - Apple'
     }
   },
+  components: {
+    TopicListChalk
+  },
   async asyncData ({ app }) {
     const nodes = ['apple', 'macos', 'ios', 'ipad', 'iphone', 'mbp']
     const appleList = await fetchTopicList(app.$axios, nodes)
@@ -19,9 +22,6 @@ export default {
     return {
       appleList
     }
-  },
-  components: {
-    TopicListChalk
   }
 }
 </script>

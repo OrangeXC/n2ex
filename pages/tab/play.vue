@@ -12,6 +12,9 @@ export default {
       titleTemplate: '%s - 好玩'
     }
   },
+  components: {
+    TopicListChalk
+  },
   async asyncData ({ app }) {
     const nodes = ['share', 'bb', 'games', 'travel', 'hardware']
     const playList = await fetchTopicList(app.$axios, nodes)
@@ -19,9 +22,6 @@ export default {
     return {
       playList
     }
-  },
-  components: {
-    TopicListChalk
   }
 }
 </script>

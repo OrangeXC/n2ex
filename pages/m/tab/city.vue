@@ -12,6 +12,9 @@ export default {
       titleTemplate: '%s - 城市'
     }
   },
+  components: {
+    TopicList
+  },
   async asyncData ({ app }) {
     const nodes = ['beijing', 'shanghai', 'shenzhen', 'hangzhou', 'life']
     const cityList = await fetchTopicList(app.$axios, nodes)
@@ -20,9 +23,6 @@ export default {
       cityList
     }
   },
-  layout: 'mobile',
-  components: {
-    TopicList
-  }
+  layout: 'mobile'
 }
 </script>
