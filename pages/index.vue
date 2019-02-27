@@ -11,15 +11,15 @@ export default {
       titleTemplate: '%s - 最热'
     }
   },
+  components: {
+    TopicListChalk
+  },
   async asyncData ({ app }) {
     const { data } = await app.$axios.get('topics/hot.json')
 
     return {
       hotList: data
     }
-  },
-  components: {
-    TopicListChalk
   }
 }
 </script>

@@ -11,6 +11,9 @@ export default {
       titleTemplate: '%s - 最热'
     }
   },
+  components: {
+    TopicList
+  },
   async asyncData ({ app }) {
     const { data } = await app.$axios.get('topics/hot.json')
 
@@ -18,9 +21,6 @@ export default {
       hotList: data
     }
   },
-  layout: 'mobile',
-  components: {
-    TopicList
-  }
+  layout: 'mobile'
 }
 </script>

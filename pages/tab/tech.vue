@@ -12,6 +12,9 @@ export default {
       titleTemplate: '%s - 技术'
     }
   },
+  components: {
+    TopicListChalk
+  },
   async asyncData ({ app }) {
     const nodes = ['programmer', 'fe', 'js', 'nodejs', 'vue']
     const techList = await fetchTopicList(app.$axios, nodes)
@@ -19,9 +22,6 @@ export default {
     return {
       techList
     }
-  },
-  components: {
-    TopicListChalk
   }
 }
 </script>

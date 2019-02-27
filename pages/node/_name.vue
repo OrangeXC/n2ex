@@ -37,6 +37,9 @@ export default {
       titleTemplate: '%s - 节点详情'
     }
   },
+  components: {
+    TopicListChalk
+  },
   async asyncData ({ app, params, error }) {
     const [node, topicList] = await Promise.all([
       app.$axios.get(`nodes/show.json?name=${params.name}`)
@@ -51,9 +54,6 @@ export default {
       node,
       topicList
     }
-  },
-  components: {
-    TopicListChalk
   }
 }
 </script>

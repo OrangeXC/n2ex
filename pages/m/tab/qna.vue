@@ -12,6 +12,9 @@ export default {
       titleTemplate: '%s - 问与答'
     }
   },
+  components: {
+    TopicList
+  },
   async asyncData ({ app }) {
     const nodes = ['qna']
     const qnaList = await fetchTopicList(app.$axios, nodes)
@@ -20,9 +23,6 @@ export default {
       qnaList
     }
   },
-  layout: 'mobile',
-  components: {
-    TopicList
-  }
+  layout: 'mobile'
 }
 </script>

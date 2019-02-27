@@ -26,13 +26,6 @@ export default {
       titleTemplate: '%s - 全部节点'
     }
   },
-  async asyncData ({ app }) {
-    const { data } = await app.$axios.get(`nodes/all.json`)
-
-    return {
-      nodeList: data
-    }
-  },
   data () {
     return {
       searchString: ''
@@ -48,6 +41,13 @@ export default {
         title.toLowerCase().indexOf(searchString) !== -1 ||
         name.toLowerCase().indexOf(searchString) !== -1
       )
+    }
+  },
+  async asyncData ({ app }) {
+    const { data } = await app.$axios.get(`nodes/all.json`)
+
+    return {
+      nodeList: data
     }
   },
   methods: {

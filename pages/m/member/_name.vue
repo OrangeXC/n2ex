@@ -108,6 +108,9 @@ export default {
       titleTemplate: '%s - 用户详情'
     }
   },
+  components: {
+    TopicList
+  },
   async asyncData ({ app, params, error }) {
     const [user, topicList] = await Promise.all([
       app.$axios.get(`members/show.json?username=${params.name}`)
@@ -122,9 +125,6 @@ export default {
       user,
       topicList
     }
-  },
-  components: {
-    TopicList
   },
   methods: {
     toWebsite (url) {

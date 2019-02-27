@@ -12,6 +12,9 @@ export default {
       titleTemplate: '%s - 酷工作'
     }
   },
+  components: {
+    TopicListChalk
+  },
   async asyncData ({ app }) {
     const nodes = ['jobs', 'cv', 'career', 'outsourcing']
     const jobList = await fetchTopicList(app.$axios, nodes)
@@ -19,9 +22,6 @@ export default {
     return {
       jobList
     }
-  },
-  components: {
-    TopicListChalk
   }
 }
 </script>

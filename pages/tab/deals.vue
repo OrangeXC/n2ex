@@ -12,6 +12,9 @@ export default {
       titleTemplate: '%s - 交易'
     }
   },
+  components: {
+    TopicListChalk
+  },
   async asyncData ({ app }) {
     const nodes = ['all4all', 'exchange', 'free', 'dn', 'tuan']
     const dealList = await fetchTopicList(app.$axios, nodes)
@@ -19,9 +22,6 @@ export default {
     return {
       dealList
     }
-  },
-  components: {
-    TopicListChalk
   }
 }
 </script>
