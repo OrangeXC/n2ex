@@ -24,8 +24,7 @@ module.exports = {
   loading: { color: '#409EFF' },
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/pwa',
-    '@nuxtjs/component-cache'
+    '@nuxtjs/pwa'
   ],
   router: {
     middleware: 'redirect'

@@ -17,9 +17,9 @@
           >
         </div>
         <div class="title">
-          {{ node.title }}
+          {{ node.title || node.title_alternative }}
         </div>
-        <p>关注 {{ node.stars }} • 创建于 {{ node.created | format }}</p>
+        <p>关注 {{ node.stars }}</p>
       </div>
       <!-- eslint-disable -->
       <div v-html="node.header" />
