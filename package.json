@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/component-cache": "^1.1.4",
     "@nuxtjs/pwa": "^3.0.0-beta.10",
     "cross-env": "^5.2.0",
     "element-ui": "^2.6.0",

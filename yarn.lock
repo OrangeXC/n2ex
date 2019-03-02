@@ -1153,13 +1153,6 @@
     axios-retry "^3.1.1"
     consola "^1.4.4"
 
-"@nuxtjs/component-cache@^1.1.4":
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/component-cache/-/component-cache-1.1.4.tgz#4015e0ab3499dbaac80866b47c62b9936fda41f8"
-  integrity sha512-6bQjzYBnbuJzAlUFCB17axlnTs98KUB2F8p0Q42SD9CYietGyjceFPEbAiFwShdQYm7qn6FR2z6JN71ilmHopg==
-  dependencies:
-    lru-cache "^5.1.1"
-
 "@nuxtjs/icon@3.0.0-beta.10":
   version "3.0.0-beta.10"
   resolved "https://registry.yarnpkg.com/@nuxtjs/icon/-/icon-3.0.0-beta.10.tgz#822cefa686ff72574188775594de6cd062f6e632"
