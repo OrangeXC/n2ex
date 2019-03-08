@@ -21,36 +21,36 @@
           v-html="detail.content_rendered"
         />
       </mu-card-text>
-      <MuCardActions>
+      <mu-card-actions>
         <div class="chip-container">
-          <MuChip
+          <mu-chip
             class="chip"
             @click="toNode(detail.node.name)"
           >
-            <MuAvatar :size="32">
+            <mu-avatar :size="32">
               <img
                 :src="detail.node.avatar_normal | image"
                 alt="avatar"
               >
-            </MuAvatar>
+            </mu-avatar>
             {{ detail.node.title }}
-          </MuChip>
-          <MuChip class="chip">
-            <MuAvatar :size="32">
-              <MuIcon value="schedule" />
-            </MuAvatar>
+          </mu-chip>
+          <mu-chip class="chip">
+            <mu-avatar :size="32">
+              <mu-icon value="schedule" />
+            </mu-avatar>
             {{ detail.created | timeAgo }}
-          </MuChip>
-          <MuChip class="chip">
-            <MuAvatar :size="32">
-              <MuIcon value="comment" />
-            </MuAvatar>
+          </mu-chip>
+          <mu-chip class="chip">
+            <mu-avatar :size="32">
+              <mu-icon value="comment" />
+            </mu-avatar>
             {{ detail.replies }}
-          </MuChip>
+          </mu-chip>
         </div>
-      </MuCardActions>
+      </mu-card-actions>
     </mu-card>
-    <Comment
+    <comment
       v-if="comments.length"
       :comments="comments"
     />
