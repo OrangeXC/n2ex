@@ -32,18 +32,6 @@
               </mu-avatar>
               {{ node.stars }}
             </mu-chip>
-            <mu-chip
-              class="chip"
-              color="blue300"
-            >
-              <mu-avatar
-                :size="32"
-                color="indigo900"
-              >
-                <mu-icon value="schedule" />
-              </mu-avatar>
-              {{ node.created | format }}
-            </mu-chip>
           </div>
         </mu-card-actions>
       </mu-card>
