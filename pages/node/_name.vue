@@ -24,7 +24,7 @@
       <!-- eslint-disable -->
       <div v-html="node.header" />
     </el-card>
-    <TopicListChalk :topic-list="topicList" />
+    <topic-list-chalk :topic-list="topicList" />
   </section>
 </template>
 
