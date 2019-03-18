@@ -1299,30 +1299,30 @@
     axios-retry "^3.1.2"
     consola "^2.5.6"
 
-"@nuxtjs/icon@3.0.0-beta.12":
-  version "3.0.0-beta.12"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/icon/-/icon-3.0.0-beta.12.tgz#d7b48ae646ced69b4b678123f7fb237f8035e9a4"
-  integrity sha512-f7nwKg+jPlyi8JyXwGNflZK2LYOwK1FkjySTGtE14eBk02MalTBD0fqv5KCcJjtCaeaNiiraJSOJ2qGhVsOIcQ==
+"@nuxtjs/icon@3.0.0-beta.14":
+  version "3.0.0-beta.14"
+  resolved "http://npm.zhaopin.com/@nuxtjs%2ficon/-/icon-3.0.0-beta.14.tgz#98a111cd8a85de585692b695f70acbcc3417cbb9"
+  integrity sha1-mKERzYqF3lhWkraV9wrLzDQXy7k=
   dependencies:
-    "@nuxtjs/pwa-utils" "3.0.0-beta.12"
+    "@nuxtjs/pwa-utils" "3.0.0-beta.14"
     fs-extra "^7.0.1"
     hash-sum "^1.0.2"
     jimp "^0.6.0"
 
-"@nuxtjs/manifest@3.0.0-beta.12":
-  version "3.0.0-beta.12"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/manifest/-/manifest-3.0.0-beta.12.tgz#d3218494edcc35d825a20a2f0b4602c95c70007e"
-  integrity sha512-qQw0f7cUwZ9GvBPmwWKdDwX1/oscmD/5Of8cn1y8ogNacFGBO7vSYmwS78lCjBom9MCw9myt53SxhdQ8QLigRA==
+"@nuxtjs/manifest@3.0.0-beta.14":
+  version "3.0.0-beta.14"
+  resolved "http://npm.zhaopin.com/@nuxtjs%2fmanifest/-/manifest-3.0.0-beta.14.tgz#e4bb7e7414693806bfa1f0cf688aa88a67fa3d94"
+  integrity sha1-5Lt+dBRpOAa/ofDPaIqoimf6PZQ=
   dependencies:
-    "@nuxtjs/pwa-utils" "3.0.0-beta.12"
+    "@nuxtjs/pwa-utils" "3.0.0-beta.14"
     hash-sum "^1.0.2"
 
-"@nuxtjs/meta@3.0.0-beta.12":
-  version "3.0.0-beta.12"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/meta/-/meta-3.0.0-beta.12.tgz#990a960958d54131d7616669c85a33e80e7bb2a0"
-  integrity sha512-mCHjAzL6feQ1dAr7LjxWBmCjNtSFPHIi2Ym4k0MLD97e5cTUC6zTICizQG5pTxTim6lmSXPtzsHFSURgglVVdg==
+"@nuxtjs/meta@3.0.0-beta.14":
+  version "3.0.0-beta.14"
+  resolved "http://npm.zhaopin.com/@nuxtjs%2fmeta/-/meta-3.0.0-beta.14.tgz#370d1921423a980e9468d51f7669b4fe8f176010"
+  integrity sha1-Nw0ZIUI6mA6UaNUfdmm0/o8XYBA=
   dependencies:
-    "@nuxtjs/pwa-utils" "3.0.0-beta.12"
+    "@nuxtjs/pwa-utils" "3.0.0-beta.14"
 
 "@nuxtjs/proxy@^1.3.3":
   version "1.3.3"
@@ -1332,29 +1332,29 @@
     consola "^2.5.6"
     http-proxy-middleware "^0.19.1"
 
-"@nuxtjs/pwa-utils@3.0.0-beta.12":
-  version "3.0.0-beta.12"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/pwa-utils/-/pwa-utils-3.0.0-beta.12.tgz#8a60387794e91b6a00b2b91e759c70b8991ab954"
-  integrity sha512-5el8TX6kps2YBMqfcKTePikDFjUaRIRTvG+WxD5HzGRwShAAbbXphuanasr9VjtxXfkCVIG0v4mqrZ2Wv91fUA==
+"@nuxtjs/pwa-utils@3.0.0-beta.14":
+  version "3.0.0-beta.14"
+  resolved "http://npm.zhaopin.com/@nuxtjs%2fpwa-utils/-/pwa-utils-3.0.0-beta.14.tgz#c5f6ebc483db4d341d52a067e97c2fc0977e3f53"
+  integrity sha1-xfbrxIPbTTQdUqBn6XwvwJd+P1M=
 
-"@nuxtjs/pwa@^3.0.0-beta.12":
-  version "3.0.0-beta.12"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/pwa/-/pwa-3.0.0-beta.12.tgz#2ea55137f896687bc265e26d6dedbfd125e130c0"
-  integrity sha512-ex37k5A0nWRK6CiL1J6VzZEk4THjWuQopCv097Aif6ylKS5OytvJUOZDAgLLuTTm+D4zp9F411TYtqA4mJ4bUw==
+"@nuxtjs/pwa@^3.0.0-beta.14":
+  version "3.0.0-beta.14"
+  resolved "http://npm.zhaopin.com/@nuxtjs%2fpwa/-/pwa-3.0.0-beta.14.tgz#47b06554aff23c3d20cd0c42d74dac22706ad29b"
+  integrity sha1-R7BlVK/yPD0gzQxC102sInBq0ps=
   dependencies:
-    "@nuxtjs/icon" "3.0.0-beta.12"
-    "@nuxtjs/manifest" "3.0.0-beta.12"
-    "@nuxtjs/meta" "3.0.0-beta.12"
-    "@nuxtjs/pwa-utils" "3.0.0-beta.12"
-    "@nuxtjs/workbox" "3.0.0-beta.12"
+    "@nuxtjs/icon" "3.0.0-beta.14"
+    "@nuxtjs/manifest" "3.0.0-beta.14"
+    "@nuxtjs/meta" "3.0.0-beta.14"
+    "@nuxtjs/pwa-utils" "3.0.0-beta.14"
+    "@nuxtjs/workbox" "3.0.0-beta.14"
 
-"@nuxtjs/workbox@3.0.0-beta.12":
-  version "3.0.0-beta.12"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/workbox/-/workbox-3.0.0-beta.12.tgz#004d9e2070f1242246f77ec920f2112b8c5c2ddc"
-  integrity sha512-HDI4VRT8x3T14SMCbeATS2ugOfb5AYF0EyX8BJO4lYlIYM3HA5D2EwOlxeKeTruUJBckrh1w+Jp1bgepBv45nQ==
+"@nuxtjs/workbox@3.0.0-beta.14":
+  version "3.0.0-beta.14"
+  resolved "http://npm.zhaopin.com/@nuxtjs%2fworkbox/-/workbox-3.0.0-beta.14.tgz#e0c8be6a09371601fb4112d4995dd1cde021681f"
+  integrity sha1-4Mi+agk3FgH7QRLUmV3RzeAhaB8=
   dependencies:
-    "@nuxtjs/pwa-utils" "3.0.0-beta.12"
-    workbox-window "4.0.0"
+    "@nuxtjs/pwa-utils" "3.0.0-beta.14"
+    workbox-cdn "^4.1.1"
 
 "@nuxtjs/youch@^4.2.3":
   version "4.2.3"
@@ -10478,17 +10478,10 @@ wordwrap@~1.0.0:
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
   integrity sha1-J1hIEIkUVqQXHI0CJkQa3pDLyus=
 
-workbox-core@^4.0.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/workbox-core/-/workbox-core-4.1.0.tgz#395d89a36a95887073b5682f9f6920e96bd53331"
-  integrity sha512-YgLs4EUSmpib3aOt7pa5055VsapQzzBEXik800Ez+h9CUohZzDTBRCL0uWJL+rm2ilcFWk/W9Y1gDeCmel9ULQ==
-
-workbox-window@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/workbox-window/-/workbox-window-4.0.0.tgz#a4d6404c96cc65d4882f79331d4e812c10f912a6"
-  integrity sha512-gdLzP/L0vu5Gi3pdUYtVNmg0yE7OriEuYZBoLt8AYoILXh6cta9WsWHKQ0/pXfmEmZywr4Dfu0qkLLvc9VlZGQ==
-  dependencies:
-    workbox-core "^4.0.0"
+workbox-cdn@^4.1.1:
+  version "4.1.1"
+  resolved "http://npm.zhaopin.com/workbox-cdn/-/workbox-cdn-4.1.1.tgz#38488075409cff88a11beeeaa65f0cc8d147101a"
+  integrity sha1-OEiAdUCc/4ihG+7qpl8MyNFHEBo=
 
 worker-farm@^1.5.2:
   version "1.6.0"
