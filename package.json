@@ -18,10 +18,10 @@
     "@nuxtjs/axios": "^5.4.1",
     "@nuxtjs/pwa": "^3.0.0-beta.14",
     "cross-env": "^5.2.0",
-    "element-ui": "^2.6.1",
+    "element-ui": "^2.7.0",
     "koa": "^2.7.0",
     "muse-ui": "^3.0.2",
-    "nuxt": "^2.4.5",
+    "nuxt": "^2.5.1",
     "source-map-support": "^0.5.11"
   },
   "devDependencies": {
