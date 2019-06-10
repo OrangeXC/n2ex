@@ -15,13 +15,13 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.5.3",
+    "@nuxtjs/axios": "^5.5.4",
     "@nuxtjs/pwa": "^3.0.0-beta.14",
     "cross-env": "^5.2.0",
     "element-ui": "^2.9.1",
     "koa": "^2.7.0",
     "muse-ui": "^3.0.2",
-    "nuxt": "^2.8.0",
+    "nuxt": "^2.8.1",
     "source-map-support": "^0.5.12"
   },
   "devDependencies": {
