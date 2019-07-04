@@ -48,7 +48,10 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
+          options: {
+            formatter: require('eslint/lib/cli-engine/formatters/stylish')
+          }
         })
       }
     }
