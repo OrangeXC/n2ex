@@ -22,12 +22,12 @@ export function timeAgo (time) {
 }
 
 export function format (timestamp) {
-  let date = new Date(timestamp * 1000)
-  let Y = date.getFullYear() + '-'
-  let M = (date.getMonth() + 1 < 10
+  const date = new Date(timestamp * 1000)
+  const Y = date.getFullYear() + '-'
+  const M = (date.getMonth() + 1 < 10
     ? '0' + (date.getMonth() + 1)
     : date.getMonth() + 1) + '-'
-  let D = (date.getDate() < 10
+  const D = (date.getDate() < 10
     ? '0' + (date.getDate())
     : date.getDate())
 
