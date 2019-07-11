@@ -35,7 +35,7 @@ export default {
     nodes () {
       if (!this.searchString) return this.nodeList
 
-      let searchString = this.searchString.trim().toLowerCase()
+      const searchString = this.searchString.trim().toLowerCase()
 
       return this.nodeList.filter(({ title, name }) =>
         title.toLowerCase().indexOf(searchString) !== -1 ||

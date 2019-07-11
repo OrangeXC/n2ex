@@ -59,7 +59,7 @@ export default {
     Comment
   },
   async asyncData ({ app, params, error }) {
-    const [ detail, comments ] = await Promise.all([
+    const [detail, comments] = await Promise.all([
       app.$axios.get(`topics/show.json?id=${params.id}`).then(res => res.data[0]),
       app.$axios.get(`replies/show.json?topic_id=${params.id}`).then(res => res.data)
     ])
