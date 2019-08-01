@@ -22,7 +22,7 @@
     "koa": "^2.7.0",
     "muse-ui": "^3.0.2",
     "nuxt": "^2.8.1",
-    "source-map-support": "^0.5.12"
+    "source-map-support": "^0.5.13"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.29",
