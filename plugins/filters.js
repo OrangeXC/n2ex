@@ -4,7 +4,7 @@ export function host (url) {
   const host = url.replace(/^https?:\/\//, '').replace(/\/.*$/, '')
   const parts = host.split('.').slice(-3)
 
-  if (parts[0] === 'www') parts.shift()
+  if (parts[0] === 'www') { parts.shift() }
 
   return parts.join('.')
 }
@@ -35,17 +35,19 @@ export function format (timestamp) {
 }
 
 export function image (url) {
-  if (url.indexOf('/static/img/') === -1) return url
+  if (!url.includes('/static/img/')) {
+    return url
+  }
 
   return `https://www.v2ex.com${url}`
 }
 
 export function largeAvatar (url) {
-  if (url.indexOf('avatar') > -1 && url.indexOf('mini') > -1) {
+  if (url.includes('avatar') && url.includes('mini')) {
     return url.replace('mini', 'large')
   }
 
-  if (url.indexOf('gravatar') > -1 && url.indexOf('s=24') > -1) {
+  if (url.includes('gravatar') && url.includes('s=24')) {
     return url.replace('s=24', 's=60')
   }
 
@@ -60,7 +62,7 @@ const filters = {
   largeAvatar
 }
 
-Object.keys(filters).forEach(key => {
+Object.keys(filters).forEach((key) => {
   Vue.filter(key, filters[key])
 })
 

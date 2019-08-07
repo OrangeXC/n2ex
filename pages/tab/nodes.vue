@@ -32,13 +32,15 @@ export default {
   },
   computed: {
     nodes () {
-      if (!this.searchString) return this.nodeList
+      if (!this.searchString) {
+        return this.nodeList
+      }
 
       const searchString = this.searchString.trim().toLowerCase()
 
       return this.nodeList.filter(({ title, name }) =>
-        title.toLowerCase().indexOf(searchString) !== -1 ||
-        name.toLowerCase().indexOf(searchString) !== -1
+        title.toLowerCase().includes(searchString) ||
+        name.toLowerCase().includes(searchString)
       )
     }
   },

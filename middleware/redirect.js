@@ -5,21 +5,21 @@ export default function (context) {
 
   const { userAgent, route, redirect } = context
 
-  if (userAgent.indexOf('Mobile') > -1) {
+  if (userAgent.includes('Mobile')) {
     if (route.path === '/') {
       redirect('/m')
     } else if (
-      route.path.indexOf('/m/') === -1 &&
+      route.path.includes('/m/') &&
       route.path !== '/m'
     ) {
       redirect(`/m${route.fullPath}`)
     }
   }
 
-  if (userAgent.indexOf('Mobile') === -1) {
+  if (userAgent.includes('Mobile')) {
     if (route.path === '/m') {
       redirect('/')
-    } else if (route.path.indexOf('/m/') > -1) {
+    } else if (route.path.includes('/m/')) {
       redirect(route.fullPath.slice(2))
     }
   }
