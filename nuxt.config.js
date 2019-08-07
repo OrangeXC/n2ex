@@ -1,7 +1,6 @@
 const pkg = require('./package')
 
 module.exports = {
-  mode: 'universal',
   head: {
     title: pkg.name,
     meta: [
@@ -26,6 +25,14 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/pwa'
   ],
+  devModules: [
+    '@nuxtjs/eslint-module'
+  ],
+  plugins: [
+    '@/plugins/element-ui.js',
+    '@/plugins/muse-ui.js',
+    '@/plugins/filters.js'
+  ],
   router: {
     middleware: 'redirect'
   },
@@ -33,24 +40,5 @@ module.exports = {
     baseURL: 'https://proxy-oagpwnbkpe.now.sh',
     credentials: false,
     proxyHeaders: false
-  },
-  plugins: [
-    '@/plugins/element-ui.js',
-    '@/plugins/muse-ui.js',
-    '@/plugins/filters.js'
-  ],
-  build: {
-    transpile: [/^element-ui/],
-    extend (config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    }
   }
 }
