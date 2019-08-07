@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import { mount } from '@vue/test-utils'
+import mocks from '../__mocks__'
 import Comment from '@/components/Comment.vue'
 import { largeAvatar } from '@/plugins/filters'
-import mocks from '../__mocks__'
 
 describe('component: Comment', () => {
   const { comments } = mocks

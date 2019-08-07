@@ -1,16 +1,18 @@
 module.exports = {
-  extends: [
-    'standard',
-    'plugin:vue/recommended'
-  ],
+  root: true,
   env: {
-    jest: true
+    browser: true,
+    node: true
   },
+  parserOptions: {
+    parser: 'babel-eslint'
+  },
+  extends: [
+    '@nuxtjs',
+    'plugin:nuxt/recommended'
+  ],
+  // add your custom rules here
   rules: {
-    'vue/component-name-in-template-casing': [
-      'error',
-      'kebab-case',
-      { ignores: [] }
-    ]
+    'nuxt/no-cjs-in-config': 'off'
   }
 }

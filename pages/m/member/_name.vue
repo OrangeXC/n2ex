@@ -128,9 +128,7 @@ export default {
   },
   methods: {
     toWebsite (url) {
-      url.indexOf('http') === -1
-        ? window.open(`http://${url}`)
-        : window.open(url)
+      window.open(url.includes('http') ? url : `http://${url}`)
     },
     toGithub (name) {
       window.open(`https://github.com/${name}`)

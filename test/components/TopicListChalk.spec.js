@@ -1,8 +1,8 @@
 import { mount } from '@vue/test-utils'
 import Vue from 'vue'
+import mocks from '../__mocks__'
 import TopicListChalk from '@/components/TopicListChalk'
 import { largeAvatar } from '@/plugins/filters'
-import mocks from '../__mocks__'
 
 describe('component: TopicListChalk', () => {
   const { topicList } = mocks

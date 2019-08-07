@@ -1,12 +1,10 @@
-const pkg = require('./package')
-
 module.exports = {
   head: {
-    title: pkg.name,
+    title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/icon.png' },
@@ -16,22 +14,22 @@ module.exports = {
       }
     ]
   },
+  loading: { color: '#409EFF' },
   css: [
     '@/assets/css/main.css',
     'element-ui/lib/theme-chalk/index.css'
-  ],
-  loading: { color: '#409EFF' },
-  modules: [
-    '@nuxtjs/axios',
-    '@nuxtjs/pwa'
-  ],
-  devModules: [
-    '@nuxtjs/eslint-module'
   ],
   plugins: [
     '@/plugins/element-ui.js',
     '@/plugins/muse-ui.js',
     '@/plugins/filters.js'
+  ],
+  devModules: [
+    '@nuxtjs/eslint-module'
+  ],
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/pwa'
   ],
   router: {
     middleware: 'redirect'
@@ -40,5 +38,8 @@ module.exports = {
     baseURL: 'https://proxy-oagpwnbkpe.now.sh',
     credentials: false,
     proxyHeaders: false
+  },
+  build: {
+    transpile: [/^element-ui/]
   }
 }

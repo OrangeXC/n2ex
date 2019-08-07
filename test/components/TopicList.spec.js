@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import { mount } from '@vue/test-utils'
+import mocks from '../__mocks__'
 import TopicList from '@/components/TopicList.vue'
 import { timeAgo, largeAvatar } from '@/plugins/filters'
-import mocks from '../__mocks__'
 
 describe('component: TopicList', () => {
   const { topicList } = mocks
@@ -75,7 +75,7 @@ describe('component: TopicList', () => {
       filters: { largeAvatar }
     })
 
-    mocks.topicList.forEach(item => {
+    mocks.topicList.forEach((item) => {
       expect(wrapper.vm.getSubTitle(item)).toBe(`by ${item.member.username} • ${timeAgo(item.created)}`)
     })
   })
