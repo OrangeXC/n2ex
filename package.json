@@ -14,26 +14,26 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.5.4",
+    "@nuxtjs/axios": "^5.6.0",
     "@nuxtjs/pwa": "^3.0.0-beta.16",
     "cross-env": "^5.2.0",
     "element-ui": "^2.11.1",
     "koa": "^2.8.1",
     "muse-ui": "^3.0.2",
-    "nuxt": "^2.8.1"
+    "nuxt": "^2.9.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.1.2",
     "@nuxtjs/eslint-module": "^1.0.0",
     "@vue/test-utils": "^1.0.0-beta.29",
-    "babel-eslint": "^10.0.2",
+    "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
-    "eslint": "^6.2.0",
+    "eslint": "^6.2.2",
     "eslint-plugin-nuxt": "^0.4.3",
     "jest": "^24.9.0",
     "node-sass": "^4.12.0",
     "nodemon": "^1.19.1",
-    "sass-loader": "^7.2.0",
+    "sass-loader": "^7.3.1",
     "vue-jest": "^4.0.0-beta.2"
   }
 }
