@@ -24,7 +24,7 @@ module.exports = {
     '@/plugins/muse-ui.js',
     '@/plugins/filters.js'
   ],
-  devModules: [
+  buildModules: [
     '@nuxtjs/eslint-module'
   ],
   modules: [
