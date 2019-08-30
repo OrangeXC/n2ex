@@ -1,4 +1,10 @@
-# n2ex
+<p align="center"><img width="100" src="https://i.loli.net/2019/08/30/3CaEjgt4iXRHm1G.jpg" alt="n2ex logo"></p>
+
+<p align="center">
+  <a href="https://travis-ci.com/OrangeXC/n2ex"><img src="https://travis-ci.com/OrangeXC/n2ex.svg?branch=master" alt="Build Status"></a>
+  <a href="https://codecov.io/gh/OrangeXC/n2ex"><img src="https://img.shields.io/codecov/c/github/OrangeXC/n2ex/master.svg" alt="Coverage Status"></a>
+  <a href="https://github.com/OrangeXC/n2ex/blob/master/LICENSE"><img src="https://img.shields.io/github/license/orangexc/n2ex" alt="GitHub License"></a>
+</p>
 
 vue ssr v2ex，because it depends on nuxt so called n2ex
 
