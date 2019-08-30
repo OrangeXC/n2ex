@@ -17,7 +17,7 @@
     "@nuxtjs/axios": "^5.6.0",
     "@nuxtjs/pwa": "^3.0.0-beta.16",
     "cross-env": "^5.2.0",
-    "element-ui": "^2.11.1",
+    "element-ui": "^2.12.0",
     "koa": "^2.8.1",
     "muse-ui": "^3.0.2",
     "nuxt": "^2.9.2"
@@ -33,7 +33,7 @@
     "jest": "^24.9.0",
     "node-sass": "^4.12.0",
     "nodemon": "^1.19.1",
-    "sass-loader": "^7.3.1",
+    "sass-loader": "^8.0.0",
     "vue-jest": "^4.0.0-beta.2"
   }
 }
