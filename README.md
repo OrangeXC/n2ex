@@ -39,24 +39,23 @@ vue ssr v2ex，because it depends on nuxt so called n2ex
 # install dependencies
 $ yarn
 
-# install dependencies
-$ yarn install
-
 # serve with hot reload at localhost:3000
-$ yarn run dev
+$ yarn dev
 
 # build for production and launch server
-$ yarn run build
+$ yarn build
 $ yarn start
 
 # generate static project
-$ yarn run generate
+$ yarn generate
 
 # eslint
-$ yarn run lint
+$ yarn lint
 
 # unit tests
-$ yarn run test
+$ yarn test
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+## License
+
+N2ex is [MIT licensed](https://github.com/OrangeXC/n2ex/blob/master/LICENSE).
