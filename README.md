@@ -6,6 +6,8 @@
   <a href="https://github.com/OrangeXC/n2ex/blob/master/LICENSE"><img src="https://img.shields.io/github/license/orangexc/n2ex" alt="GitHub License"></a>
 </p>
 
+## Introduction
+
 vue ssr v2ex，because it depends on nuxt so called n2ex
 
 ## Performance
