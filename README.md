@@ -26,7 +26,7 @@ vue ssr v2ex，because it depends on nuxt so called n2ex
 * Node proxy solve [CORS](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS)
 * Progressive Web Apps
 
-## page
+## Pages
 
 * Hot topic list
 * New topic list
