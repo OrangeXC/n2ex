@@ -16,7 +16,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.6.0",
     "@nuxtjs/pwa": "^3.0.0-beta.16",
-    "cross-env": "^5.2.1",
+    "cross-env": "^6.0.0",
     "element-ui": "^2.12.0",
     "koa": "^2.8.1",
     "muse-ui": "^3.0.2",
