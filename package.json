@@ -18,7 +18,7 @@
     "@nuxtjs/pwa": "^3.0.0-beta.16",
     "cross-env": "^6.0.0",
     "element-ui": "^2.12.0",
-    "koa": "^2.8.1",
+    "koa": "^2.8.2",
     "muse-ui": "^3.0.2",
     "nuxt": "^2.9.2"
   },
@@ -29,11 +29,11 @@
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "codecov": "^3.6.1",
-    "eslint": "^6.4.0",
+    "eslint": "^6.5.0",
     "eslint-plugin-nuxt": "^0.4.3",
     "jest": "^24.9.0",
     "node-sass": "^4.12.0",
-    "nodemon": "^1.19.2",
+    "nodemon": "^1.19.3",
     "sass-loader": "^8.0.0",
     "vue-jest": "^4.0.0-beta.2"
   }
