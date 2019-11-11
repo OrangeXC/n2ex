@@ -3,8 +3,8 @@
     <mu-appbar title="N2EX">
       <mu-button
         slot="left"
-        icon
         @click="toggle()"
+        icon
       >
         <mu-icon value="menu" />
       </mu-button>
@@ -23,62 +23,62 @@
       <mu-appbar title="Tabs" />
       <mu-list @itemClick="docked ? '' : toggle()">
         <mu-list-item
-          button
           @click="toTab('tech')"
+          button
         >
           <mu-list-item-title>技术</mu-list-item-title>
         </mu-list-item>
         <mu-list-item
-          button
           @click="toTab('play')"
+          button
         >
           <mu-list-item-title>好玩</mu-list-item-title>
         </mu-list-item>
         <mu-list-item
-          button
           @click="toTab('apple')"
+          button
         >
           <mu-list-item-title>Apple</mu-list-item-title>
         </mu-list-item>
         <mu-list-item
-          button
           @click="toTab('jobs')"
+          button
         >
           <mu-list-item-title>酷工作</mu-list-item-title>
         </mu-list-item>
         <mu-list-item
-          button
           @click="toTab('deals')"
+          button
         >
           <mu-list-item-title>交易</mu-list-item-title>
         </mu-list-item>
         <mu-list-item
-          button
           @click="toTab('city')"
+          button
         >
           <mu-list-item-title>城市</mu-list-item-title>
         </mu-list-item>
         <mu-list-item
-          button
           @click="toTab('qna')"
+          button
         >
           <mu-list-item-title>问与答</mu-list-item-title>
         </mu-list-item>
         <mu-list-item
-          button
           @click="toHome()"
+          button
         >
           <mu-list-item-title>最热</mu-list-item-title>
         </mu-list-item>
         <mu-list-item
-          button
           @click="toNew()"
+          button
         >
           <mu-list-item-title>最新</mu-list-item-title>
         </mu-list-item>
         <mu-list-item
-          button
           @click="toTab('nodes')"
+          button
         >
           <mu-list-item-title>节点</mu-list-item-title>
         </mu-list-item>

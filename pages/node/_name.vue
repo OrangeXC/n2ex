@@ -2,8 +2,8 @@
   <section>
     <el-card>
       <img
-        class="card-background"
         :src="node.avatar_large"
+        class="card-background"
         alt="background"
       >
       <div

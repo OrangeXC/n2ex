@@ -20,8 +20,8 @@
       <mu-card-actions>
         <div class="chip-container">
           <mu-chip
-            class="chip"
             @click="toNode(item.node.name)"
+            class="chip"
           >
             <mu-avatar :size="32">
               <img

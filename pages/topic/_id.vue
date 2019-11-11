@@ -16,14 +16,14 @@
             {{ detail.title }}
           </div>
           <el-tag
-            size="small"
             @click.native="toNode(detail.node.name)"
+            size="small"
           >
             {{ detail.node.title }}
           </el-tag>
           <span
-            class="link"
             @click="toMember(detail.member.username)"
+            class="link"
           >
             {{ detail.member.username }}
           </span>
