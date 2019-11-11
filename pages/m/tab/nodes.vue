@@ -11,8 +11,8 @@
     <mu-chip
       v-for="node in nodes"
       :key="node.id"
-      class="chip"
       @click="toNode(node.name)"
+      class="chip"
     >
       {{ node.title }}
     </mu-chip>

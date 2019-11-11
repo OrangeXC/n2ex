@@ -3,8 +3,8 @@
     <section class="container">
       <mu-card class="node-card">
         <img
-          class="card-background"
           :src="node.avatar_normal"
+          class="card-background"
           alt="background"
         >
         <mu-card-header
