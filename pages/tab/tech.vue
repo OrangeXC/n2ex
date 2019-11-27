@@ -7,11 +7,6 @@ import { fetchTopicList } from '~/utils'
 import TopicListChalk from '~/components/TopicListChalk'
 
 export default {
-  head () {
-    return {
-      titleTemplate: '%s - 技术'
-    }
-  },
   components: {
     TopicListChalk
   },
@@ -21,6 +16,11 @@ export default {
 
     return {
       techList
+    }
+  },
+  head () {
+    return {
+      titleTemplate: '%s - 技术'
     }
   }
 }

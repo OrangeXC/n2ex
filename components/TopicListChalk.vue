@@ -9,8 +9,8 @@
         class="clearfix"
       >
         <span
-          @click="toTopic(item.id)"
           class="link"
+          @click="toTopic(item.id)"
         >
           {{ item.title }}
         </span>
@@ -25,8 +25,8 @@
         <div>
           <div class="card-content">
             <span
-              @click="toMember(item.member.username)"
               class="link"
+              @click="toMember(item.member.username)"
             >
               {{ item.member.username }}
             </span>
@@ -35,9 +35,9 @@
           </div>
           <div class="card-action">
             <el-button
-              @click="toNode(item.node.name)"
               size="small"
               round
+              @click="toNode(item.node.name)"
             >
               <mu-avatar :size="29">
                 <img
@@ -49,8 +49,8 @@
             </el-button>
             <el-badge :value="item.replies">
               <el-button
-                @click="toTopic(item.id)"
                 size="small"
+                @click="toTopic(item.id)"
               >
                 评论
               </el-button>

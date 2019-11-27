@@ -6,11 +6,6 @@
 import TopicListChalk from '~/components/TopicListChalk'
 
 export default {
-  head () {
-    return {
-      titleTemplate: '%s - 最热'
-    }
-  },
   components: {
     TopicListChalk
   },
@@ -19,6 +14,11 @@ export default {
 
     return {
       hotList: data
+    }
+  },
+  head () {
+    return {
+      titleTemplate: '%s - 最热'
     }
   }
 }

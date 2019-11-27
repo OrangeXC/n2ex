@@ -32,11 +32,6 @@
 import TopicListChalk from '~/components/TopicListChalk'
 
 export default {
-  head () {
-    return {
-      titleTemplate: '%s - 节点详情'
-    }
-  },
   components: {
     TopicListChalk
   },
@@ -53,6 +48,11 @@ export default {
     return {
       node,
       topicList
+    }
+  },
+  head () {
+    return {
+      titleTemplate: '%s - 节点详情'
     }
   }
 }

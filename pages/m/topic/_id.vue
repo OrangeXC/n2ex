@@ -61,11 +61,6 @@
 import Comment from '~/components/Comment'
 
 export default {
-  head () {
-    return {
-      titleTemplate: '%s - 话题详情'
-    }
-  },
   components: {
     Comment
   },
@@ -80,13 +75,18 @@ export default {
       comments
     }
   },
-  validate ({ params }) {
-    return /^\d+$/.test(params.id)
-  },
   methods: {
     toNode (name) {
       this.$router.push(`/node/${name}`)
     }
+  },
+  head () {
+    return {
+      titleTemplate: '%s - 话题详情'
+    }
+  },
+  validate ({ params }) {
+    return /^\d+$/.test(params.id)
   },
   layout: 'mobile'
 }

@@ -6,11 +6,6 @@
 import TopicList from '~/components/TopicList'
 
 export default {
-  head () {
-    return {
-      titleTemplate: '%s - 最新'
-    }
-  },
   components: {
     TopicList
   },
@@ -19,6 +14,11 @@ export default {
 
     return {
       newList: data
+    }
+  },
+  head () {
+    return {
+      titleTemplate: '%s - 最新'
     }
   },
   layout: 'mobile'

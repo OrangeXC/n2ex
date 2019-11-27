@@ -6,11 +6,6 @@
 import TopicList from '~/components/TopicList'
 
 export default {
-  head () {
-    return {
-      titleTemplate: '%s - 最热'
-    }
-  },
   components: {
     TopicList
   },
@@ -19,6 +14,11 @@ export default {
 
     return {
       hotList: data
+    }
+  },
+  head () {
+    return {
+      titleTemplate: '%s - 最热'
     }
   },
   layout: 'mobile'

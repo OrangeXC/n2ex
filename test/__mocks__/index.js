@@ -3,8 +3,8 @@ const topicList = [{
   title: 'title1',
   member: {
     username: 'frank',
-    avatar_normal: `frank's avatar`,
-    avatar_large: `frank's avatar`
+    avatar_normal: 'frank\'s avatar',
+    avatar_large: 'frank\'s avatar'
   },
   node: {
     name: 'node one',
@@ -18,8 +18,8 @@ const topicList = [{
   title: 'title2',
   member: {
     username: 'jack',
-    avatar_normal: `jack's avatar`,
-    avatar_large: `jack's avatar`
+    avatar_normal: 'jack\'s avatar',
+    avatar_large: 'jack\'s avatar'
   },
   node: {
     name: 'node two',

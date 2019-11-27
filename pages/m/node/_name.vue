@@ -44,11 +44,6 @@
 import TopicList from '~/components/TopicList'
 
 export default {
-  head () {
-    return {
-      titleTemplate: '%s - 节点详情'
-    }
-  },
   components: {
     TopicList
   },
@@ -65,6 +60,11 @@ export default {
     return {
       node,
       topicList
+    }
+  },
+  head () {
+    return {
+      titleTemplate: '%s - 节点详情'
     }
   },
   layout: 'mobile'

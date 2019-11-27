@@ -16,14 +16,14 @@
             {{ detail.title }}
           </div>
           <el-tag
-            @click.native="toNode(detail.node.name)"
             size="small"
+            @click.native="toNode(detail.node.name)"
           >
             {{ detail.node.title }}
           </el-tag>
           <span
-            @click="toMember(detail.member.username)"
             class="link"
+            @click="toMember(detail.member.username)"
           >
             {{ detail.member.username }}
           </span>
@@ -47,14 +47,6 @@
 import Comment from '~/components/Comment'
 
 export default {
-  head () {
-    return {
-      titleTemplate: '%s - 话题详情'
-    }
-  },
-  validate ({ params }) {
-    return /^\d+$/.test(params.id)
-  },
   components: {
     Comment
   },
@@ -82,6 +74,14 @@ export default {
     toMember (name) {
       this.$router.push(`/member/${name}`)
     }
+  },
+  head () {
+    return {
+      titleTemplate: '%s - 话题详情'
+    }
+  },
+  validate ({ params }) {
+    return /^\d+$/.test(params.id)
   }
 }
 </script>

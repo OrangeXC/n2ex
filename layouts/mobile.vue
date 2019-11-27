@@ -3,8 +3,8 @@
     <mu-appbar title="N2EX">
       <mu-button
         slot="left"
-        @click="toggle()"
         icon
+        @click="toggle()"
       >
         <mu-icon value="menu" />
       </mu-button>
@@ -23,62 +23,62 @@
       <mu-appbar title="Tabs" />
       <mu-list @itemClick="docked ? '' : toggle()">
         <mu-list-item
-          @click="toTab('tech')"
           button
+          @click="toTab('tech')"
         >
           <mu-list-item-title>技术</mu-list-item-title>
         </mu-list-item>
         <mu-list-item
-          @click="toTab('play')"
           button
+          @click="toTab('play')"
         >
           <mu-list-item-title>好玩</mu-list-item-title>
         </mu-list-item>
         <mu-list-item
-          @click="toTab('apple')"
           button
+          @click="toTab('apple')"
         >
           <mu-list-item-title>Apple</mu-list-item-title>
         </mu-list-item>
         <mu-list-item
-          @click="toTab('jobs')"
           button
+          @click="toTab('jobs')"
         >
           <mu-list-item-title>酷工作</mu-list-item-title>
         </mu-list-item>
         <mu-list-item
-          @click="toTab('deals')"
           button
+          @click="toTab('deals')"
         >
           <mu-list-item-title>交易</mu-list-item-title>
         </mu-list-item>
         <mu-list-item
-          @click="toTab('city')"
           button
+          @click="toTab('city')"
         >
           <mu-list-item-title>城市</mu-list-item-title>
         </mu-list-item>
         <mu-list-item
-          @click="toTab('qna')"
           button
+          @click="toTab('qna')"
         >
           <mu-list-item-title>问与答</mu-list-item-title>
         </mu-list-item>
         <mu-list-item
-          @click="toHome()"
           button
+          @click="toHome()"
         >
           <mu-list-item-title>最热</mu-list-item-title>
         </mu-list-item>
         <mu-list-item
-          @click="toNew()"
           button
+          @click="toNew()"
         >
           <mu-list-item-title>最新</mu-list-item-title>
         </mu-list-item>
         <mu-list-item
-          @click="toTab('nodes')"
           button
+          @click="toTab('nodes')"
         >
           <mu-list-item-title>节点</mu-list-item-title>
         </mu-list-item>
