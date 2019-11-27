@@ -6,11 +6,6 @@
 import TopicListChalk from '~/components/TopicListChalk'
 
 export default {
-  head () {
-    return {
-      titleTemplate: '%s - 最新'
-    }
-  },
   components: {
     TopicListChalk
   },
@@ -19,6 +14,11 @@ export default {
 
     return {
       newList: data
+    }
+  },
+  head () {
+    return {
+      titleTemplate: '%s - 最新'
     }
   }
 }

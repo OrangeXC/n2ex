@@ -7,11 +7,6 @@ import { fetchTopicList } from '~/utils'
 import TopicList from '~/components/TopicList'
 
 export default {
-  head () {
-    return {
-      titleTemplate: '%s - 交易'
-    }
-  },
   components: {
     TopicList
   },
@@ -21,6 +16,11 @@ export default {
 
     return {
       dealList
+    }
+  },
+  head () {
+    return {
+      titleTemplate: '%s - 交易'
     }
   },
   layout: 'mobile'

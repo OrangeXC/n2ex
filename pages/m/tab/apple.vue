@@ -7,11 +7,6 @@ import { fetchTopicList } from '~/utils'
 import TopicList from '~/components/TopicList'
 
 export default {
-  head () {
-    return {
-      titleTemplate: '%s - Apple'
-    }
-  },
   components: {
     TopicList
   },
@@ -21,6 +16,11 @@ export default {
 
     return {
       appleList
+    }
+  },
+  head () {
+    return {
+      titleTemplate: '%s - Apple'
     }
   },
   layout: 'mobile'

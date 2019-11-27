@@ -7,11 +7,6 @@ import { fetchTopicList } from '~/utils'
 import TopicList from '~/components/TopicList'
 
 export default {
-  head () {
-    return {
-      titleTemplate: '%s - 好玩'
-    }
-  },
   components: {
     TopicList
   },
@@ -21,6 +16,11 @@ export default {
 
     return {
       playList
+    }
+  },
+  head () {
+    return {
+      titleTemplate: '%s - 好玩'
     }
   },
   layout: 'mobile'

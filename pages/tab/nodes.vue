@@ -20,9 +20,11 @@
 
 <script>
 export default {
-  head () {
+  async asyncData ({ app }) {
+    const { data } = await app.$axios.get('nodes/all.json')
+
     return {
-      titleTemplate: '%s - 全部节点'
+      nodeList: data
     }
   },
   data () {
@@ -44,16 +46,14 @@ export default {
       )
     }
   },
-  async asyncData ({ app }) {
-    const { data } = await app.$axios.get('nodes/all.json')
-
-    return {
-      nodeList: data
-    }
-  },
   methods: {
     toNode (name) {
       this.$router.push(`/node/${name}`)
+    }
+  },
+  head () {
+    return {
+      titleTemplate: '%s - 全部节点'
     }
   }
 }

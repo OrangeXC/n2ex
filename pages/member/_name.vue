@@ -25,9 +25,9 @@
           <div class="chip-container">
             <mu-chip
               v-if="user.website"
-              @click="toWebsite(user.website)"
               class="chip"
               color="greenA100"
+              @click="toWebsite(user.website)"
             >
               <mu-avatar
                 :size="32"
@@ -39,9 +39,9 @@
             </mu-chip>
             <mu-chip
               v-if="user.twitter"
-              @click="toTwitter(user.twitter)"
               class="chip"
               color="lightBlue100"
+              @click="toTwitter(user.twitter)"
             >
               <mu-avatar :size="32">
                 <img
@@ -53,9 +53,9 @@
             </mu-chip>
             <mu-chip
               v-if="user.github"
-              @click="toGithub(user.github)"
               class="chip"
               color="grey300"
+              @click="toGithub(user.github)"
             >
               <mu-avatar
                 :size="32"
@@ -70,9 +70,9 @@
             </mu-chip>
             <mu-chip
               v-if="user.location"
-              @click="toMap(user.location)"
               class="chip"
               color="deepOrange100"
+              @click="toMap(user.location)"
             >
               <mu-avatar
                 :size="32"
@@ -106,11 +106,6 @@
 import TopicListChalk from '~/components/TopicListChalk'
 
 export default {
-  head () {
-    return {
-      titleTemplate: '%s - 用户详情'
-    }
-  },
   components: {
     TopicListChalk
   },
@@ -141,6 +136,11 @@ export default {
     },
     toMap (location) {
       window.open(`https://www.google.com/maps?q=${location}`)
+    }
+  },
+  head () {
+    return {
+      titleTemplate: '%s - 用户详情'
     }
   }
 }

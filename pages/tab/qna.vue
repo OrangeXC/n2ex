@@ -7,11 +7,6 @@ import { fetchTopicList } from '~/utils'
 import TopicListChalk from '~/components/TopicListChalk'
 
 export default {
-  head () {
-    return {
-      titleTemplate: '%s - 问与答'
-    }
-  },
   components: {
     TopicListChalk
   },
@@ -21,6 +16,11 @@ export default {
 
     return {
       qnaList
+    }
+  },
+  head () {
+    return {
+      titleTemplate: '%s - 问与答'
     }
   }
 }
