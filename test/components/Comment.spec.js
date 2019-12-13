@@ -41,7 +41,9 @@ describe('component: Comment', () => {
 
       const content = wrapper.findAll('.article').at(index)
 
-      expect(content.html()).toBe(`<div class="article">${item.content_rendered}</div>`)
+      expect(content.html()).toBe(`<div class="article">
+  ${item.content_rendered}
+</div>`)
     })
   })
 
