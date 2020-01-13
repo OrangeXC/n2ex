@@ -14,7 +14,7 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.9.2",
+    "@nuxtjs/axios": "^5.9.3",
     "@nuxtjs/pwa": "^3.0.0-beta.19",
     "cross-env": "^6.0.3",
     "element-ui": "^2.13.0",
@@ -34,7 +34,7 @@
     "jest": "^25.0.0",
     "node-sass": "^4.13.0",
     "nodemon": "^2.0.2",
-    "sass-loader": "^8.0.0",
+    "sass-loader": "^8.0.1",
     "vue-jest": "^4.0.0-beta.2"
   }
 }
