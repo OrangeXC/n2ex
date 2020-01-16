@@ -46,7 +46,7 @@
     </el-main>
     <el-footer>
       <span>
-        Copyright © 2016-2019 Orange
+        Copyright © 2016-{{ year }} Orange
       </span>
       <a
         class="github"
@@ -63,7 +63,8 @@
 export default {
   data () {
     return {
-      activeIndex: '/'
+      activeIndex: '/',
+      year: new Date().getFullYear()
     }
   },
   created () {
