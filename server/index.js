@@ -6,7 +6,7 @@ const app = new Koa()
 
 // Import and Set Nuxt.js options
 const config = require('../nuxt.config.js')
-config.dev = !(app.env === 'production')
+config.dev = app.env !== 'production'
 
 async function start () {
   // Instantiate nuxt.js
@@ -17,6 +17,7 @@ async function start () {
     port = process.env.PORT || 3000
   } = nuxt.options.server
 
+  await nuxt.ready()
   // Build in development
   if (config.dev) {
     const builder = new Builder(nuxt)
