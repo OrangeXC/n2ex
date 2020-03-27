@@ -20,18 +20,18 @@
     "element-ui": "^2.13.0",
     "koa": "^2.11.0",
     "muse-ui": "^3.0.2",
-    "nuxt": "^2.12.0"
+    "nuxt": "^2.12.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.2",
     "@nuxtjs/eslint-module": "^1.1.0",
     "@vue/test-utils": "^1.0.0-beta.32",
     "babel-eslint": "^10.1.0",
-    "babel-jest": "^25.1.0",
+    "babel-jest": "^25.2.3",
     "codecov": "^3.6.5",
     "eslint": "^6.8.0",
     "eslint-plugin-nuxt": "^0.5.2",
-    "jest": "^25.1.0",
+    "jest": "^25.2.3",
     "node-sass": "^4.13.1",
     "nodemon": "^2.0.2",
     "sass-loader": "^8.0.2",
