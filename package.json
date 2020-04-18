@@ -17,7 +17,7 @@
     "@nuxtjs/axios": "^5.9.7",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "cross-env": "^7.0.2",
-    "element-ui": "^2.13.0",
+    "element-ui": "^2.13.1",
     "koa": "^2.11.0",
     "muse-ui": "^3.0.2",
     "nuxt": "^2.12.2"
