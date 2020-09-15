@@ -111,10 +111,10 @@ export default {
   },
   async asyncData ({ app, params, error }) {
     const [user, topicList] = await Promise.all([
-      app.$axios.get(`members/show.json?username=${params.name}`)
+      app.$axios.get(`/api/members/show.json?username=${params.name}`)
         .then(res => res.data)
         .catch(() => error({ statusCode: 404, message: 'Member not found' })),
-      app.$axios.get(`topics/show.json?username=${params.name}`)
+      app.$axios.get(`/api/topics/show.json?username=${params.name}`)
         .then(res => res.data)
         .catch(() => error({ statusCode: 404, message: 'Member not found' }))
     ])

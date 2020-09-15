@@ -52,8 +52,8 @@ export default {
   },
   async asyncData ({ app, params, error }) {
     const [detail, comments] = await Promise.all([
-      app.$axios.get(`topics/show.json?id=${params.id}`).then(res => res.data[0]),
-      app.$axios.get(`replies/show.json?topic_id=${params.id}`).then(res => res.data)
+      app.$axios.get(`/api/topics/show.json?id=${params.id}`).then(res => res.data[0]),
+      app.$axios.get(`/api/replies/show.json?topic_id=${params.id}`).then(res => res.data)
     ])
 
     if (!detail) {

@@ -10,7 +10,7 @@ export default {
     TopicList
   },
   async asyncData ({ app }) {
-    const { data } = await app.$axios.get('topics/latest.json')
+    const { data } = await app.$axios.get('/api/topics/latest.json')
 
     return {
       newList: data

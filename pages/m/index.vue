@@ -10,7 +10,7 @@ export default {
     TopicList
   },
   async asyncData ({ app }) {
-    const { data } = await app.$axios.get('topics/hot.json')
+    const { data } = await app.$axios.get('/api/topics/hot.json')
 
     return {
       hotList: data

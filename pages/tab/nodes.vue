@@ -21,7 +21,7 @@
 <script>
 export default {
   async asyncData ({ app }) {
-    const { data } = await app.$axios.get('nodes/all.json')
+    const { data } = await app.$axios.get('/api/nodes/all.json')
 
     return {
       nodeList: data
