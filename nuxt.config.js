@@ -29,15 +29,19 @@ module.exports = {
   ],
   modules: [
     '@nuxtjs/axios',
+    '@nuxtjs/proxy',
     '@nuxtjs/pwa'
   ],
   router: {
     middleware: 'redirect'
   },
   axios: {
-    baseURL: 'https://proxy-oagpwnbkpe.now.sh',
-    credentials: false,
-    proxyHeaders: false
+    proxy: true
+  },
+  proxy: {
+    '/api': {
+      target: 'https://www.v2ex.com'
+    }
   },
   build: {
     transpile: [/^element-ui/]

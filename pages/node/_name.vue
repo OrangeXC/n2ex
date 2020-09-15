@@ -37,10 +37,10 @@ export default {
   },
   async asyncData ({ app, params, error }) {
     const [node, topicList] = await Promise.all([
-      app.$axios.get(`nodes/show.json?name=${params.name}`)
+      app.$axios.get(`/api/nodes/show.json?name=${params.name}`)
         .then(res => res.data)
         .catch(() => error({ statusCode: 404, message: 'Node not found' })),
-      app.$axios.get(`topics/show.json?node_name=${params.name}`)
+      app.$axios.get(`/api/topics/show.json?node_name=${params.name}`)
         .then(res => res.data)
         .catch(() => error({ statusCode: 404, message: 'Node not found' }))
     ])
