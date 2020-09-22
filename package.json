@@ -21,7 +21,7 @@
     "element-ui": "2.13.2",
     "koa": "2.13.0",
     "muse-ui": "3.0.2",
-    "nuxt": "2.14.5"
+    "nuxt": "2.14.6"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "3.1.0",
