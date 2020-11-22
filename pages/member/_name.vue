@@ -124,6 +124,11 @@ export default {
       topicList
     }
   },
+  head () {
+    return {
+      titleTemplate: '%s - 用户详情'
+    }
+  },
   methods: {
     toWebsite (url) {
       window.open(url.includes('http') ? url : `http://${url}`)
@@ -136,11 +141,6 @@ export default {
     },
     toMap (location) {
       window.open(`https://www.google.com/maps?q=${location}`)
-    }
-  },
-  head () {
-    return {
-      titleTemplate: '%s - 用户详情'
     }
   }
 }

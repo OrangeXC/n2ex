@@ -10,6 +10,7 @@ export default {
   components: {
     TopicList
   },
+  layout: 'mobile',
   async asyncData ({ app }) {
     const nodes = ['share', 'bb', 'games', 'travel', 'hardware']
     const playList = await fetchTopicList(app.$axios, nodes)
@@ -22,7 +23,6 @@ export default {
     return {
       titleTemplate: '%s - 好玩'
     }
-  },
-  layout: 'mobile'
+  }
 }
 </script>

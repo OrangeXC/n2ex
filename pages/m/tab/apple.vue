@@ -10,6 +10,7 @@ export default {
   components: {
     TopicList
   },
+  layout: 'mobile',
   async asyncData ({ app }) {
     const nodes = ['apple', 'macos', 'ios', 'ipad', 'iphone', 'mbp']
     const appleList = await fetchTopicList(app.$axios, nodes)
@@ -22,7 +23,6 @@ export default {
     return {
       titleTemplate: '%s - Apple'
     }
-  },
-  layout: 'mobile'
+  }
 }
 </script>

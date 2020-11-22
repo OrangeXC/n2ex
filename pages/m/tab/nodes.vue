@@ -21,6 +21,7 @@
 
 <script>
 export default {
+  layout: 'mobile',
   async asyncData ({ app }) {
     const { data } = await app.$axios.get('/api/nodes/all.json')
 
@@ -31,6 +32,11 @@ export default {
   data () {
     return {
       searchString: ''
+    }
+  },
+  head () {
+    return {
+      titleTemplate: '%s - 全部节点'
     }
   },
   computed: {
@@ -51,13 +57,7 @@ export default {
     toNode (name) {
       this.$router.push(`/node/${name}`)
     }
-  },
-  head () {
-    return {
-      titleTemplate: '%s - 全部节点'
-    }
-  },
-  layout: 'mobile'
+  }
 }
 </script>
 

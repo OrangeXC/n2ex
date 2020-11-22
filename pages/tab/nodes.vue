@@ -32,6 +32,11 @@ export default {
       searchString: ''
     }
   },
+  head () {
+    return {
+      titleTemplate: '%s - 全部节点'
+    }
+  },
   computed: {
     nodes () {
       if (!this.searchString) {
@@ -49,11 +54,6 @@ export default {
   methods: {
     toNode (name) {
       this.$router.push(`/node/${name}`)
-    }
-  },
-  head () {
-    return {
-      titleTemplate: '%s - 全部节点'
     }
   }
 }

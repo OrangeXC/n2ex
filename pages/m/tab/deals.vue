@@ -10,6 +10,7 @@ export default {
   components: {
     TopicList
   },
+  layout: 'mobile',
   async asyncData ({ app }) {
     const nodes = ['all4all', 'exchange', 'free', 'dn', 'tuan']
     const dealList = await fetchTopicList(app.$axios, nodes)
@@ -22,7 +23,6 @@ export default {
     return {
       titleTemplate: '%s - 交易'
     }
-  },
-  layout: 'mobile'
+  }
 }
 </script>

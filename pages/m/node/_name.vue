@@ -47,6 +47,7 @@ export default {
   components: {
     TopicList
   },
+  layout: 'mobile',
   async asyncData ({ app, params, error }) {
     const [node, topicList] = await Promise.all([
       app.$axios.get(`/api/nodes/show.json?name=${params.name}`)
@@ -66,8 +67,7 @@ export default {
     return {
       titleTemplate: '%s - 节点详情'
     }
-  },
-  layout: 'mobile'
+  }
 }
 </script>
 

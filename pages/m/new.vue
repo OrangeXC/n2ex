@@ -9,6 +9,7 @@ export default {
   components: {
     TopicList
   },
+  layout: 'mobile',
   async asyncData ({ app }) {
     const { data } = await app.$axios.get('/api/topics/latest.json')
 
@@ -20,7 +21,6 @@ export default {
     return {
       titleTemplate: '%s - 最新'
     }
-  },
-  layout: 'mobile'
+  }
 }
 </script>
