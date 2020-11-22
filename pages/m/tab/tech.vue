@@ -10,6 +10,7 @@ export default {
   components: {
     TopicList
   },
+  layout: 'mobile',
   async asyncData ({ app }) {
     const nodes = ['programmer', 'fe', 'js', 'nodejs', 'vue']
     const techList = await fetchTopicList(app.$axios, nodes)
@@ -22,7 +23,6 @@ export default {
     return {
       titleTemplate: '%s - 技术'
     }
-  },
-  layout: 'mobile'
+  }
 }
 </script>

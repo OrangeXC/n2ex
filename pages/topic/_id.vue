@@ -50,6 +50,9 @@ export default {
   components: {
     Comment
   },
+  validate ({ params }) {
+    return /^\d+$/.test(params.id)
+  },
   async asyncData ({ app, params, error }) {
     const [detail, comments] = await Promise.all([
       app.$axios.get(`/api/topics/show.json?id=${params.id}`).then(res => res.data[0]),
@@ -67,6 +70,11 @@ export default {
       comments
     }
   },
+  head () {
+    return {
+      titleTemplate: '%s - 话题详情'
+    }
+  },
   methods: {
     toNode (name) {
       this.$router.push(`/node/${name}`)
@@ -74,14 +82,6 @@ export default {
     toMember (name) {
       this.$router.push(`/member/${name}`)
     }
-  },
-  head () {
-    return {
-      titleTemplate: '%s - 话题详情'
-    }
-  },
-  validate ({ params }) {
-    return /^\d+$/.test(params.id)
   }
 }
 </script>
