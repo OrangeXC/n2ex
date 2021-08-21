@@ -18,10 +18,10 @@
     "@nuxtjs/proxy": "2.1.0",
     "@nuxtjs/pwa": "3.3.5",
     "cross-env": "7.0.3",
-    "element-ui": "2.15.3",
+    "element-ui": "2.15.5",
     "koa": "2.13.1",
     "muse-ui": "3.0.2",
-    "nuxt": "2.15.7"
+    "nuxt": "2.15.8"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "6.0.1",
